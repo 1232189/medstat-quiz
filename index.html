@@ -200,8 +200,8 @@ button{touch-action:manipulation}
 </head>
 <body>
 <div id="app"></div>
-<script src="questions.js"></script>
-<script src="feedback-config.js"></script>
+<script src="questions.js?v=be340ab4"></script>
+<script src="feedback-config.js?v=b920c553"></script>
 <script>
 (function(){
 "use strict";
@@ -734,6 +734,25 @@ function submitFeedback(){
     try{
       window.location.href = 'mailto:'+FB.target+'?subject='+
         encodeURIComponent('[题库反馈] '+t.question_id)+'&body='+encodeURIComponent(ticketBody(t));
+    }catch(e){}
+  } else if(FB.channel==='api' && FB.target && typeof fetch==='function'){
+    try{
+      fetch(FB.target, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(t)
+      }).then(function(r){
+        if(r && r.ok){
+          var ls = getTickets();
+          ls.forEach(function(x){ if(x.id===t.id) x.exported = true; });
+          store.set(KT, ls);
+          toast('反馈已提交，谢谢');
+        } else {
+          toast('提交没成功，已存在本机，可导出文件发给作者');
+        }
+      }).catch(function(){
+        toast('提交没成功，已存在本机，可导出文件发给作者');
+      });
     }catch(e){}
   }
   fbDraft = null;
