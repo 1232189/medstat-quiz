@@ -1,5 +1,5 @@
 /* 由 build_app_data.py 从 banks/ 生成，请勿手改 */
-window.QUIZ_BANKS = [{"id": "medstat", "name": "医学统计学", "subtitle": "5 号公寓复印店《医学统计学题库-05》", "dir": "medstat", "enabled": true, "id_prefix": "p", "source_pdf": "统计 打印店选择题库.pdf", "pipeline": "clean_pages.py → segment_from_coords.py → normalize.py → validate_bank.py"}, {"id": "labanimal", "name": "实验动物学", "subtitle": "实验动物学 单选 / 多选 / 判断题（docx 导入）", "dir": "labanimal", "enabled": true, "id_prefix": "lab", "source_docx": "实验动物学/*.docx", "pipeline": "import_docx.py"}];
+window.QUIZ_BANKS = [{"id": "medstat", "name": "医学统计学", "subtitle": "5 号公寓复印店《医学统计学题库-05》", "dir": "medstat", "enabled": true, "id_prefix": "p", "source_pdf": "统计 打印店选择题库.pdf", "pipeline": "clean_pages.py → segment_from_coords.py → normalize.py → validate_bank.py"}, {"id": "labanimal", "name": "实验动物学", "subtitle": "实验动物学 单选 / 多选 / 判断题（docx 导入）", "dir": "labanimal", "enabled": true, "id_prefix": "lab", "source_docx": "实验动物学/*.docx", "pipeline": "import_docx.py"}, {"id": "statworkbook", "name": "赵耐青统计练习册", "subtitle": "是非题与选择题（含解析）", "dir": "statworkbook", "enabled": true, "id_prefix": "zhao", "source_pdf": "赵耐青 统计练习册.pdf", "pipeline": "extract_pdf_text.py → import_answer_book.py"}];
 window.QUIZ_DATA = [
  {
   "id": "p02-001",
@@ -61430,5 +61430,5819 @@ window.QUIZ_DATA = [
   "version": 2,
   "page": null,
   "no": null
+ },
+ {
+  "id": "statworkbook-j0001",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "家庭中子女数是离散型的定量变量。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0002",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "同质个体之间的变异称为个体变异。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0003",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "学校对某个课程进行1 次考试，可以理解为对学生掌握该课程知识的一次随机抽样。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0004",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "某医生用某个新药治疗了100 名牛皮癣患者，其中55 个人有效，则该药的有效率为 55%。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "只能说该样本有效率为55％或称用此药总体有效率的样本估计值为55%",
+  "version": 2,
+  "page": 1,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0005",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "已知在某个人群中，糖尿病的患病率为8%，则可以认为在该人群中，随机抽一个对象， 其患糖尿病的概率为8%。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "人群的患病率称为总体患病率。在该人群中随机抽取一个对象，每个对象均有相 同的机会被抽中，抽到是糖尿病患者的概率为8％。",
+  "version": 2,
+  "page": 1,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0001",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列属于连续型变量的是 ____ 。",
+  "options": {
+   "A": "血压",
+   "B": "职业",
+   "C": "性别",
+   "D": "民族"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0002",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "某高校欲了解大学新生心理健康状况，随机选取了1000 例大学新生调查，这1000 例大 学生新生调查问卷是 ____ 。",
+  "options": {
+   "A": "一份随机样本",
+   "B": "研究总体",
+   "C": "目标总体",
+   "D": "个体"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0003",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "某研究用X 表示儿童在一年中患感冒的次数，共收集了1000 人，请问：儿童在一年中 患感冒次数的资料属于 ____ 。",
+  "options": {
+   "A": "连续型资料",
+   "B": "有序分类资料",
+   "C": "不具有分类的离散型资料",
+   "D": "以上均不对"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0004",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列描述中，不正确的是 ____ 。",
+  "options": {
+   "A": "总体中的个体具有同质性",
+   "B": "总体中的个体大同小异",
+   "C": "总体中的个体在同质的基础上有变异",
+   "D": "如果个体间有变异那它们肯定不是来自同一总体"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0005",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "用某个降糖药物对糖尿病患者进行治疗，根据某个大规模随机抽样调查的研究结果得 到该药的降糖有效率为85%的结论，请问降糖有效率是指 ____ 。",
+  "options": {
+   "A": "每治疗100 个糖尿病患者，正好有85 个人降糖有效，15 个人降糖无效",
+   "B": "每个接受该药物治疗的糖尿病患者，降糖有效的机会为85%",
+   "C": "接受该药物治疗的糖尿病人群中，降糖有效的比例为85%",
+   "D": "根据该研究的入选标准所规定的糖尿病患者人群中，估计该药降糖有效的比例为 85%"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 1,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 1,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0006",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "不论数据呈何种分布，都可以用算术均数和中位数表示其平均水平。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 3,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "只有资料满足正态或近似正态分布时计算算术均数是比较有统计学意义的",
+  "version": 2,
+  "page": 3,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0007",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在一组变量值中少数几个变量值比大多数变量值大几百倍，一般不宜用算术均数表示其 平均水平。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 3,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "可以采用中位数表示",
+  "version": 2,
+  "page": 3,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0008",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "只要单位相同，用s 和用CV 来表示两组资料的离散程度，结论是完全一样的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 3,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "标准差S 是绝对误差的一种度量，变异系数CV 是相对误差的一种度量，对于两组 资料离散程度的比较，即使两组资料的度量单位相同，也完全有可能出现两个指标的结论是 不同的。在实际应用时，选择离散程度的指标时，考虑其结果是否有研究背景意义。例如： 一组资料为成人的身高观察值，另一组资料为2 岁幼儿的身高观察值，虽然可以用标准差S 比较两组的离散程度，也不能认为这是错误的，但根本没有研究背景意义，相反选择变异系 数CV 比较两组资料的相对变异程度，这就有一定的研究背景意义。",
+  "version": 2,
+  "page": 3,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0009",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "描述200 人血压的分布，应绘制频数图。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 3,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 3,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0010",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "算术均数与中位数均不容易受极值的影响。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 3,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "算术均数比中位数容易受到极值的影响",
+  "version": 2,
+  "page": 3,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0006",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "中位数是表示变量值 ____ 的指标。",
+  "options": {
+   "A": "平均水平",
+   "B": "变化范围",
+   "C": "频数分布",
+   "D": "相互间差别大小"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 3,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 3,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0007",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "对于最小组段无确定下限值和（或）最大组段无确定上限值的频数分布表资料，宜用下 列哪些指标进行统计描述？ ____ ____",
+  "options": {
+   "A": "中位数，极差",
+   "B": "中位数，四分位数间距",
+   "C": "中位数，四分位数范围",
+   "D": "中位数，标准差"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 4,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 4,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0008",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "描述年龄（分8 组）与疗效（有效率）的关系，应绘制 ____ 。",
+  "options": {
+   "A": "线图",
+   "B": "圆图",
+   "C": "直方图",
+   "D": "百分条图"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 4,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 4,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0009",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "为了描述资料分布概况，绘制直方图时，直方图的纵轴可以为 ____ 。",
+  "options": {
+   "A": "频数",
+   "B": "频率",
+   "C": "频率密度(频率/组距)",
+   "D": "都可以"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 4,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 4,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0011",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "二项分布越接近Poisson 分布时，也越接近正态分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 6,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "当二项分布的π 不太接近0 或者1，随着ｎ的增大，nπ 和(1 ) n π − 均较大时， 二项分布的X 的逐渐近似正态分布；n 较大，π 较小，二项分布的X 近似总体均数为 n μ π = 的Poisson 分布，只有n 较大、π 较小并且nπ 较大时，二项分布的X 既近似 Poisson 分布又近似正态分布，其本质是当n 较大、π 较小时二项分布的X 所近似的 Poisson 分布在其总体均数 n μ π = 较大时逼近正态分布。",
+  "version": 2,
+  "page": 6,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0012",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "从同一新生儿总体（无限总体）中随机抽样200 人，其中新生儿窒息人数服从二项 分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 6,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为可以假定每个新生发生窒息的概率π 是相同的并且相互独立，对于随机抽 取200 人，新生儿窒息人数X 服从二项分布 ( , ) B n π 。",
+  "version": 2,
+  "page": 6,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0013",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在n 趋向无穷大、总体比例π趋向于0，且nπ 保持常数时的二项分布的极限分布是 Poisson 分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 6,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "这是二项分布的性质",
+  "version": 2,
+  "page": 6,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0014",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "某一放射物体，以一分钟为单位的放射性计数为50，40，30，30，10，如果以5 分 钟为时间单位，其标准差为 160 5 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 6,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "设 i X 服从总体均数为μ 的Poisson 分布， 1,2,3,4,5 i = ，并且相互独立。根据 Poisson 分布的可加性， 1 2 3 4 5 X X X X X + + + + 服从总体均数为5μ ，其总体方差为 5μ ，本题5 分钟的总体方差5μ 的估计值为50 40 30 30 10 160 + + + + = ，所以其标准 差为160 。",
+  "version": 2,
+  "page": 6,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0015",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "一个放射性物体一分钟脉冲数为20 次，另一个放射性物体一分钟脉冲数为50 次。 假定两种放射性物体的脉冲性质相同，并且两种放射性物体发生脉冲是相互独立的， 则这两种物体混合后，其一分钟脉冲数的总体均数估计值为70 次。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 6,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "根据Poisson 分布的可加性，这两种物体混合后的发生的脉冲数为 1 2 X X + ，混 合后一分钟脉冲数的总体均数估计值为20+50＝70 次。",
+  "version": 2,
+  "page": 6,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0016",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "一个放射性物体平均每分钟脉冲数为5 次（可以认为服从Poisson 分布），用X 表示 连续观察20 分钟的脉冲数，则X 也服从Poisson 分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "这是Poisson 分布的可加性",
+  "version": 2,
+  "page": 7,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-j0017",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "一个放射性物体平均每分钟脉冲数为5 次（可以认为服从Poisson 分布），用X 表示 连续观察20 分钟的脉冲数，则X 的总体均数和总体方差均为100 次。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 7,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "Poisson 分布的可加性原理",
+  "version": 2,
+  "page": 7,
+  "no": 7
+ },
+ {
+  "id": "statworkbook-j0018",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "用X 表示某个放射性物体的每分钟脉冲数，其平均每分钟脉冲数为5 次（可以认为 服从Poisson 分布），用Y 表示连续观察20 分钟的脉冲数，则可以认为Y 近似服从正 态分布，但不能认为X 近似服从正态分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 8,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为Y 的总体均数为100，当μ比较小的时候，Poisson 分布是一个偏态的分布 但是当μ增大时，Poisson 分布会逐渐趋于对称。",
+  "version": 2,
+  "page": 7,
+  "no": 8
+ },
+ {
+  "id": "statworkbook-c0010",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "理论上，二项分布是一种 ____ 。",
+  "options": {
+   "A": "连续性分布",
+   "B": "离散分布",
+   "C": "均匀分布",
+   "D": "标准正态分布"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 7,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0011",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "在样本例数不变的情况下，下列何种情况时，二项分布越接近对称分布。 ____",
+  "options": {
+   "A": "总体率π越大",
+   "B": "样本率P 越大",
+   "C": "总体率π越接近0.5",
+   "D": "总体率π越小"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 7,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0012",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "设 1 2 10 , , , X X X \" 均服从 (4,0.01) ____ ，并且 1 2 10 , , , X X X \" 相互独立。令 1 2 10 Y X X X = + + + \" ，则 D ~ Y B",
+  "options": {
+   "A": "Y 近似服从二项分布",
+   "B": "Y 近似服从Poisson 分布",
+   "C": "Y 近似服从正态分布   D (40,0.01)"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 7,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0013",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "设 1 2 10 , , , X X X \" 均服从 (2.2) Poisson ，并且 1 2 10 , , , X X X \" 相互独立。令 1 2 10 ( ) /10 Y X X X = + + + \" ，则 C ____",
+  "options": {
+   "A": "Y 近似服从 (10,0.22)",
+   "B": "Y 服从 (22) Poisson 分布",
+   "C": "Y 近似服从正态分布",
+   "D": "Y 服从 (2.2) Poisson 分布"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 7,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 7,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0019",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "设X 的总体均数为μ，则样本均数X 的总体均数也为μ。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 9,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "经随机抽样得到的样本均数X 的总体均数也为μ",
+  "version": 2,
+  "page": 9,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0020",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "设X 的总体方差为σ2，则样本均数X 的总体方差也为σ2。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 9,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "经随机抽样后得到的样本均数X 的总体方差为σ2/n",
+  "version": 2,
+  "page": 9,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0021",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "设随机变量 1, , n X X … 均服从 (1, ) B π ，n 很大时，则 1 1 n i i X X n = = ∑ 近似服从 ( , (1 ) / ) N n π π π −",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 9,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 9,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0022",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "某研究者做了一个儿童血铅浓度的流行病学调查，共调查了1000 人，检测了每个人血 铅浓度。虽然血铅检浓度一般呈非正态分布，但由于该研究样本量很大，可以认为这些 血铅浓度近似服从正态分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 9,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "血铅浓度的分布与样本量是否很大无关，如果样本量充分大时，血铅浓度的样本均 数的分布近似正态分布。",
+  "version": 2,
+  "page": 9,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0023",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "某研究者做了一个儿童血铅浓度的流行病学调查，共调查了1000 人，检测了每个人血 铅浓度，计算这1000 人的血铅平均浓度。对于现有的1000 人的血铅浓度资料，可以认 为该资料的样本均数近似服从正态分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 9,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "样本均数的概率分布是指随机抽样前将要随机抽取的样本，其样本均数近似服从 某个概率分布，样本量很大时，样本均数逼近正态分布。对于这个资料而言，这是已经完成 随机抽样的资料，这个资料的样本均数只是一个数，不存在服从哪种分布的问题。",
+  "version": 2,
+  "page": 9,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0024",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "某研究者做了一个儿童血铅浓度的流行病学调查，已知血铅测量值非正态分布，计划调 查1000 人，并将计算1000 人的血铅浓度的样本均数，由于该研究样本量很大，可以认 为随机抽样所获得血铅浓度的样本均数将近似服从正态分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 9,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "如果从某个均数为μ，标准差为σ的非正态分布的总体中抽样，只要样本量足够大 则样本均数X 的分布也将近似于正态分布 2 ( , / ) N n μ σ 。",
+  "version": 2,
+  "page": 9,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-j0025",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "t 检验统计量服从自由度为ν 的t 分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 15,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "只有在H0 假设为真时才成立",
+  "version": 2,
+  "page": 15,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0026",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "当拒绝 0 H 时，只可能发生第一类错误。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 15,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 15,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0027",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于 0 0 1 0 : : H H μ μ μ μ = ≠ 的t 检验，当 1 H 为真时，检验统计量 /2, 1 n t tα − > 的 概率为1 β − 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 15,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "当 1 H 为真时，作出正确推断的概率即为1 β − 。",
+  "version": 2,
+  "page": 15,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0028",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于 0 0 1 0 : : H H μ μ μ μ = ≠ 的t 检验， 0 H 为真而言，发生拒绝 0 H 的机会与样 本量n 无关。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 15,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "无论样本量n 多大，犯第一类错误的概率为α",
+  "version": 2,
+  "page": 15,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0029",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "05/2, 1 n X X t S − ± 估计总体均数所在范围， 要求资料服从正态分布或样本量很大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 15,
+   "no": 0,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 15,
+  "no": 0
+ },
+ {
+  "id": "statworkbook-c0014",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "在同一总体随机抽样，其他条件不变，样本量越大，则总体均数的95%可信 区间（ ____ ）。",
+  "options": {
+   "A": "越窄",
+   "B": "越宽",
+   "C": "越可靠",
+   "D": "越稳定"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 15,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 15,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0015",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "其他条件不变，可信度1-α 越大，则总体均数可信区间（ ____ ）",
+  "options": {
+   "A": "越宽",
+   "B": "越窄",
+   "C": "不变",
+   "D": "还与第二类错误有关"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 16,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 16,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0016",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "其他条件不变，可信度1-α 越大，则随机抽样所获得的总体均数可信区间将 不包含总体均数的概率（ ____ ）。",
+  "options": {
+   "A": "越大",
+   "B": "越小",
+   "C": "不变",
+   "D": "不确定"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 16,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 16,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0017",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "增大样本含量，则错误的是（ ____ ）。 x",
+  "options": {
+   "A": "可信区间的可信度变大                B S 变小",
+   "C": "同样可信度情况下，可信区间变窄",
+   "D": "抽样误差减少"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 16,
+   "no": 7,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 16,
+  "no": 7
+ },
+ {
+  "id": "statworkbook-c0018",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "由两个独立样本计算得到两个总体均数的可信区间，则下列结论中正确的是 （ ____ ）。",
+  "options": {
+   "A": "如果两个可信区间无重叠，可认为两样本均数差别无统计意义",
+   "B": "如果两个可信区间有重叠，可认为两样本均数差别有统计意义",
+   "C": "如果两个可信区间无重叠，可认为两样本均数差别有统计意义",
+   "D": "以上都不对"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 16,
+   "no": 9,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 16,
+  "no": 9
+ },
+ {
+  "id": "statworkbook-c0019",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "在总体方差相等的条件下，由两个独立样本计算两个总体均数之差的可信区 间包含了0，则（ ____ ）。",
+  "options": {
+   "A": "可认为两样本均数差别无统计学意义",
+   "B": "可认为两样本均数差别有统计学意义",
+   "C": "可认为两总体均数差别无统计学意义",
+   "D": "可认为两总体均数差别有统计学意义"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 16,
+   "no": 10,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 16,
+  "no": 10
+ },
+ {
+  "id": "statworkbook-c0020",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "假设检验中的第二类错误是指（ ____ ）所犯的错误。",
+  "options": {
+   "A": "拒绝了实际上成立的H0",
+   "B": "未拒绝实际上成立的H0",
+   "C": "拒绝了实际上不成立的H0",
+   "D": "未拒绝实际上不成立的H0"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 17,
+   "no": 11,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 17,
+  "no": 11
+ },
+ {
+  "id": "statworkbook-c0021",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两样本均数比较的假设检验中，差别有统计学意义时，P 越小，说明（ ____ ）。",
+  "options": {
+   "A": "两样本均数差别越大",
+   "B": "两总体均数差别越大",
+   "C": "越有理由认为两样本均数不同",
+   "D": "越有理由认为两总体均数不同"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 17,
+   "no": 12,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 17,
+  "no": 12
+ },
+ {
+  "id": "statworkbook-c0022",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "作两样本均数差别的t 检验中，P 值与α 值中（ ____ ）。",
+  "options": {
+   "A": "α 值是研究者指定的",
+   "B": "P 值是研究者指定的",
+   "C": "两者意义相同，数值不同",
+   "D": "两者意义相同，数值相同"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 17,
+   "no": 13,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 17,
+  "no": 13
+ },
+ {
+  "id": "statworkbook-c0023",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两样本均数的t 检验，按0.05 的检验水准拒绝H0，若此时推断有误，其错误 的概率为（ ____ ）。",
+  "options": {
+   "A": "0.05",
+   "B": ">0.05",
+   "C": "<0.05",
+   "D": "不一定"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 17,
+   "no": 14,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 17,
+  "no": 14
+ },
+ {
+  "id": "statworkbook-c0024",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "在样本均数与总体均数差别的双侧显著性检验中，结果为P<α 而拒绝H0,接 受H1，原因是（ ____ ）。 0 0 1 0",
+  "options": {
+   "A": "H0 假设成立的可能性小于α",
+   "B": "H1 假设成立的可能性大于1-α",
+   "C": "H0 成立的可能性小于α 且H1 成立的可能性大于1-α",
+   "D": "从H0 成立的总体中随机抽取一个样本，其样本均数比现有样本的均数更 远离（H0 为真时）总体均数的可能性小于α 注:假设检验是反证法思想，即：考察 H 为真情况下，样本统计量出现背离 H 并 且逼近 H 的概率是否为小概率事件，所以假设检验中不涉及到 H 成立的概 率。"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 17,
+   "no": 15,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 17,
+  "no": 15
+ },
+ {
+  "id": "statworkbook-j0030",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "随机区组设计的检验效能一定高于完全随机设计",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 19,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "如果在完全随机设计中，实验条件和实验过程控制都非常好，研究对象 的同质性非常好，几乎不存在可能的混杂因素，即可以认为可能混杂效应很小甚 至可以忽略，则完全随机设计的检验效能可能要高于随机区组设计。",
+  "version": 2,
+  "page": 19,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0031",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "随机对照试验就是实验性研究",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 19,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "随机对照试验的英文名是Random control trial，缩写为RCT。在随 机分组前，随机对照试验的研究对象来自同一人群，通过选择不同的干预，构成 试验组和对照组，由此评价干预效应。因此随机对照试验就是实验性研究，但要 注意：实验性研究未必是随机对照试验。",
+  "version": 2,
+  "page": 19,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0032",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "随机对照试验就是完全随机设计",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 19,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "随机对照试验贯彻了随机化原则，对照组和实验组间除实验因素不同 外，其他条件基本相同，研究设计可以是完全随机对照设计，也可以是随机区组 设计。",
+  "version": 2,
+  "page": 19,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0033",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "采取随机分组可以提高检验效能",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 19,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "采取随机分组的主要目的是控制或减少混杂因素对结果的影响，与检 验效能没有直接的连续。",
+  "version": 2,
+  "page": 19,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0034",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "为了研究A 因素与死亡的关系，采用队列研究，但所获样本资料不能估计人 群的A 因素暴露比例。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 19,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为队列研究是根据A 因素的不同暴露水平分别入选研究对象，由此 建立不同暴露水平的队列进行随访研究的。如按A 因素暴露和非暴露分别入组 2000 人进行随访，因此暴露人数与非暴露人数是1：1，与人群中的暴露比例无 关。即：队列研究中的研究对象中的暴露比例是人为确定的，不是人群的暴露比 例。",
+  "version": 2,
+  "page": 19,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0025",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "病例对照研究的主要缺点之一是 ____",
+  "options": {
+   "A": "研究周期长",
+   "B": "病例不容易收集",
+   "C": "容易产生选择性偏倚",
+   "D": "容易失访"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 19,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 19,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0026",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "病例对照研究的主要优点之一是 ____",
+  "options": {
+   "A": "容易失访",
+   "B": "不容易发生测量偏倚",
+   "C": "患病率很低的疾病也适用",
+   "D": "很容易选择和收集对照"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 20,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 20,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0027",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "病例对照研究最好应选择 ____ 为对照 人",
+  "options": {
+   "A": "健康人",
+   "B": "医院中未患该疾病的人",
+   "C": "医院中的正常人",
+   "D": "根据研究背景选择符合一定条件的未患该疾病的"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 20,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 20,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0028",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "采用配对设计的主要目的是 ____ 。",
+  "options": {
+   "A": "减少样本含量",
+   "B": "减少混杂因素对结果的影响",
+   "C": "提高统计检验的功效",
+   "D": "有利于统计分析"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 20,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 20,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0029",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列说法哪一个是正确的 ____ 。",
+  "options": {
+   "A": "采用完全随机设计可以使试验组和对照组同时减少混杂因素的影响，提高 统计检验效能",
+   "B": "采用随机区组设计可以控制了混杂因素对结果的影响，提高统计检验效能",
+   "C": "采用随机区组设计可以减少了混杂因素对结果的影响，当效应指标与研究 因素之间存在混杂效应的情况下，采用配对设计可以提高了统计检验的效 能。",
+   "D": "采用完全随机设计可以控制混杂因素在试验组和对照组达到概率意义下 的平衡，由此提高了统计检验的效能。"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 20,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 20,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0035",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在两样本t 检验中，t 检验统计量服从自由度为n1+n2-2 的t 分布。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 22,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "只有 0 1 2 : H μ μ = 为真才成立",
+  "version": 2,
+  "page": 22,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0036",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于两个样本的样本量都很大时，t 检验对正态性的要求可以忽略。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 22,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "根据中心极限定理可知，样本量很大时，样本均数的分布逼近正态分 布。",
+  "version": 2,
+  "page": 22,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0030",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两个样本均数不一致，t 检验时P>0.05，则（ ____ ）",
+  "options": {
+   "A": "可以认为两个总体均数相等",
+   "B": "可以认为总体均数不同",
+   "C": "没有足够证据可以推断总体均数不同",
+   "D": "可以认为两个样本来自同一总体"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 22,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 22,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0031",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两独立样本均数的比较，P<0.001，拒绝H0 时可推论为（ ____ ）。 1 2 1 2 1 2 1 2",
+  "options": {
+   "A": "X 与 X 间差异有统计学意义      B. X 与 X 的差异无统计学意义",
+   "C": "μ 与 μ 间差异无统计学意义      D. μ 与 μ 间差异有统计学意义"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 22,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 22,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0032",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "完全随机设计的两样本比较的秩和检验中，编秩次的方法是（ ____ ）。",
+  "options": {
+   "A": "将两组数据分别编秩，各组秩次分别相加求秩和",
+   "B": "将两组数据混合，从小到大统一编秩，再相加求总秩和",
+   "C": "将两组数据混合，从小到大统一编秩，再将各组秩次分别相加求秩和",
+   "D": "将两组数据分别编秩，全部秩次相加求秩和"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 23,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 23,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0033",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两独立样本连续型定量资料比较，当分布类型不清时选择（ ____ ）总是正确的。 2",
+  "options": {
+   "A": "t 检验",
+   "B": "Z 检验",
+   "C": "秩和检验",
+   "D": "χ 检验"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 23,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 23,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0034",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两独立样本连续型定量资料的比较，应首先考虑（ ____ ）。 2",
+  "options": {
+   "A": "t 检验",
+   "B": "秩和检验    C χ 检验",
+   "D": "资料符合哪些统计检验方法的条件，在符合的统计方法中选择Power 高的 检验方法。"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 23,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 23,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0035",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "对两样本均数比较的t 检验，无效假设正确的是（ ____ ）。 2 1 μ 2 1 μ 2 1 X 2 1 X",
+  "options": {
+   "A": "H0： μ =",
+   "B": "H0： μ ≠",
+   "C": "H0： X =",
+   "D": "H0： X ≠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 23,
+   "no": 7,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 23,
+  "no": 7
+ },
+ {
+  "id": "statworkbook-c0036",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两样本秩和检验的备择假设是（ ____ ）。",
+  "options": {
+   "A": "两组所对应总体分布相同",
+   "B": "两组所对应总体均数相等",
+   "C": "两组所对应总体分布不相同",
+   "D": "两组所对应总体均数不全相等"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 23,
+   "no": 8,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 23,
+  "no": 8
+ },
+ {
+  "id": "statworkbook-j0037",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在样本量较大时，方差分析对资料的正态性要求可以忽略",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 28,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "当样本量大时，其样本均数近似正态分布，所以可以忽略资料对正态性的要求",
+  "version": 2,
+  "page": 28,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0038",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在样本量较大时，方差分析对资料的方差齐性要求可以忽略",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 28,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "方差齐性与样本量大小没有直接",
+  "version": 2,
+  "page": 28,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0039",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于完全随机设计，总样本量不变的情况下，如果各组的样本量相同，则检验效能相对 较高",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 28,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "可以证明：在总样本量相同的情况下，当各组样本量相同时，检验效能最大",
+  "version": 2,
+  "page": 28,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0040",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "如果各组的样本标准差相差不超过0.1，则可以认为各组之间的方差是齐性的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 28,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "例如3 组样本标准差分别为0.1,0.01,0.05，每组样本量均为20，作方差齐性检验 可以验证方差齐性的差异有统计学意义，所以需做方差齐性检验。",
+  "version": 2,
+  "page": 28,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0037",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "完全随机设计资料的方差分析中，必然有（ ____ ）。 > 总 + = 总 + >",
+  "options": {
+   "A": "组间 SS 组内 SS",
+   "B": "组内 组间 MS MS MS",
+   "C": "ss = 组间 SS 组内 SS",
+   "D": "组内 组间 MS MS"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 28,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 28,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0038",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "多个样本定量资料比较，当不满足独立、正态、方差齐性等条件情况下应选择（ ____ ）。",
+  "options": {
+   "A": "方差分析",
+   "B": "t 检验",
+   "C": "Z 检验",
+   "D": "Kruskal-Wallis 检验"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 29,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 29,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0039",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "当组数等于2 时，对于同一资料的双侧检验，方差分析结果与t 检验结果( ____ )。 = F t F",
+  "options": {
+   "A": "完全等价且 t       B．方差分析结果更准确",
+   "C": "t 检验结果更准确",
+   "D": "完全等价且="
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 29,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 29,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0040",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "05( , ) F F ν ν > ，则统计推论结论是（ ____ ）。",
+  "options": {
+   "A": "各总体均数不全相等",
+   "B": "各总体均数都不相等",
+   "C": "各样本均数都不相等",
+   "D": "各样本均数间差别都有显著性"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 29,
+   "no": 0,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 29,
+  "no": 0
+ },
+ {
+  "id": "statworkbook-c0041",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "单因素方差分析中的组内均方是（ ____ ）的统计量。",
+  "options": {
+   "A": "表示平均的随机误差度量",
+   "B": "表示某处理因素的效应作用度量",
+   "C": "表示某处理因素的效应和随机误差两者综合影响的结果",
+   "D": "表示N 个数据的离散程度"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 29,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 29,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0042",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "g 个组方差齐性检验拒绝 0 H ，可认为（ ____ ）。 2 1 2 2 2 g g",
+  "options": {
+   "A": "σ 、 σ 、…、 σ 不全相等",
+   "B": "μ 1  、μ 2  、…、 μ 不全相等",
+   "C": "S1  、S2  、…、Sg 不全相等",
+   "D": "X 1、X 2、…、X g 不全相等"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 29,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 29,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-j0041",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "成组设计的资料作配对t 检验，不但合理，而且平均起来可以提高统计效率。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "成组设计的资料不含有配对信息，所以无法作配对t 检验，即使勉强配对，也将时 期配对后随机分组，所以不可行。",
+  "version": 2,
+  "page": 32,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0042",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "满足参数检验的配伍区组设计资料，如果采用非参数检验，会增大第Ⅰ类错误。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "会增大第2 类错误",
+  "version": 2,
+  "page": 32,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0043",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "随机区组设计的方差分析通常需要从背景上排除了研究因素与区组因素的交互作用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 32,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0044",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于配伍区组设计资料，只有在总的检验结论有统计学意义之后，才用两两比较的方法 来进一步确定哪二组之间有差别。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "主要控制第一类错误",
+  "version": 2,
+  "page": 32,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0045",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "为分析某市2005 年不同区域大气中的氮化物含量，某研究者选取了8 个采样点，对每个 采样点的4 个不同时点进行监测与资料收集，则该资料属于配伍区组设计资料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "同一城市不同采样点之间的氮化物含量是不独立的，同样同一采样点的4 个不同时 点的氮化物含量也是不独立的，所以该资料不属于配伍区组设计资料。",
+  "version": 2,
+  "page": 32,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-c0043",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "对于配对t 检验，下列说法错误的是（ ____ ）",
+  "options": {
+   "A": "对于配对设计的资料应作配对t 检验，如果作成组t 检验是无法控制犯第一类错误的概 率，所以配对设计资料作成组t 检验是错的。",
+   "B": "成组设计的资料作配对t 检验，不但合理，而且平均起来可以提高统计效率",
+   "C": "成组设计的资料，无法作配对t 检验",
+   "D": "作配对t 检验或成组t 检验，应根据原始设计类型而定"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 32,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0044",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "配对设计的秩检验中，其H0 假设为（ ____ ）",
+  "options": {
+   "A": "差值的总体均数为0",
+   "B": "差值的总体均数不为0",
+   "C": "差值的总体中位数为0",
+   "D": "差值的总体中位数不为0"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 32,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 32,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0045",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "满足方差分析检验方法的配伍区组设计资料，如果采用Friedman 检验，则将（ ____ ）",
+  "options": {
+   "A": "犯第Ⅰ类错误的概率增大",
+   "B": "犯第Ⅱ类错误的概率增大",
+   "C": "犯第Ⅰ类错误的概率减小",
+   "D": "犯第Ⅱ类错误的概率减小"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 33,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 33,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0046",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "随机区组设计的方差分析中，必然有( ____ ) = + + 总 + > + = + + 总",
+  "options": {
+   "A": "SS SS SS SS 处理 区组 误差         B.  MS MS MS < + 处理 区组 误差",
+   "C": "SS SS SS 处理 区组 误差                 D. MS MS MS MS 处理 区组 误差"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 33,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 33,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0047",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "在随机区组设计的方差分析中，通常已经从研究背景排除了可能存在（ ____ ）",
+  "options": {
+   "A": "研究因素的作用",
+   "B": "区组因素的作用",
+   "C": "研究因素与区组因素的交互作用",
+   "D": "变异的分解"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 33,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 33,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0046",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "直线回归系数的数值表示自变量变动一个单位时因变量的值变动的量。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 38,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "应该是因变量的值平均改变的量",
+  "version": 2,
+  "page": 38,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0047",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "回归系数越大，两变量的数量关系越密切。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 38,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "回归系数越大，说明自变量变化1 个单位时，因变量的值平均改变的量越大",
+  "version": 2,
+  "page": 38,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0048",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "X Y 4 14 ˆ + = 是1~7 岁儿童以年龄（岁）估计体重（市斤）的回归方程，若体重换成 国际单位kg，则此方程 ____ 。",
+  "options": {
+   "A": "截距改变",
+   "B": "回归系数改变",
+   "C": "截距和回归系数都改变",
+   "D": "两者都不改变"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 39,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 39,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0049",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "一组双变量正态分布资料，用最小二乘法建立回归方程： X b a Y 1 1 ˆ + = ， Y b a X 2 2 ˆ + = ， 计算得到的相关系数为r ，则 ____ 。 = 2 r 2 b 0 2 1 = b 2 1 b 1 2 1 = b b",
+  "options": {
+   "A": "1b",
+   "B": "+ b",
+   "C": "b ="
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第十章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 39,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 39,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-j0048",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "两独立样本四格表资料的 2 χ 检验要求 40 ≥ n 且理论数 5 ≥ T 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 41,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 41,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0049",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "3 个样本率比较的Pearson 2 p χ 检验中， 0 H ： 3 2 1 π π π = = ， 1 H ：1 2 3 , , π π π 互不相同 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 41,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 41,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0050",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在样本量很大时，两独立样本四格表资料符合Pearson 2 p χ 检验要求，但仍可以用Fisher 检验，并且从检验的效果上考虑，可以认为Fisher 检验优于Pearson 2 p χ 检验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 41,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为Fisher 检验假定行合计数和列合计数是固定的，这与实际抽样的情况不一致 所以也是一种近似。当样本量较大时，Pearson 2 p χ 检验可以非常适合四格表资料统计分析， 所以这时Fisher 检验反而较差。",
+  "version": 2,
+  "page": 41,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0051",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "配对设计的四格表资料也可以用Pearson 2 p χ 检验，只是检验效能较低。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 42,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "Pearson 2 p χ 检验只能检验行变量与列变量之间的关联性，不能检验配对四格表中 的两个率是否相等。",
+  "version": 2,
+  "page": 42,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0052",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "2 χ 分布是一种连续型随机变量的概率分布，因此Pearson 2 p χ 检验也可用于均数的比较。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 42,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "均数比较往往还应考虑消除标准差的影响，如t 检验，而Pearson 2 p χ 检验无法完 成此类检验。",
+  "version": 2,
+  "page": 42,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0053",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于某个统计方法检验一类资料，当 0 H 为真时，拒绝 0 H 的概率≤α；当 0 H 非真时，检 验效能很低，则称该资料统计分析方法的选择是错误的。（    ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 42,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "不能认为该资料统计分析方法的选择是错误的，只是所选择的统计方法不够优",
+  "version": 2,
+  "page": 42,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-c0050",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "多个样本率比较的Pearson 2 p χ 检验，若P<α，说明： ____ 。",
+  "options": {
+   "A": "各样本率均不相等",
+   "B": "各总体率均不相等",
+   "C": "各样本率不全相等",
+   "D": "各总体率不全相等"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 42,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 42,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0051",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "对于总合计数n 为51 的5 个样本率比较的Pearson 2 p χ 检验，其自由度为 ____ 。",
+  "options": {
+   "A": "50",
+   "B": "4",
+   "C": "1",
+   "D": "47"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第十一章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 42,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 42,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0054",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "反因变量为有序多分类的多组资料比较的统计分析首选Pearson 2 p χ 检验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "反因变量为有序多分类变量，多组资料比较一般不选Pearson 2 p χ ，而是可以采 用秩和检验，包括Wilcoxon 秩和检验和Kruskal-Wallis 检验（Kruskal-Wallis test）分别用来 推断两个或多个独立样本有序分类资料的总体分布是否有差别。",
+  "version": 2,
+  "page": 47,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0055",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "比较某两种药物的有效率，在样本量较大时可用Pearson 2 p χ 检验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "可用四格表Pearson 2 p χ 检验。",
+  "version": 2,
+  "page": 47,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0056",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "比较某两种药物治疗疼痛的疗效，把疼痛分为无，轻，中和重4 个等级。可以考虑用 Wilcoxon 秩和检验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "这是两独立样本的有序多分类资料，可以考虑选用Wilcoxon 秩和检验",
+  "version": 2,
+  "page": 47,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0057",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "双变量有序分类资料相关性的分析可进行秩变换后计算Pearson 线性相关系数。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "这就是Spearman 等级相关系数",
+  "version": 2,
+  "page": 47,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0058",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "秩和检验不同于秩变换的统计方法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "秩变换的方法中，取秩后秩次数据是代入对应的t 检验或方差分析等公式进行统 计分析；而秩和检验是将原变量值按照从小到大的顺序排秩后，采用秩次进行假设检验。两 者是不同的。",
+  "version": 2,
+  "page": 47,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0052",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两组有序分类资料的比较宜用（ ____ ）。 2",
+  "options": {
+   "A": "t 检验",
+   "B": "秩和检验",
+   "C": "F 检验",
+   "D": "四格表 χ 检验"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 47,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0053",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两组有序分类资料的秩和检验中，各等级的平均秩次为（ ____ ）。",
+  "options": {
+   "A": "该等级的秩次范围的上界",
+   "B": "该等级的秩次范围的下界",
+   "C": "该等级的秩次范围的上界、下界的平均数",
+   "D": "该等级的秩次范围的上界、下界的之和"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 47,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0054",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "有序分类资料两样本比较的秩和检验中，如相同秩次过多，应计算校正 c Z 值，校正的 结果使（ ____ ）。",
+  "options": {
+   "A": "Z 值增加，P 值减小",
+   "B": "Z 值增加，P 值增加",
+   "C": "Z 值减小，P 值增加",
+   "D": "Z 值减小，P 值减小"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 47,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 47,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0055",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "四组病人疗效（痊愈、显效、好转、有效、无效）的比较，宜用什么方法分析（ ____ ）。 2 p",
+  "options": {
+   "A": "方差分析",
+   "B": "秩和检验",
+   "C": "Pearson χ 检验",
+   "D": "四格表直接概率法"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 48,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 48,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0056",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两独立样本比较的秩和检验，其检验统计量是（ ____ ）。",
+  "options": {
+   "A": "一般取秩和较小者为T",
+   "B": "一般取秩和较大者为T",
+   "C": "一般取例数较小者的秩和为T",
+   "D": "一般取例数较大者的秩和为T"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十二章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 48,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 48,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-j0059",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于样本量很大时，已知总体率为 0 π ，样本量所对应的总体率为π （未知），则单样本 率的检验统计量 ( ) 0 0 0 1 P Z n π π π − = − 近似服从标准正态分布。（ ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 54,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "当样本量很大的情况下，只有样本对应的总体总体率 0 π π = ，检验统计量Z 近似 服从标准正态分布。",
+  "version": 2,
+  "page": 54,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0060",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "001 P = ，则可以认为这是一个小概率事件。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 54,
+   "no": 0,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "P 值的计算是基于 0 H 为真情况下计算的概率，对于 0 H 为真的情况下，样本统计 检验的P<0.05，可以认为这是一个小概率事件，当 0 H 非真时，出现",
+  "version": 2,
+  "page": 54,
+  "no": 0
+ },
+ {
+  "id": "statworkbook-j0061",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "如果国家对饮用水规定平均每毫升合格饮用水中的细菌总数不超过100 个，因此检验人 员在待检的饮用水中随机抽取1 毫升样品进行检验，如果1 毫升样品中的细菌总数超过 100 个，则可以认为该饮用水不合格。（  ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 54,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为平均每毫升合格饮用水中的细菌总数不超过100 个是指1 毫升合格饮用水中的 细菌总数的平均数不超过100 个，所以从合格饮用水中随机抽取1 毫升样品，其细菌总数 超过100 个的机会还是相对较大的。",
+  "version": 2,
+  "page": 54,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0062",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "如果卫生监督部门的法规规定：合格的饮用水要求1 毫升饮用水中，细菌总数不得超过 100 个，即：可以理解1 毫升合格饮用水中的平均细菌数总数不能超过100 个。（）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 54,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为卫生监督部门的法规规定就是针对样品中的细菌总数而言的，不是针对总体平 均数而言的，事实上制定合格饮用水的样品细菌总数的标准也是为了控制细菌总数的总体 均数在某个范围内的目标。为了法规执行方便，通过计算样品中的细菌总数在某个范围内 才能以一定概率（如95％）保证控制细菌总数的总体均数在预定的范围内。",
+  "version": 2,
+  "page": 54,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0063",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于单样本率的检验，确切概率法检验的准确性要优于正态近似的检验方法。（ ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 55,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "单样本确切概率法的计算完全符合其背景，所以确切概率法所计算的P 值是准确 的。",
+  "version": 2,
+  "page": 55,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0064",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对同一资料，使用双侧检验所得的P 值一定是单侧检验的两倍。（ ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 55,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "只有在 0 H 为真时的分布为对称分布时才成立。",
+  "version": 2,
+  "page": 55,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-j0065",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对于样本量较小时，单个样本定量资料平均水平的检验应当首先考虑使用Wilcoxon 符号 秩检验。（ ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 55,
+   "no": 7,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "选用Wilcoxon 符号秩检验进行单个样本定量资料平均水平的检验是可以的，但不 一定是最佳的，如果其资料符合单个样本的t 检验条件，应选择单个样本的t 检验为更好。",
+  "version": 2,
+  "page": 55,
+  "no": 7
+ },
+ {
+  "id": "statworkbook-j0066",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "利用直接计算概率法对样本率进行检验时，其假设检验的P 值是指假定 0 H 成立时，从 0 H 所对应的总体中随机抽样，获得现有样本的概率。（ ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十三章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 55,
+   "no": 9,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "对于双侧检验，P 值是指从 0 H 所对应的总体中随机抽样，获得样本的概率小于或 等于现有样本的概率的累积概率；单侧检验指从 0 H 所对应的总体中随机抽样，获得样本 的样本率比现有样本的样本率更加或相当背离 0 H 和更加符合 1 H 的累积概率。（例如： 0 :",
+  "version": 2,
+  "page": 55,
+  "no": 9
+ },
+ {
+  "id": "statworkbook-j0067",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "如果一个观察对象在研究结束时没有死亡,但失访或退出研究,这个人的生存时间叫终 检。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 58,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "研究对象在发生失效事件前停止观察而没有观察到失效事件发生",
+  "version": 2,
+  "page": 58,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0068",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "如果一条生存曲线完全高于第二条生存曲线上，并且两条生存曲线的最低生存率均低于 50％,则第二条曲线的中位生存时间长于第一条曲线的生存时间。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 58,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "第一条曲线的中位生存时间长于第二条曲线的生存时间",
+  "version": 2,
+  "page": 58,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0069",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在生存分析中,结局事件总是用两分类变量进行定义的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 58,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 58,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0070",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在生存分析中所定义的生存时间，更严格地讲，生存时间为确诊到死亡的时间。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 58,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "生存时间指观察对象从起点时间开始到出现失效事件或发生终检所经历的时间",
+  "version": 2,
+  "page": 58,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0071",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "凡是生存数据都可以画出生存曲线，并且求出中位生存时间。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 58,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "当实际的生存分析样本资料中出现大量的失访情况，以致样本中超过中位生存时间 的生存时间均为截尾数据，对应的生存曲线段为水平直线，故无法估计中位生存时间，所以 有些生存分析资料是无法得到中位生存时间的估计值的。",
+  "version": 2,
+  "page": 58,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0057",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "两组生存资料的Log-rank 检验的无效假设是 ____",
+  "options": {
+   "A": "两组的生存率相同",
+   "B": "两组的中位生存时间相同",
+   "C": "两条总体生存率曲线相同",
+   "D": "两个总体的平均生存时间相同"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十四章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 59,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 59,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0072",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "诊断试验中要估计样本量的目的主要是要控制第I 类错误。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 61,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "诊断试验中要估计样本量控制灵敏度和特异度的抽样误差，即：灵敏度和特异度的 95％可信区间的宽度。。",
+  "version": 2,
+  "page": 61,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0073",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "如果受检人群的患病率很低，则要求诊断指标的灵敏度非常高。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 61,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "诊断试验预测性指标不仅依赖于试验的真实性，而且依赖于患病率",
+  "version": 2,
+  "page": 61,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0074",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "作为筛查性的诊断试验研究，要求诊断指标的特异度很高。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "应为筛查的目的主要控制漏诊的概率，由于筛查诊断后还需要进行确认性的诊断 所以容许出现相对较大的假阳性。",
+  "version": 2,
+  "page": 62,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0075",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "本章（15－1）式所估计的灵敏度存在抽样误差，需要足够的样本量才能控制抽样误差在 较小的范围内。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "样本量越大，95％可信区间的宽度就越窄，估计的精度就越高，抽样误差就越小",
+  "version": 2,
+  "page": 62,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0058",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列叙述不正确的是（ ____ ）",
+  "options": {
+   "A": "灵敏度越高则漏诊率越低",
+   "B": "灵敏度越高表示假阳性率就越低",
+   "C": "特异度越高表示误诊率越低",
+   "D": "假阴性率的高低与灵敏度有关"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 62,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0059",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列叙述正确的是（ ____ ）",
+  "options": {
+   "A": "患病率越低，要求诊断试验的样本量就越高",
+   "B": "诊断试验要求患病组与非患病组的比例近似于受检者人群的比例",
+   "C": "诊断试验的灵敏度高是指该检测指标的精确度高",
+   "D": "诊断试验中的灵敏度估计及其抽样误差与非患病组的样本量无关"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 62,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0060",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列叙述正确的是（ ____ ）",
+  "options": {
+   "A": "用于筛查的诊断指标首先要求灵敏度高",
+   "B": "用于筛查的诊断指标首先要求特异度高",
+   "C": "用于筛查的诊断试验，患病组的对象是在医院中被诊断为患病的对象",
+   "D": "用于筛查的诊断试验，患病组的对象必须来自医院就诊人群，并且被诊断为患病的对象"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 62,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0061",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列叙述不正确的是（ ____ ）",
+  "options": {
+   "A": "ROC 的面积表示各个诊断界值的平均灵敏度",
+   "B": "ROC 的面积表示各个诊断界值的平均特异度",
+   "C": "ROC 的面积接近1 表示该指标对测量的精度要求不高",
+   "D": "ROC 的面积接近1 表示该指标对诊断疾病不敏感。"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 62,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0062",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列叙述不正确的是（ ____ ）",
+  "options": {
+   "A": "A 病的诊断试验的患者组对象可以是在医院中被诊断为患A 病的对象",
+   "B": "A 病的诊断试验的患者组对象可以是在人群中普查发现并被诊断为A 患病的对象",
+   "C": "A 病的筛查性诊断试验的非患者组对象可以是在人群中体检合格者",
+   "D": "A 病的筛查性诊断试验的非患者组对象应是在人群中非患A 病的对象"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十五章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 62,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 62,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0076",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "两因素析因设计的研究资料，可以采用完全随机设计的方差分析比较各组别的差异，但 不可以分析交互作用。（      ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 64,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "析因设计的资料在不考虑交互作用的前提下，可以用完全随机设计的方差分析",
+  "version": 2,
+  "page": 64,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0077",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "析因设计时，各研究因素的水平数必须相同。（      ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "各研究因素的水平数可以不同",
+  "version": 2,
+  "page": 65,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0078",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "对两因素析因设计资料进行数据分析时，若交互作用项统计学检验P<0.05，则有理由认 为这两个因素间存在拮抗效应。（      ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "只能推断这两因素间存在交互作用，可能是拮抗也可能是协同作用",
+  "version": 2,
+  "page": 65,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0079",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "交叉设计的数据分析中，试验阶段效应的统计学检验，必然有P>0.05。（      ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "当有延滞效应存在时，将有P<0.05",
+  "version": 2,
+  "page": 65,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0080",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在进行交叉设计的数据分析时，对于各假设检验所对应的F 统计量中，分母均为个体内 的误差均方。（      ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "顺序效应的假设检验F 值，用到的分母误差均方与个体间变异有关",
+  "version": 2,
+  "page": 65,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0081",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在进行二阶段交叉设计的数据分析时，顺序效应的假设检验的F 统计量中，分母为个体 间的变异均方。（      ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "可以证明：该均方的期望值（理论值） 2 2 ( ) E MS rσ σ = 个体 个体间 个体内 ＋ ，其中 2 σ个体间 为个体间变异的总体方差， 2 σ个体内为个体内变异的总体方差，所以该均方不仅与个体内变 异有关，而且与个体间变异有关联。",
+  "version": 2,
+  "page": 65,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-c0063",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列哪项不是析因设计方差分析的特点（ ____ ）",
+  "options": {
+   "A": "可以考察因素间是否存在交互作用",
+   "B": "可以找到因素间最优水平组合",
+   "C": "研究资料必须是计数资料",
+   "D": "每次试验涉及全部因素，因素同时施加"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 65,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0064",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列哪个因素不是交叉设计分析中需要考虑的因素（ ____ ）",
+  "options": {
+   "A": "处理因素",
+   "B": "处理顺序",
+   "C": "试验阶段",
+   "D": "配伍因素"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 65,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0065",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "二阶段交叉设计方差分析中，总变异可以分为几个部分：（ ____ ）",
+  "options": {
+   "A": "3 个",
+   "B": "4 个",
+   "C": "5 个",
+   "D": "6 个"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 65,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0066",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "某研究者欲应用析因设计研究甲、乙两药疗效间是否存在交互作用，共分为四组（空白 对照组、甲药组、乙药组、甲乙合用组），此时的无效检验假设是：（ ____ ）",
+  "options": {
+   "A": "合用甲、乙两药组与对照组的总体均数之差不等于单独使用甲药组与对照组总体 均数之差加上单独使用乙药组与对照组总体均数之差",
+   "B": "合用甲、乙两药组与对照组的总体均数之差等于单独使用甲药组与对照组总体 均数之差加上单独使用乙药组与对照组总体均数之差",
+   "C": "单独使用甲药组与对照组总体均数之差不等于单独使用乙药组与对照组总体均 数之差",
+   "D": "单独使用甲药组与对照组总体均数之差等于单独使用乙药组与对照组总体均数 之差"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 65,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0067",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "以下关于交叉设计的描述中，不正确的是（ ____ ）",
+  "options": {
+   "A": "交叉设计中，多个处理可在相同个体的不同时期实施，因而节省了样本数",
+   "B": "交叉设计适用于对于那些观察指标在个体间变异大的疾病",
+   "C": "交叉设计只能安排两个因素",
+   "D": "交叉设计是成组设计与自身配对设计相结合的一种研究设计"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十六章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 65,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 65,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0082",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "线性回归模型中要求因变量和自变量均服从正态分布",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "要求残差服从正态分布，方差齐性",
+  "version": 2,
+  "page": 68,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0083",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "线性回归模型中，要求因变量服从正态分布",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "要求残差服从正态分布或固定自变量，因变量服从正态分布",
+  "version": 2,
+  "page": 68,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0084",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在Logistic 回归分析中，用样本资料拟合模型后，回归系数 0 ib > ，并且有统计学意义， 则可以认为 i X 越大，因变量所描述的事件发生的概率就越大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "回归系数 0 ib > ，并且有统计学意义，则根据Logistic 回归模型的表达式可以认为 i X 越大，因变量所描述的事件( 1 Y = )发生的概率就越大。",
+  "version": 2,
+  "page": 68,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0085",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在初中的数学中，任何一个正数A 均可以表示为 exp(ln( )) A A = ，由于假定生存率 ( ) 0 S t > ，所以任何生存率( ) S t 均可表示为exp( ( )) H t − 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "令 ( ) ln( ( )) H t S t = − ，并称为累积风险函数。",
+  "version": 2,
+  "page": 68,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0086",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在回归模型中，自变量均视为非随机变量。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "自变量均视为非随机变量",
+  "version": 2,
+  "page": 68,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0087",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "Logistic 回归模型没有考虑时间效应，Cox 模型考虑了时间效应，所以研究设计时，如果 考虑时间效应，应尽可能考虑符合Cox 模型特点收集资料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 68,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-c0068",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "多重线性回归分析中，共线性是指（ ____ ），导致的某一自变量作用可以由其他自变 量的线性函数表示。",
+  "options": {
+   "A": "自变量相互之间存在高度相关关系",
+   "B": "因变量与各个自变量的相关系数相同",
+   "C": "因变量与自变量间有较高的复相关关系",
+   "D": "因变量与各个自变量之间的回归系数 相同"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 68,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0069",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "一般而言，Logisitic 回归模型的因变量可以为（ ____ ）。",
+  "options": {
+   "A": "二分类变量",
+   "B": "多分类有序变量",
+   "C": "多分类无序变量",
+   "D": "以上均可"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 68,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 68,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0070",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "logistic 回归系数与自变量增加一个单位的优势比OR 的关系为（ ____ ）。 > β",
+  "options": {
+   "A": "0 等价于OR＜1    B．β ≤0 等价于OR≥1",
+   "C": "β ＝0 等价于OR＝1",
+   "D": "以上均不正确"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 69,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 69,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0071",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "多重线性回归、Logistic 回归和Cox 回归都可应用于（ ____ ）。",
+  "options": {
+   "A": "预测自变量",
+   "B": "预测因变量Y 取某个值的概率π",
+   "C": "预测风险函数h",
+   "D": "筛选影响因素（自变量）"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十七章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 69,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 69,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-j0088",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "病例对照研究可以估计患病率。 （   ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 71,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "因为病例对照研究的病例组人数与对照组人数的比例是研究者自己决定的，不 是患者人群与对照人群的比例估计。",
+  "version": 2,
+  "page": 71,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0089",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "横断面调查设计中，估计样本量时需要先确定α水平和β水平。（  ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "横断面调查所涉及到的主要研究问题是估计，所以只需确定可信度α和可信区 间的宽度就可以估计样本量。",
+  "version": 2,
+  "page": 72,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0090",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "某地区城市与郊区的人口比例为1:2，根据样本量估计的结果共需100000 人估计某疾 病的患病率，由于城市与郊区的患病率不同，故按城市和郊区分层随机抽样，每个层各 抽取50000 人，按样本中患病总人数与样本总人数之比作为样本患病率，这样可以减少 偏倚。（   ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "应按人口比例进行抽样或按城市和郊区分布计算患病率，然后按人口比例加权 平均得到总的样本患病率。",
+  "version": 2,
+  "page": 72,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0091",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "在分层抽样研究中，对于每个层的四格表资料，经常需要计算Mantel－Haenszel OR， 并且假定各个层的总体OR 相等。（   ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "称为OR 是齐性的",
+  "version": 2,
+  "page": 72,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0092",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "病例对照研究是根据结局变量分组随机抽样的，队列研究是根据暴露因素的各个水平 进行分组抽样的。（  ）",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "这是病例对照研究的定义和队列研究的定义",
+  "version": 2,
+  "page": 72,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0072",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "以下抽样调查方法中不属于概率抽样的是 ____ 。",
+  "options": {
+   "A": "单纯随机抽样",
+   "B": "系统抽样",
+   "C": "雪球抽样",
+   "D": "整群抽样"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 72,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-c0073",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "整群抽样的优点是 ____ 。",
+  "options": {
+   "A": "易于理解，简便易行",
+   "B": "减少抽样误差",
+   "C": "节省经费，容易控制调查质量",
+   "D": "均数及标准误计算简便"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 72,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-c0074",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "在设计病例对照研究时，对照组的选择最好是 ____ 。",
+  "options": {
+   "A": "从该地区未患该病的全人群中选择对照",
+   "B": "从医院的其他患者中选择对照",
+   "C": "从患者的同事中选择对照",
+   "D": "从患者的亲戚中选择对照"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 72,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-c0075",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "队列研究的最大优点是 ____ 。",
+  "options": {
+   "A": "研究时间较长的随访",
+   "B": "发生偏倚的机会较少",
+   "C": "控制混杂作用易实现",
+   "D": "较直接地验证病因与疾病的因果关系"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 72,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-c0076",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "以下所述不属于病例对照研究特点是 ____ 。",
+  "options": {
+   "A": "是在疾病发生后进行的",
+   "B": "可以直接计算出相对危险度RR 值",
+   "C": "研究对象是按有无患有所研究的疾病分成病例组和对照组",
+   "D": "所研究因素的暴露情况是通过研究对象的回忆获得的"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 72,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 72,
+  "no": 5
+ },
+ {
+  "id": "statworkbook-c0077",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "队列研究是 ____ 。",
+  "options": {
+   "A": "回顾性研究",
+   "B": "描述性研究",
+   "C": "前瞻性研究",
+   "D": "干预性研究"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 73,
+   "no": 6,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 73,
+  "no": 6
+ },
+ {
+  "id": "statworkbook-c0078",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "队列研究对象选择的原则是 ____ 。",
+  "options": {
+   "A": "按随机化原则抽样选择部分人群",
+   "B": "从人群中选择病人组成研究人群",
+   "C": "用整群抽样的方法调查某几类人群",
+   "D": "按是否暴露于某危险因素分为暴露组与非暴露组"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 73,
+   "no": 7,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 73,
+  "no": 7
+ },
+ {
+  "id": "statworkbook-c0079",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "下列描述不属于队列研究的是 ____ 。",
+  "options": {
+   "A": "按是否暴露于某因素分为暴露组与非暴露组",
+   "B": "是一种“由因到果”的研究",
+   "C": "研究某一危险因素所致的多种疾病",
+   "D": "施加人为处理"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 73,
+   "no": 8,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 73,
+  "no": 8
+ },
+ {
+  "id": "statworkbook-c0080",
+  "bank": "statworkbook",
+  "type": "single",
+  "stem": "当某因素与某疾病有统计学联系时，这说明 ____ 。",
+  "options": {
+   "A": "因素与疾病有因果的联系",
+   "B": "样本的较好代表性",
+   "C": "联系有一致性",
+   "D": "可能存在虚假的联系、间接的联系、因果的联系"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "第十八章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 73,
+   "no": 9,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 73,
+  "no": 9
+ },
+ {
+  "id": "statworkbook-j0093",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "期望寿命就是平均死亡年龄。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 77,
+   "no": 1,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "期望寿命不是平均死亡年龄",
+  "version": 2,
+  "page": 77,
+  "no": 1
+ },
+ {
+  "id": "statworkbook-j0094",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "去死因寿命表可用来说明某死因对居民寿命的危害程度。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "第十九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 77,
+   "no": 2,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": 77,
+  "no": 2
+ },
+ {
+  "id": "statworkbook-j0095",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "寿命表中死亡率mx是指刚活满x 岁的人今后n 年内死亡的可能性（n 为寿命表的组段）。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 77,
+   "no": 3,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "mx是指刚活满x 岁的人今后每1 年内死亡的可能性",
+  "version": 2,
+  "page": 77,
+  "no": 3
+ },
+ {
+  "id": "statworkbook-j0096",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "死亡概率q0是0 岁组的死亡人数除以0 岁组平均人口数。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 77,
+   "no": 4,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "编制寿命表时一般用婴儿死亡率或校正婴儿死亡率作为0∼岁组婴儿死亡概率的 估计值。",
+  "version": 2,
+  "page": 77,
+  "no": 4
+ },
+ {
+  "id": "statworkbook-j0097",
+  "bank": "statworkbook",
+  "type": "judge",
+  "stem": "同一地点，时间，人群0 岁组的期望寿命一定大于1 岁组的期望寿命。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "第十九章",
+  "tags": [
+   "答案册"
+  ],
+  "source": {
+   "page": 77,
+   "no": 5,
+   "file": "赵耐青 统计练习册.pdf"
+  },
+  "quality": {
+   "ocr": "pdf-text",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": "不一定",
+  "version": 2,
+  "page": 77,
+  "no": 5
  }
 ];
