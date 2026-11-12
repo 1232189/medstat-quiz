@@ -1,5 +1,5 @@
 /* 由 build_app_data.py 从 banks/ 生成，请勿手改 */
-window.QUIZ_BANKS = [{"id": "medstat", "name": "医学统计学", "subtitle": "5 号公寓复印店《医学统计学题库-05》", "dir": "medstat", "enabled": true, "id_prefix": "p", "source_pdf": "统计 打印店选择题库.pdf", "pipeline": "enhance_pages.py → rapid_ocr_pages.py → build_from_rapid.py"}];
+window.QUIZ_BANKS = [{"id": "medstat", "name": "医学统计学", "subtitle": "5 号公寓复印店《医学统计学题库-05》", "dir": "medstat", "enabled": true, "id_prefix": "p", "source_pdf": "统计 打印店选择题库.pdf", "pipeline": "clean_pages.py → segment_from_coords.py → normalize.py → validate_bank.py"}, {"id": "labanimal", "name": "实验动物学", "subtitle": "实验动物学 单选 / 多选 / 判断题（docx 导入）", "dir": "labanimal", "enabled": true, "id_prefix": "lab", "source_docx": "实验动物学/*.docx", "pipeline": "import_docx.py"}];
 window.QUIZ_DATA = [
  {
   "id": "p02-001",
@@ -13315,5 +13315,50860 @@ window.QUIZ_DATA = [
   "image": "pages/p55.png",
   "clean_image": "pages/p55_clean.png",
   "lecture": "第五讲抽样误差"
+ },
+ {
+  "id": "labanimal-j001",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病毒是自然界已知的最小的微生物，不会危害实验动物的健康和干扰动物实验的结果",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j002",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学是研究实验动物的一门新兴学科。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j003",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物学是动物学的一门分支学科。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j004",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学研究实验动物最终目的是实现实验动物标准化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j005",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学就是研究关于实验动物标准化和动物实验规范化的科学。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j006",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学是生命科学的重要组成部分，是生命科学的基础和条件，因此它是附属于生命科学的一门非独立学科。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j007",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学是衡量一个国家或一个科研单位科学研究水平的重要标志。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j008",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学已形成了一门独立的综合性基础科学门类，成为生命科学的重要前沿学科。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j009",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物科学是多个相关学科相互融合、相互渗透的中心。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j010",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物医学就是研究实验动物的各种疾病包括传染性疾病、营养代谢性疾病、遗传性疾病以及恶劣环境所致疾病的科学。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j011",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "凡用于科学实验的动物就称为实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j012",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物都是哺乳动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j013",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "比较医学是对动物的健康和疾病状态进行类比研究的科学。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j014",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系动物、免疫缺陷动物和悉生动物等新的实验动物品种或新的模型动物的培育成功为实验动物科学独立于其他学科奠定了基础。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j015",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "每一个新的实验动物种系或新的模型动物的出现都给生命科学带来了革命性的变化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j016",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物标准化和动物实验规范化是国际实验动物科学发展的潮流，势在必行。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j017",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物标准化和法制化管理，使21世纪世界各国实验动物发展的总趋势。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j018",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "转基因动物模型因为投入成本大、技术要求高、实用性不强，导致各国的生产企业在转基因动物模型的开发和生产上踯躅不前。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j019",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "21世纪实验者将可在网络上查找、购买自己所需的实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j020",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物保护与动物福利将成为市场准入的重要条件。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j021",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "测定人体30亿个核苷酸序列是生命科学研究的一个新的开端，结构基因组学将成为21世纪生物学的核心。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j022",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "人类第一个基因组草图的完成，标志着生命科学将进入结构基因组研究的时代。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j023",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "目前人们对确定的3万多个人类基因的功能仍不清楚，因此生命科学随着进入到一个新的纪元——后基因组时代，即结构基因组的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j024",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "“3R”运动的最终目的是终止动物实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j025",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验的减少原则就是在任何情况下都要绝对减少动物实验的数量。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j026",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验的替代原则就是力求以动物实验替代临床试验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j027",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验的替代原则就是以低等生物、微生物或细胞、组织、器官甚至电子计算机模拟、替代或动物实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j028",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验的优化原则就是选用高质量的实验动物进行动物实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j029",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验的优化原则主要指实验技术路线和手段的精细设计和选择，减少实验动物的紧张与不适，减少动物的痛苦，从而使动物实验有更准确的结果。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j030",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "“3R”运动反映了实验动物科学由技术上严格要求转向人道主义的管理，提倡实验动物福利与动物保护的国际总趋势。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j031",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物质量的不标准，会导致动物实验的敏感性、重复性差，致使动物浪费严重。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j032",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "若一个科研课题的经费为5万元，动物耗费5千元，占整个课题经费1/10，但1/10的经费可影响5万元经费的成败。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j033",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验可用计算机模拟、细胞培养等体外方法替代，因此实验动物在医学生物学研究中的应用是可以替代的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j034",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "所谓动物福利，就是让动物在康乐的状态下生存。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j035",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "不同的病毒对自然宿主、人和其他动物的致病性是不一样的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j036",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病毒mRNA在转录时，必须利用宿主细胞的酶及其他物质。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j037",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物病毒根据病毒对自然宿主、人和其他动物的致病性，以及干扰生物医学研究、污染生物制剂和肿瘤移植物的程度分类。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j038",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "人畜共患病原体对自然宿主、人和其他动物均有较强的致病性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j039",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "烈性传染病病原体对自然宿主致病性很强，常引起爆发流行，甚至毁灭整个种群。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j040",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病毒对干燥的抵抗力与病毒的种类有关。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j041",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病毒不耐热，大多数病毒在55℃经30分钟即被灭活。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j042",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病毒对低温的抵抗力强，通常温度越低，病毒存活的时间越长。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j043",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "强酸和强碱均能杀灭病毒，强酸作用更大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j044",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "所有病毒对电磁辐射都敏感，特别是X射线、γ射线和紫外线。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j045",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病毒对一般的抗菌物质如青霉素、链霉素对病毒敏感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j046",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "细菌有细胞壁、细胞膜、细胞浆、及细胞核等基本构造。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j047",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "水是组成细菌的最基本的成分，约占菌体总重量的75－80%。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j048",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "任何细菌生长繁殖均需要合适的营养条件、适宜的环境温度和pH值以及渗透压。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j049",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "高温对细菌有明显的致死作用，是最有效的灭菌方法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j050",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "日光是最有效的天然杀菌因子，起杀菌作用的主要是紫外线。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j051",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "pH值影响细菌的营养代谢活动，减弱或抑制细菌的生长，甚至引起细菌的死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j052",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物传染病的流行过程，就是从实验动物个体感染发病发展到群体发病的过程。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j053",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "杀灭所有活的微生物叫做消毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j054",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "消毒剂不能用于灭菌。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j055",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "传染病是指由病原微生物引起，具有一定的潜伏期和临床表现，并具有传染性的一类疾病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j056",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "从传染源中将病原体传播给易感动物的各种外界环境因素称为传播媒介。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j057",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "从母体到其后代之间的传播为平行传播。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j058",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "传染病在实验动物群体之间或个体之间以水平形式横向平行传播为垂直传播。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j059",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "间接接触传播是指在外界环境因素的参与下，病原体通过传播媒介使易感动物发生传染的方式。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j060",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "垂直传播从广义上讲属于间接接触传播。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j061",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "易感动物是指对某一种或几种传染病病原体敏感的动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j062",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "所有实验动物都可采用疫苗，提高动物的特异免疫状态。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j063",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "不同品种或不同品系的动物对传染病的抵抗力具有遗传性差异。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j064",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物发生疫病时应该迅速隔离患病动物，并紧急治疗。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j065",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "研究传染病传播途径的目的在于切断病原体继续传播的途径，防止易感动物受感染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j066",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲养人员和兽医技术人员应经常进行健康检查。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j067",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物发生疫病时应该及时封锁消息，处理受感染动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j068",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物的隔离措施主要用于新引入的动物、患病和可疑感染的大动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j069",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "隔离场所应设在动物饲养繁殖区中单独的房间中，小动物最好隔离在不锈钢隔离器中。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j070",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施周围应无传染源，不得饲养非实验用家畜家禽。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j071",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "检疫是为了控制传染源，防止传染病的发生或蔓延。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j072",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "检疫就是利用各种动物传染病的诊断方法，对实验动物及其产品进行疫病检查。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j073",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "检疫步骤与时间视所有动物和设施应该统一。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j074",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "消毒比灭菌范围狭窄，它不能杀死细菌的芽胞。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j075",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠痘是实验小鼠的一种烈性传染病，是危害实验小鼠最为严重的疾病之一。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j076",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠痘临床表现有四肢、尾和头部肿胀、溃烂、 脚趾脱落，故又称脱脚病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j077",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲养人员和节肢动物不能成为鼠痘的机械传播者。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j078",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠痘急性病例，小鼠突然死亡，实验中断，造成人力、物力和财力的极大浪费。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j079",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠痘慢性病例，出现全身症状，使实验结果混乱，且污染环境。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j080",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "隐性感染鼠痘病毒的小鼠，无临床症状，对实验研究无影响。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j081",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "一旦发生鼠痘疫情，应对所有鼠群进行扑杀，对实验动物设施彻底消毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j082",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "淋巴细胞性脉络丛脑膜炎病毒能引起人和多种动物共患的病毒性疾病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j083",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "人类感染淋巴细胞性脉络丛脑膜炎主要表现为流感样症状和脑膜炎。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j084",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "用ELISA试验检查淋巴细胞性脉络丛脑膜炎病毒效果好。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j085",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "淋巴细胞性脉络丛脑膜炎病毒在T、B淋巴细胞和巨噬细胞中大量复制，从而抑制体液免疫和细胞免疫应答。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j086",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "野生家鼠不携带淋巴细胞性脉络丛脑膜炎病毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j087",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠仙台病毒感染是最难控制的病毒性疾病之一。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j088",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠仙台病毒多数情况下呈隐性感染，对实验研究不产生严重干扰。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j089",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "仙台病毒传播和扩散主要的方式是直接接触和空气传播。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j090",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验小鼠感染仙台病毒后，可使肺部正常抗菌能力减弱，从而使小鼠易继发细菌性肺炎。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j091",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠仙台病毒可严重影响体液和细胞介导的免疫应答。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j092",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "妊娠母鼠在感染仙台病毒后会严重影响胎儿的发育，增加新生乳鼠的死亡率。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j093",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠肝炎多数情况下呈亚临床感染或隐性感染，实验时不改变各种免疫应答参数。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j094",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠肝炎病毒感染可使大量的酶系统发生改变。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j095",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大、小鼠感染流行性出血热多表现为隐性感染，一般无临床症状。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j096",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "流行性出血热是人畜共患病，人类感染后，以发热、出血和肾脏损害为主要临床。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j097",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "流行性出血热病毒的自然宿主主要是小型啮齿类动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j098",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "流行性出血热病毒可以通过胎盘垂直传播。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j099",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "定期对流行性出血热病毒的实验室检查，最常用的主要是血清学方法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j100",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔病毒性出血症是由兔出血症病毒引起的兔的一种烈性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j101",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔病毒性出血症发生于所有温血动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j102",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬瘟热是由犬瘟热病毒引起的，高度接触传染性、致死性的传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j103",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬科动物均易感犬瘟热，以1岁龄以下的幼犬最为易感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j104",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬瘟热只可以通过消化道传染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j105",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "预防犬瘟热的合理措施是免疫接种。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j106",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬细小病毒的抵抗力不强，容易彻底根除。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j107",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "只有刚断乳至90日龄的幼犬感染犬细小病毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j108",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "细小病毒感染，常可使大批动物发病和死亡，造成实验中断。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j109",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "狂犬病是由狂犬病病毒引起的人和所有温血动物共患的一种急性直接接触性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j110",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "感染狂犬病病毒的个体终因局部或全身麻痹而死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j111",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "狂犬病典型的病理变化为非化脓性脑炎，在神经细胞胞浆内可见内基小体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j112",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "狂犬病潜伏期的长短与咬伤的部位、深度、病毒的数量与毒力等均有关系。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j113",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "感染病毒性肝炎可改变实验犬的酶系统和免疫反应性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j114",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫泛白细胞减少症是猫及猫科动物的一种急性高度接触性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j115",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫泛白细胞减少症病毒只通过直接接触传染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j116",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "妊娠母猫不能通过胎盘将猫泛白细胞减少症病毒垂直传播给胎儿。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j117",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫泛白细胞减少症感染早期呈明显的双相热型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j118",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫泛白细胞减少症感染最后衰竭而死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j119",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫泛白细胞减少症严重干扰血液学指标的观察。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j120",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猴B病毒病是人、猴共患的一种烈性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j121",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猴是B病毒的自然宿主，感染率可达10%－60%。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j122",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猴B病毒感染的恒河猴，一般并无特征性临床表现，不威胁实验人员和饲养人员的健康。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j123",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "沙门氏菌病是人畜共患病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j124",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "各种年龄的实验动物均可感染沙门氏菌，但老年实验动物更易感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j125",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "泰泽氏病对外界抵抗力极强，一般消毒药不可将其杀死。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j126",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "伪结核耶氏菌病只传染啮齿类动物和家兔。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j127",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "伪结核耶氏菌病特征是肠道、内脏器官和淋巴结出现干酪样坏死性结节。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j128",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "伪结核耶氏菌病通常无特别明显的症，呈隐性感染，对实验研究和实验人员影响不大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j129",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "布氏杆菌病是一种人畜共患的慢性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j130",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "布氏杆菌的传播途径不仅有消化道，还可以通过破损的皮肤、粘膜侵入机体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j131",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "感染布氏杆菌，妊娠动物表现是流产，雄性动物表现为睾丸炎、睾丸萎缩。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j132",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "巴氏杆菌病是由多杀性巴氏杆菌所引发的各种哺乳动物和禽类的传染病的总称。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j133",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "巴氏杆菌病急性病例以败血病和出血性炎症为特征。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j134",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "多杀性巴氏杆菌对多种动物和人均有致病性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j135",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "巴氏杆菌经消化道或者通过飞沫、尘埃经呼吸道传染，节肢动物也可传播此病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j136",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "多杀性巴氏杆菌可使动物发生出血性败血症，造成动物大批死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j137",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "多杀性巴氏杆菌主要侵袭部位为鼻粘膜。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j138",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "多杀性巴氏杆菌还可引起动物肺炎、中耳炎，造成家兔斜颈。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j139",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "巴氏杆菌病多呈隐性感染，不会造成动物大批死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j140",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "支原体病是一类主要危害大鼠和小鼠的传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j141",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "支原体的生长营养要求高，生长速度慢。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j142",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "容易感染实验动物的支原体有肺支原体、溶神经支原体和关节炎支原体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j143",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "支原体感染动物生殖道，表现为雌性动物繁殖力下降及死胎，影响生殖产科学方面的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j144",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "关节炎支原体主要侵袭大鼠，引起多发性关节炎，可造成四肢关节肿胀，后肢麻痹。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j145",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "溶神经支原体主要侵袭小鼠脑神经和中枢神经，形成小鼠旋转病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j146",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "病原体可经垂直传播途径传染，也可经接触、空气等途径传染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j147",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "环境中氨浓度过高可促进支原体的生长，继而促进肺炎和中耳炎的发生。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j148",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肺炎克雷伯杆菌病以体躯部形成脓肿和脓毒败血症为特征的一种慢性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j149",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "自然界中克雷伯杆菌存在于土壤、水及农产品中。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j150",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肺炎克雷氏杆菌病通常抽取未破溃脓肿的脓汁或采取牌、淋巴结进行实验室检查，以便确诊。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j151",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肺炎克雷氏杆菌病临床上多为慢性经过性，以呼吸道感染为常见。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j152",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SPF级大、小鼠无须排除肺炎克雷氏杆菌病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j153",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "志贺氏菌病是由志贺氏菌引起的人畜共患病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j154",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "志贺氏菌感染猕猴后表现为急性菌痢和慢性菌痢。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j155",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "志贺氏菌病急性爆发造成猕猴大量死亡，从而使实验中断。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j156",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "志贺氏菌病慢性发作死亡率低，不影响动物的健康，不影响实验结果。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j157",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "结核病是由分枝杆菌引起的一种人畜共患的慢性传染病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j158",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "结核病病理特征是在多种组织器官形成结核性肉芽肿，继而结节中心干酪样坏死或钙化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j159",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "结核病主要经呼吸道、消化道感染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j160",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "结核病是一种慢性传染病，对动物机体的危害不大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j161",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "支气管败血波氏杆菌主要聚集在中耳及脓灶，在那里可长期居留。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j162",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "啮齿类实验动物，特别是小鼠体内支气管败血波氏杆菌很常见。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j163",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "棒状杆菌病一般呈隐性感染，当受到应激因素刺激时可呈急性爆发、造成伪结核病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j164",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "棒状杆菌主要感染大、小鼠，急性爆发造成动物的大量死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j165",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "棒状杆菌慢性发病时，造成动物脏器的病变，从而影响实验研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j166",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠的生殖周期最短，一般小鼠的妊娠期为16天 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j167",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠和大鼠一样无胆囊。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j168",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠属于脊椎动物门，哺乳纲，啮齿目，鼠科，鼠属的动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j169",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠淋巴系统特别发达，性成熟时胸腺最大，35—80  日龄渐渐退化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j170",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠的门齿终生不断生长，通过啃咬磨牙控制牙的长度。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j171",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠的繁殖力很强，每胎产仔数多于20只。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j172",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "雌性小鼠交配后10—12小时，阴道口有白色阴道栓，是交配过的典型标志。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j173",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "成年雌性小鼠一年四季都有性的活动，性周期4—5天。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j174",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "根据阴道涂片的细胞学改变，可以推断小鼠的性周期变化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j175",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "两个不同的近交系小鼠杂交所生的第一代小鼠，称为F1代小鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j176",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "KM小鼠、BALB／ｃ小鼠等是常用的封闭群小鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j177",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "BALB／ｃ、C57BL／６Ｊ等是常用的近交系的小鼠 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j178",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "对于清洁级及其以上级别的小鼠而言，饮用水只要是干净的自来水即可。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j179",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠很聪敏，易于调教，嗅觉发达，味觉很差。喜居安静环境，夜间活跃。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j180",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠为全年多发情动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j181",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠汗腺少，只有爪垫上有，尾巴是散热器官。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j182",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠、小鼠一样一出生就有视力，也能吃食物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j183",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠和小鼠一样都有5对乳头。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j184",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "Wistar大鼠、SD大鼠是目前常用封闭群大鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j185",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SHR、BN大鼠等是常用的近交系的大鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j186",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "维生素A过量可导致小鼠繁殖紊乱和胚胎畸形。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j187",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲喂大鼠的饲料应为全价颗粒饲料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j188",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "处于发情期和发情后期的雌性大鼠可以接受雄性大鼠交配。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j189",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "通过阴道涂片可以判断大鼠是否交配过。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j190",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "新生仔大鼠周身无毛，皮肤赤红，两眼不睁。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j191",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠头大、颈短、耳圆、无尾，全身被毛，四肢紧缩，有极为紧凑的身体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j192",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠自动调节体温能力较强，受外界温度变化影响不大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j193",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠的听力、嗅觉发达，对外界的刺激极为敏感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j194",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠性情凶猛胆大，易咬人伤人，善攀登和跳跃。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j195",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠只能利用外源维生素C，是进行维生素C缺乏导致的坏血病研究的重要动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j196",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "免疫学研究中由于豚鼠易致敏而广泛应用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j197",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠自动调节体温能力较差，受外界温度变化影响较大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j198",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠是最早获得无菌动物的实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j199",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠对抗菌素处理敏感，尤其是青霉素。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j200",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠、大鼠、犬都属于季节性发情动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j201",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠容易被致敏，易引起变态反应，对免疫抑制剂敏感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j202",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠和猫一样为全年多发情动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j203",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠体内不能合成VC，在饲料中应补充VC。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j204",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠在啮齿类动物中妊娠期为最长的动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j205",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠与大鼠、小鼠不同，地鼠白天活动，夜晚睡觉。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j206",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠饲料中，粗蛋白的含量要求达21-24%，否则地鼠将出现性功能减退。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j207",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠对皮肤移植的反应很特别，同一封闭群内个体间的皮肤移植常可存活。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j208",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "一般地鼠有冬眠现象，而中国地鼠无冬眠现象。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j209",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠与其它啮齿目动物不同，地鼠是白天活动，夜晚休息。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j210",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠牙齿十分尖硬，可咬断细铁丝，兴奋时会发出金属性音响。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j211",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠颊囊是贮存食物的工具。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j212",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "中国地鼠、金黄地鼠寿命都是为4年。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j213",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "地鼠颊囊缺乏腺体和完整的淋巴管通路。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j214",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "常见地鼠背脊为鲜明的淡金红色，腹部与头侧部为白色。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j215",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "中国地鼠常用做糖尿病研究。它是Ⅰ型糖尿病的良好动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j216",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔的胸腔由纵隔分为互不相通的左右两部。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j217",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔的尾巴与豚鼠的尾巴一样都很短。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j218",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "圆小囊是家兔体内特有的解剖结构。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j219",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔、大鼠、小鼠都属于啮齿目动物，所以一般喂颗粒饲料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j220",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔的性周期不明显。雌兔有产后发情，属常年多发情动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j221",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔与犬一样属于刺激性排卵动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j222",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "成年兔在春秋两季各换毛1次。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j223",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔被毛较厚，依靠耳和呼吸散热。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j224",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔易产生发热反应，对热源反应灵敏典型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j225",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔、猫既是季节性发情动物，又属于刺激性排卵动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j226",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔性周期不明显，需通过交配刺激诱发。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j227",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔的颜色有白色、黑色、灰色、咖啡色等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j228",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔有夜间直接从肛门口吃粪的食粪癖，易感染寄生虫病。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j229",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔上唇分开，左右两瓣分别与同侧鼻孔相连。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j230",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔眼球大，便于手术操作和观察，是眼科研究中最常用动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j231",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "处于假妊娠期的雌兔拒绝雄性兔的交配。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j232",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "白色家兔虹膜内缺乏色素细胞，耳由于血色透露而呈红色。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j233",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔是草食性动物，在饲养过程中只能喂青草，不可以喂颗粒饲料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j234",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬的视力很差，但对于移动的物体比较敏感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j235",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔是草食性动物，一般白天吃草。夜晚进行反刍。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j236",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "环境温度高时，犬加速呼吸频率，舌头伸出口外，以加强散热。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j237",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬为季节性发情动物，一般在春夏季节发情。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j238",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "根据犬牙齿的生长情况、磨损程度及外形颜色差异等可以判断犬的年龄。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j239",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "正常的犬鼻尖呈油状滋润，触摸有凉感，表明犬是健康的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j240",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬对外界环境适应性强，易于饲养，可通过调教很好地配合实验的需要。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j241",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬为季节性单发情动物，多数在春、秋季发情。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j242",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "Beagle犬是国际上公认的实验用犬。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j243",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫与犬一样属于季节性发情动物，一般都是在春秋季节发情。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j244",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫和犬一样都属于刺激性排卵动物 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j245",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫习惯群居生活，经常许多聚集在一起打闹。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j246",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫和犬一样视力很敏锐。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j247",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫眼与其它动物不同，能按照光线的强弱灵敏地调节瞳孔。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j248",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫出生一天就能睁眼。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j249",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫的血压稳定，适合进行药物对循环系统作用机制的分析。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j250",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫具有极敏感的神经系统，是脑神经生理学研究的绝好实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j251",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猕猴是热带、亚热带动物，群栖于接近水源的有林区或草原。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j252",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猕猴群体活动范围较固定，群体之间从不相互跨越。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j253",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猕猴有较发达的智力和神经控制能力，能用手操纵工具。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j254",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猕猴有颊囊，其用处与地鼠的颊囊功能不同，它是一种免疫器官。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j255",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在制造和鉴定脊髓灰质炎疫苗时，猕猴是唯一的实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j256",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猕猴与人的生殖生理非常接近，是人类避孕药研究极为理想的实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j257",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猕猴与家兔一样体内不能合成维生素C，必须从饲料中补充维生素C。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j258",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在制造和鉴定脊髓灰质炎疫苗时，猕猴是重要的实验动物之一。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j259",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猪是进行实验性烧伤研究的理想动物。猪皮常用于烧伤创面敷盖。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j260",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猪、马、牛等都属于哺乳纲偶蹄目动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j261",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "羊、马、牛等都属于草食性反刍动物 。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j262",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猪的皮肤与人非常相同，猪皮常用于烧伤创面敷盖。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j263",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长爪沙鼠是一种小型草食动物，大小介于大鼠和豚鼠之间。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j264",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长爪沙鼠性情温驯，有一定的神经质，在妊娠期易受惊。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j265",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长爪沙鼠独特的脑血管解剖特征，很容易利用它建立脑缺血模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j266",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长爪沙鼠具有类似人类的自发性癫痫病发作的特点，是癫痫研究常用的实验动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j267",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "沙鼠对肿瘤的移植比较容易接受，常用于肿瘤生长及转移的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j268",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "沙鼠耐辐射能力较强，可以用于耐辐射研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j269",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长爪沙鼠、鼠兔、猪都属于杂食性动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j270",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔一年换毛两次，冬夏季节各一次。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j271",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔外形似家兔， 但形体比一般家兔大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j272",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔性情温和，胆小喜静，耐寒怕热，常发生“鸟叫式”啼叫。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j273",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔为草食性动物，在饲料中应加入一定的粗纤维。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j274",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔对氧的利用率很高，因此可以作为高山生理和低压特征研究良好的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j275",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔是形成自然过剩排卵、过剩着床的动物，可以作为生殖生理学研究的模型动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j276",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鼠兔可替代兔对猪瘟苗、羊厌气三联苗的检验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j277",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "旱獭是冬眠动物，冬眠期各组织的总酶活力低于非冬眠期。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j278",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "旱獭体格粗壮，肢端强壮，前爪特别发达。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j279",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "旱獭耗氧量极低，广泛分布于高原草原，它是高山生理和耐低氧研究的良好动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j280",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "树鼩是一类攀缘型小型哺乳类动物，为动物界的特有类群。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j281",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "树鼩凭分泌的有特殊气味的分泌物识别环境。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j282",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "中国树鼩的血清白蛋白与人类相似。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j283",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "树鼩是研究人类甲型肝炎病毒良好的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j284",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "树鼩是研究肿瘤良好的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j285",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "树鼩可以用于人类致秃及毛发再生的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j286",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡与鸽一样属于鸟纲、鸡形目动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j287",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡无牙齿，腺胃消化性差，主要靠肌胃和沙粒磨碎食物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j288",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡的凝血机制好，红细胞呈椭圆形，无细胞核。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j289",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡与犬一样几乎没有汗腺，散热主要靠呼吸来进行的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j290",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡可以作为研究高血脂症、动脉粥样硬化的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j291",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡在饲养过程中应定期用甲醛等消毒液进行喷雾消毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j292",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡的体表被覆丰盛的羽毛，耐寒怕热。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j293",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "利用鸡的红细胞特点，可以它作为炎性渗出液内白细胞的吞噬异物，观察吞噬功能和过程。   （",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j294",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸽的视觉非常发达，对于姿势的平衡反应很敏锐，但听觉很差。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j295",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "可以用切除鸽大脑半球的方法来观察其大脑半球的一般功能。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j296",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鱼属于变温动物，能根据水温的变化而改变体温。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j297",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鱼在水中的气体交换是腮，皮肤和肺不交换气体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j298",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鱼的繁殖行为单一，鱼是卵生动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j299",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鱼体很多组织都可发生肿瘤病变，是理想的肿瘤研究的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j300",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鱼类进行环境监测特别是水污染比较灵敏，是一种生物指示剂。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j301",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "可以利用温度的变化研究鱼类新陈代谢的加快或减慢、炎症反应、免疫功能以及膜生理学等方面的功能。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j302",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "蟾蜍、青蛙和地鼠一样均属于冬眠动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j303",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "蟾蜍和青蛙的饲养管理的关键是水的质量。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j304",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "蟾蜍和青蛙可用于脊髓休克、脊髓反射和观察反射弧分布的实验研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j305",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "蟾蜍、青蛙的生活史中有变态过程。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j306",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "青蛙的心脏离体后能维持收缩相当长的时间，而蟾蜍则不同。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j307",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "离体蛙心能维持收缩相当长的时间，利用这一特点，可以研究心脏的生理功能和药物对心脏的作用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j308",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大部分牛散热机能不发达，比较耐寒，不耐热。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j309",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "牛的反刍时间大部分是在中午或下午。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j310",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "公牛遇敌害时，常表现戒备行为，把头低下，目光直射对方，前脚刨地吼叫，后肢挺直前进，具有威吓姿势。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j311",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "羊和牛一样属于草食性反刍动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j312",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "羊和牛一样属于多胃动物，牛有4个胃，绵羊有3个胃。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j313",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "蛇、青蛙和地鼠一样均属于冬眠动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j314",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "每种爬行类动物体温调节方面都有一个最适温度区，每个温度区为该物种的特征，受行为学和生理学机理的调节。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j315",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "捕食啮齿类动物的蛇，关养时避免投喂活的啮齿动物，防止啮齿动物咬伤蛇类。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j316",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "真菌易于在酸性环境下生长，多数真菌是厌氧型的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j317",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "真菌的繁殖方式比其他的微生物的繁殖方式复杂，有有性繁殖和无性繁殖两种。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j318",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "寄生虫都是永久性的寄生于宿主的体内或体表的，并从宿主取得它们所需要的营养物质。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j319",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "宿主是指为寄生虫提供生活居住的场所和提供营养的生物体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j320",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "带虫动物往往被认为是健康的动物，所以它的存在对实验动物的危害并不是很大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j321",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物感染寄生虫后，通常会吸收宿主的营养，从而影响宿主的生长发育，但是不会对动物实验结果造成影响。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j322",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "同其他许多传染病一样，病原真菌也大部分为人畜共患病原，但比其他类型微生物感染性低，一般皆为慢性过程，多呈散发性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j323",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "皮肤真菌感染实验动物后很难根除，常常需全群淘汰，对所有的用具和房间进行彻底的熏蒸消毒，也可以对动物进行药浴。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j324",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "须发癣是人畜共患病原，所以要注意公共卫生，防止人和动物间的相互感染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j325",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物组织胞浆菌感染临床上慢性型呈流感状，体温升高，烦躁不安。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j326",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物组织胞浆菌的控制重在预防，对饲养的实验动物要加强卫生管理，对饲养室周围的环境和土壤进行化学消毒亦是有效的预防办法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j327",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物组织胞浆菌常常存在于土壤中，即所谓土壤保菌，这种保菌形式在自然界构成小生态，用人工方法就可以轻易的消灭。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j328",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "真菌性疾病对人和动物的危害均较大，同时对实验研究也带来比较大的影响。实验动物感染真菌后，不仅影响科学实验的准确性，而且容易污染环境，威胁动物群体以及饲养人员和实验人员的身体健康。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j329",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "随着高等级动物的普及，啮齿类动物感染寄生虫的机率逐步得到控制。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j330",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "普通级环境中灵长类动物易感的寄生虫主要有螨、虱、弓形虫、卡氏肺孢子虫、纤毛虫、食道口线虫等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j331",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "Beagle 犬易感的寄生虫主要有体外寄生虫如螨、虱等；除此之外，Beagle 犬易感的寄生虫还有阿米巴原虫、卡氏肺孢子虫、纤毛虫、绦虫、犬钩虫、犬恶丝虫等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j332",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验用猪和羊易感的寄生虫主要有体外寄生虫如螨、蜱、虱等，另外蛔虫、鞭虫、绦虫、肝片吸虫、线虫等也常常会感染猪和羊。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j333",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "各种实验动物的螨病依靠临床症状和镜检患部皮屑中发现螨、虫体断片或虫卵就可以作为诊断的依据。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j334",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "螨类只寄生于实验动物的体表，因此在诊断时刮去患部的皮屑，经处理后在显微镜下检查有无虫体和虫卵，即可做出确切的诊断。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j335",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "粪便内的原虫的病原学检查，主要是对球虫卵囊和结肠小袋虫的检查。可以采用蠕虫学粪便检查方法中的直接涂片法和饱和食盐水检查法来检查。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j336",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "弓形虫病主要是由刚第弓形虫引起的一种世界范围内分布的人畜共患原虫病。其主要特征是引起流产、死胎和胎儿畸形。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j337",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "弓形虫在中间宿主体内进行有性繁殖，即增生和形成包囊的阶段。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j338",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫因吃进感染弓形虫的中间宿主组织或食入孢子化卵囊而被感染。食入缓殖子后，潜伏期为10到12天。食入速殖子，则为5到10天。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j339",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "弓形虫病预防主要是着眼于防止实验动物的饲料、饮水被猫粪便污染，消灭野鼠。为避免人体感染，接触实验动物后要清洗消毒，儿童不要与猫狗玩耍，孕妇更不要与猫接触。治疗可用磺胺类药物和抗菌增效剂合用，效果较好。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j340",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔球虫病是家兔的一种重要的寄生虫病，死亡率极高。主要以接触传播的方式来传播病原，动物食入被虫卵污染的饲料而感染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j341",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "3月龄家兔最易感球虫，且死亡率极高。感染途径多是通过饲料和饮水以及仔兔在哺乳时 吃到乳房上沾污的球虫卵囊而感染。此外，饲养员、工具、野鼠、苍蝇也可机械的搬运球虫卵囊而传播球虫病。一般在干燥季节流行。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j342",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物球虫病可根据流行病学资料、临床症状及病理解剖结果可初步诊断。用饱和盐水漂浮法检查粪便中的卵囊，可以确诊。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j343",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物感染球虫病后，不仅会造成动物健康水平的下降，而且会对动物的各项肝功能指标造成影响，从而使得实验结果产生波动，甚至会对动物实验结果得出错误的结论。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j344",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "螨病的主要临床症状主要是嘴、鼻周围及脚爪发炎，动物表现不安、剧痒，会用脚搔嘴、鼻，患部结痂、变硬，病变部位出现皮屑和血痂，患部脱毛，皮肤增厚失去弹性，形成皱褶。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j345",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "发现实验动物感染螨虫后，患病动物不需要隔离、淘汰，但要对笼器具及周围环境彻底消毒，保持房舍干燥通风。加强动物饲养管理和卫生防疫，加强检疫，增强动物的抗病力。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j346",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "螨虫感染实验动物后会不断的掠夺宿主的营养，不断地从宿主皮下组织中吸血，造成动物慢性贫血。螨、虱等在吸血时，能分泌有毒性的唾液，刺激宿主的神经末梢，产生痒感，使动物骚动不安，影响采食和休息，最终动物消瘦，发育不良，降低对其他疾病的抵抗力。另外感染螨病后也会影响实验动动物物正常生理生化指标，从而干扰动物实验的结果。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j347",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物感染血液寄生虫后，不断地掠夺动物的营养（主要是吸血），久而久之造成动物贫血。血液寄生虫还会因不断地在动物脏器中穿行而对动物机体产生机械性损伤，但是对宿主的生理、生化和免疫系统一般不会造成影响。所以说，实验动物感染血液寄生虫后对实验研究的干扰不必引起重视。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j348",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "血液寄生虫的传播与野鼠密切相关，因此要加强卫生防疫管理，切断传播途径，对患病动物进行隔离治疗。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j349",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物感染寄生虫后，不仅虫体对动物机体造成一定的损害，而且动物机体也对虫体产生相应的反应，使得动物机体的生理、生化以及免疫学指标发生改变，进而影响到实验结果。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j350",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物感染寄生虫后对动物群体影响没有病毒性疾病以及细菌性疾病危害大，所以对实验动物寄生虫病的控制不值得引起高度重视。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j351",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "ICLAS是一个以促进实验动物质量、健康和应用达到高标准的官方组织。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j352",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "我国《实验动物管理条例》是1988年经国务院批准，由国家科技部颁布的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j353",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "1988年颁布的《实验动物管理条例》共分为五个章节。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j354",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "国家实验动物质量检测中心（微生物、遗传）挂靠在中国医学科学院实验动物研究所。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j355",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "各省、自治区、直辖市实验动物管理委员会下设办公室，具体负责本地区实验动物的日常管理工作，简称动管办。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j356",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "美国的《动物福利法》是一部专门规范实验动物管理的法规。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j357",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在美国，实验动物使用单位必须要到动植物卫生检疫局（APHIS）登记，订立遵守有关法规的保证书。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j358",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "我国《实验动物质量管理办法》规定，各省、直辖市、自治区实行独立的实验动物质量监督管理制度。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j359",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "未取得实验动物生产许可证的单位，可饲养、繁育实验动物供本单位使用，如教学用，但不得经营实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j360",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "国家实验动物质量检测中心负责微生物、遗传、环境病理、营养和寄生虫六个专业领域检测技术的标准化、规范化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j361",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大小鼠的抓取固定很方便，可以提起鼠尾，置于清洁光滑的桌面上，即可抓起作灌胃等操作。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j362",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "不可用袭击方法抓取大鼠，否则易被咬伤。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j363",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠胆小，易受惊，所以抓取时必须稳、准、迅速。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j364",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "耳缘剪孔法是在耳边缘剪出不同的缺口或打出小孔进行编号的方法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j365",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "挂牌标记法，适用于大鼠、小鼠、豚鼠等动物的编号。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j366",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "耳缘剪孔法在剪缘或打孔后，需用酒精消毒局部。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j367",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "挂牌标记法，可使动物感到不适，使其搔抓号牌，使挂牌部位损伤。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j368",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "剪毛时，剪刀紧贴皮肤，必要时用手提起被毛，以免剪破皮肤。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j369",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "拔毛法适用于家免耳缘静脉注射或采血。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j370",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "麻醉的目的是消除实验动物在实验过程中的疼痛和不适感，以利实验者操作，确保动物 实验顺利进行。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j371",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "给犬动物麻醉时，发现动物的角膜反射消失，瞳孔突然放大，表明无继续试验的价值，应弃用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j372",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "常用的浸润麻醉药是1%硫喷妥钠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j373",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "浸润麻醉时，每次注药前，应回抽，以防药液误注于血管内。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j374",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "灌胃时，将灌胃针从鼠的右口角插入口中，沿咽前壁慢慢插入食道，使其前端达到膈肌位置。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j375",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "口服给药法简单方便，剂量准确。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j376",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "使鼠尾静脉扩张的方法有局部用45~50℃的温水浸润几分钟或用75%酒精棉反复擦拭。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j377",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "耳缘静脉注射时，应尽量选粗的静脉处进针。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j378",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "鸡常采用翼下静脉注射。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j379",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "皮下注射针头垂直刺入皮下，拔针时手指捏住针刺部位，防止药液外漏。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j380",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肌肉注射一般选肌肉发达，无大血管通过的部位。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j381",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肌肉注射时针头宜垂直迅速刺入肌肉，回抽无回血，即可注射。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j382",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠、小鼠腹腔注射时，应使动物头处于高位。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j383",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔腹腔注射部位下腹部近腹白线左右两侧1cm处。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j384",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬腹腔注射部位脐前腹白线两侧边1~2cm处。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j385",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔、犬等灌胃一般可直接将胃管插入口中。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j386",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠、小鼠剪尾采血，每只鼠只能采一次。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j387",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠剪尾采血，须剪去尾尖1~2mm，一次采血0.1ml左右。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j388",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠剪尾采血，须剪去尾尖3~5mm，一次采血0.3~0.5ml左右。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j389",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠、小鼠剪尾采血，每只可采血10次以上。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j390",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "眼眶后静脉丛采血，以45度从外眼角刺入。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j391",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠、大鼠如进行一次取血，可采用摘眼球法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j392",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠、大鼠股动脉一次采血量小鼠达0.5ml，大鼠达2.0ml。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j393",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠、大鼠大量取血时常用股动脉采血。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j394",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔心脏采血法，心脏穿刺部位在第3肋骨间，胸骨左缘8cm处。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j395",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔耳缘静脉采血，常用于采血量多时。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j396",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬最常用的采血法是皮下头静脉和小隐静脉处采血。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j397",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬大量或连续采血时，可采用颈静脉采血法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j398",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猴采血需血量少时，可经毛细血管采血。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j399",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猴采血需血量大时，可采用静脉采血。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j400",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大小鼠代谢笼法集尿费时费事，并需专用笼具，一般不使用该法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j401",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "对实验动物采取安乐死，主要是为了减轻动物的痛苦，对实验结果并无影响。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j402",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔处死常用空气栓塞法，但从动物保护的角度出发，不提倡使用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j403",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "用犬做实验经过一年观察期和用大鼠做实验经过相同观察期，其生物学意义基本相同。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j404",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "研究发现，毒物对不同性别大小鼠的毒性有差异，一般雌性的敏感性稍小于雄性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j405",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "医学研究中，动物模型和动物实验结果要外推到人。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j406",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验选用的动物类别或等级要与实验条件、实验技术、方法及试剂相匹配。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j407",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物实验中不可以使用怀孕、哺乳、患病、瘦弱及营养不良的实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j408",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "对动物无效的药物临床也无效，反之亦成立。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j409",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "海水中生活的动物尿液是高渗的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j410",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "草食类动物尿液显酸性，粘度高，而肉食类动物尿液显碱性，且有特殊的气味。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j411",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "蛙和蟾蜍，适合做简单的反射弧实验，其结构简单明了，易于分析。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j412",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在生理、病理生理实验研究中，犬的神经系统和血液循环系统发达，适合进行此方面的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j413",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬的消化系统不发达，不适合进行消化系统的慢性实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j414",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬不适合用于微循环的实验研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j415",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "齿式与动物的食性有密切关系，草食类与肉食类差异最为显著。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j416",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猪是研究动脉粥样硬化最好的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j417",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肉食类动物的盲肠比草食类动物的长。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j418",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠耳廓做微循环试验，可以避免手术，简化观察程序，很适宜外周微循环慢性实验观察。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j419",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "灰兔眼部适宜做微循环实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j420",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "青蛙肠系膜不适宜做微循环观察。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j421",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "犬的血液循环系统不发达，不适合用于微循环的实验研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j422",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "狗的甲状旁腺位置较固定，适于作甲状旁腺摘除实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j423",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔的甲状旁腺分布较散，适于作甲状旁腺摘除实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j424",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "用犬作条件反射实验时，常用红绿色信号作为条件刺激物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j425",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔颈部的交感神经、迷走神经和减压神经不独立行走，因此观察减压神经对心脏的作用时，不能选用兔。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j426",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "用家免试做开胸和心脏试验时，动物一定要人工呼吸。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j427",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "家兔体温变化十分灵敏，发热反应典型、恒定。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j428",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠无胆囊，不能作胆囊功能的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j429",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠无胆囊，不适合作胆管插管收集胆汁，进行消化功能研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j430",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "中国地鼠易产生真性糖尿病，适合于糖尿病的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j431",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠体内缺乏合成维生素C的酶，不能合成维生素C，不适于作维生素C缺乏症实验研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j432",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠对人型结核杆菌具有高度的易感性，是结核病诊断及病理研究的首先实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j433",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔是典型的刺激性排卵动物，而猫不是。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j434",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "有不少药物和化学物，在不同种系动物身上引起的反应存在很大差异。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j435",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "雌激素能终止大鼠和小鼠的早期妊娠，但不能终止人的妊娠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j436",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "吗啡对兔、猴、人、猫产生中枢抑制。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j437",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "吗啡对家犬、兔、人、小鼠产生中枢兴奋。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j438",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "吗啡对小鼠、猫产生中枢兴奋。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j439",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "高癌系小鼠，无需任何外加的处理，几乎100%的自然发生白血病、肺癌、乳腺癌等恶性肿瘤，证明癌症是可以遗传的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j440",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "肿瘤学研究中主要选用近交系大鼠和小鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j441",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸小鼠可接受人类各种肿瘤细胞的植入。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j442",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸鼠先天无胸腺，T淋巴细胞缺失，细胞免疫机能缺陷。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j443",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸鼠对异体移植免疫排斥反应较大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j444",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "进行临床前药物动力研究中，不一定选用成年的动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j445",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "一般药理研究，常选用的动物包括小鼠、大鼠、狗、猫和猴等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j446",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "镇痛催眠药研究一般选用健康成年小鼠，便于分组实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j447",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "镇痛药研究一般选用健康成年小鼠或大鼠，且以雌性为宜。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j448",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "解热药研究首选家兔，因为家兔对热原质极敏感。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j449",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "豚鼠的体温调节能力强，所以解热药研究首选豚鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j450",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫是对神经节传导阻滞影响的药物研究的首选动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j451",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "镇咳药筛选的首选动物是豚鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j452",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔对化学刺激或电刺激不敏感，很少用于筛选镇咳药。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j453",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "支气管扩张药物研究一般不选用豚鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j454",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔有呕吐反射，而犬则没有。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j455",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猴、犬有呕吐反射，而大鼠、豚鼠则没有。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j456",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "利尿药物或抗利尿药物的研究一般以雌性大鼠或犬为佳。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j457",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "用兔制备的血清制品效价高、特异性强，经常用于制备免疫血清。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j458",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猪的皮肤结构与人相差大，一般不用于人烧伤后的敷盖物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j459",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "猫与人类的循环系统相似，血压稳定，适合用于药物对循环系统作用机制的分析，而猴 则不适用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j460",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "树鼩不麻醉就能承受手术切割皮肤、肌肉等引起的疼痛。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j461",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "人类腭裂与兔腭裂在形态发生和病理形成方面有相似性，因此兔适于各类唇裂，腭裂的 实验研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j462",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物是主要用来研究胃肠道微生物在营养代谢中的作用的动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j463",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "一般生殖毒性试验的目的是判断雄性、雌性动物连续用药后，一般生殖行为和生育能力 的变化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j464",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "致畸敏感期毒性试验的目的是判断雌性动物在胚胎器官形成前、后所给的药物对胚胎的 毒性和致畸性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j465",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "围产期毒性试验的目的是判断雌性动物在妊娠后期给药对子代的影响。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j466",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "急性毒性试验是简单的试验，对实验动物质量没有严格要求，这符合经济节约的原则。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j467",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长期毒性试验持续时间长，而且实验动物的高中剂量组是给予中毒剂量的药物。因此必 须保证实验动物的质量和适宜的环境。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j468",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "长期毒性试验常用SD大鼠，不能用Wistar大鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j469",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "大鼠的致癌试验需2~3年，通常意味着是终生试验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j470",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "兔对放射线十分敏感，因此常选用兔进行放射医学研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j471",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸鼠不适合皮肤病学研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j472",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "人类疾病动物模型是指医学研究中建立的具有人类疾病表现的动物实验对象和相关材 料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j473",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "易自发地出现某些相应病变的动物，适宜作为复制该病变的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j474",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "易产生与复制疾病相混淆的疾病或临床症状的动物，不宜选用复制该疾病模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j475",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "诱发性动物模型又称之为实验性动物模型，即为人工诱发出特定的疾病动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j476",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "由于基因突变的异常表现通过遗传育种手段保留下来的动物模型属于诱发性动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j477",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物未经任何人工处置，在自然条件下自发产生的动物模型属于自发性实验动物模 型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j478",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "自发性动物模型中，疾病的发生、发展与人类相应的疾病很相似，其应用价值很高。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j479",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "抗疾病实验动物模型是指特定的疾病容易在某种动物身上发生，从而可以用来探讨这种动物对该疾病的抵抗力。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j480",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生物医学模型是指利用健康动物生物学特征来提供人类疾病相似表现的疾病模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j481",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "阴虚动物模型、阳虚动物模型、气虚动物模型、血虚动物模型等属于中医证候分类动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j482",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "利水渗湿药动物模型不属于中药理论分类的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j483",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "免疫缺陷动物仅是指用人工方法造成动物一种或多种免疫系统组成成分缺陷的动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j484",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "AIDS动物模型属于获得性免疫缺陷动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j485",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸小鼠、裸大鼠不属于T淋巴细胞功能缺陷动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j486",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "Beige小鼠属于B淋巴细胞功能缺陷动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j487",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "CBA/N小鼠属于B淋巴细胞功能缺陷动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j488",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸小鼠一般不用于肿瘤学的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j489",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "裸大鼠主要用于人体肿瘤的移植的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j490",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "诱发性肿瘤动物模型是使用致癌因素在实验条件下诱发动物发生肿瘤的动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j491",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物自发性肿瘤是指实验动物未经任何有意识的人工处置，在自然情况下所发生的肿瘤。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j492",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "自发性肿瘤更接近人群发病情况，但在实际的肿瘤研究试验中诱发性肿瘤动物模型优于自发瘤。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j493",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SD大鼠是筛选抗高血压药物的良好动物模型。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j494",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "小鼠是第二种被完成基因组测序的哺乳类动物，更是研究人类基因功能的最为理想的模式动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j495",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "显微注射转基因小鼠的供体雌鼠是通过正常雌鼠与结扎雄鼠交配产生。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j496",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "显微注射转基因小鼠的受体母鼠是通过注射激素的雌鼠与正常雄鼠交配而得。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j497",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "目前研究最多、最深入的基因敲除动物模型是基因敲除小鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j498",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "ENU致突变技术是高通量大规模筛选新基因及发育突变技术的化学方法。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j499",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "ENU诱发是近年来被公认的最有潜力的能够快速产生、大规模筛选并建立突变型动物的有效手段。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j500",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "为了不浪费动物，多领取的动物可以返回饲养室。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j501",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "遗传监测就是通过基因、饲养环境和饲料营养检验等方法来测定实验动物品系的遗传组成是否发生变化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j502",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "尽管在实验动物的培育、维持和生产过程中采取了许多严格的控制手段，但还是存在许多导致动物发生遗传变异的因素。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j503",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "遗传上的变化导致实验动物某些原有特性的改变，影响实验研究结果，所以进行实验动物质量的遗传监测就显得尤为重要。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j504",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "遗传污染是最常见的实验动物管理事故，通常是由于其他品系动物与本品系动物发生交配所致。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j505",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "遗传漂变是指一个品系动物基因型在饲养过程中可能发生的随机改变，这种改变多由于近交系动物残留杂合基因分离，造成了亚系的形成。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j506",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "遗传漂变是最常见的实验动物管理事故，通常是指由于其他品系动物与本品系动物发生交配所致。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j507",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "突变是由于动物基因组中某个核苷酸残基的置换、缺失或插入，引起一个等位基因的改变。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j508",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物只有性细胞发生突变才能传给后代，而体细胞发生突变一般不影响个体的整体或性细胞，因此不会传给后代。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j509",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物性细胞发生突变能传给后代，体细胞发生突变也会影响个体的整体或性细胞，因此也会传给后代。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j510",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物遗传物质发生可遗传的改变就是突变，根据发生突变的原因又分为自然突变和人工诱变两类。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j511",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系数是表示实验动物近交程度的一个指数，对于群体，我们假定一个大群体实行随机交配，则某一后代在亲代中随机取得一对同源等位基因的概率就是这一个体的近交系数。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j512",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系是指至少连续20代的同胞兄妹交配培育而成，品系内所有个体都可追溯到起源于第20代或后代数的一对共同祖先。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j513",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系一般以大写英文字母命名，亦可以用大写英文字母加阿拉伯数字命名，符号应尽量简短。如A系、TA1系等。近交系的近交代数用大写英文字母F表示。例如当一个近交系的近交代数为87代时，写成（F87）。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j514",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "亚系是指一个近交系内的各个分支的动物之间，已经存在或十分可能存在遗传差异。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j515",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系亚系的命名方法是在原品系的名称后加一道斜线，斜线后标明亚系的符号。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j516",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "重组近交系的命名由两个亲代近交系的缩写名称中间加大写英文字母X命名。由相同双亲交配育成的一组近交系用阿拉拍数字予以区分。例如：由BALB/c与C57BL两个近交系杂交育成的一组重组近交系，分别命名为CXB1、CXB2、……。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j517",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在两个近交系杂交生育杂种一代后，杂种一代互交生育杂种二代，从杂种二代中随机选择个体配对，连续进行20代以上的兄妹交配，可培育出重组近交系动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j518",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "同源突变系的命名由发生突变的近交系名称后加突变基因符号（用英文斜体印刷体）组成，二者之间以连接号分开。当突变基因必须以杂合子形式保持时，用“+”号代表野生型基因，如：A/Fa- +/c。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j519",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "同源导入系名称一般由三部分组成：接受导入基因的近交系名称；提供导入基因的近交系的缩写名称，并与a项之间用英文句号分开；导入基因的符号（用英文斜体），与b项之间以连字符分开。例如：B10.129-H-12b，表示该同源导入近交系的遗传背景为C57BL/10sn(=B10)，导入B10的基因为H-12b，基因提供者为129/J近交系。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j520",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "转基因的命名遵循这样的原则：一个转基因符号由以下三部分组成，均以罗马字体表示：TgX(YYYYYY) ＃＃＃＃＃ Zzz。其中各部分符号表示含意为：TgX=方式；(YYYYYY)=插入片段标示；＃＃＃＃＃=实验室指定序号；Zzz = 实验室注册代号。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j521",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "C57BL/6J-TgN(CD8Ge)23Jwg，表示来源于美国杰克逊研究所（J）的C57BL/6品系小鼠被转入了的CD8基因组（Ge）；转基因工作在Jon W.Gordon(Jwg)实验室完成,这个小鼠是该实验室通过于一系列显微注射后得到的序号为23的小鼠。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j522",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "如果转基因动物的遗传背景是由不同的近交系或远交群之间混合而成时，则该转基因符号应不使用动物品系或种群的名称。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j523",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交品系动物中任何一个基因位点上纯合子的概率高达99%，因而能繁殖出完全一致的纯合子，品系内个体相互交配不会出现形状分离。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j524",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交品系动物中虽然任何一个基因位点上纯合子的概率高达99%，也可能繁殖出不完全一致的杂合子，品系内个体相互交配也会出现形状分离。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j525",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交品系内所有动物个体都可追溯到一对共同祖先，也就是说同一个品系内每只动物的个体在遗传上都是同源的，基因型完全一致。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j526",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "由于基因型一致，近交系内个体的表型也是相同的，特别是那些可遗传的生物学特征。如毛色、蛋白质、生化同工酶以及行态学特征等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j527",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系动物在遗传上具有高度稳定性，虽然残留杂合会导致个体遗传变异，但这种概率非常小。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j528",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "每个近交系都有各自的遗传概貌（包括毛色基因、生化基因等）,选用适当的遗传监测方法，即可分辨各个近交系。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j529",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "每个近交系都有自己的遗传组成和独自的生物学特性，经过近交培育之后，每个品系从物种的整个基因库中只能获取极少部分的基因，这部分基因构成了品系的遗传组成，因此，每个品系在遗传组成上是独一无二的，具有独特的表型特征。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j530",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系动物任何一个个体均携带该品系全部基因库，引种非常方便，便于在不同国家、地区建立几乎完全相同的标准近交系，使各国研究结果具有可比性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j531",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系动物在培育和保种的过程中都有详细记录，加之这些动物分布广泛，经常使用，已有相当数量的文献记载着各个品系的生物学特征，这些基本数据对于设计新的实验和解释实验结果提供了便利条件。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j532",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "封闭群由2～4个大写英文字母命名，种群名称前标明保持者的英文缩写名称，第一个字母须大写，后面的字母小写，一般不超过4个字母。保持者与种群名称之间用冒号分开。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j533",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "作为原种的封闭群动物必须遗传背景明确、来源清楚，有较完整的资料，包括种群名称、来源、遗传基因特点和主要生物学特性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j534",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "为保持封闭群动物的遗传异质性及基因多态性，引种动物数量要足够多，小型啮齿类封闭群动物引种数目一般不能少于25对。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j535",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "为保持封闭群动物的遗传基因稳定，封闭群应足够大，并尽量避免近亲交配。根据封闭群的大小，选用随机交配法、循环交配法等方法进行繁殖，以确保每代近交系数上升不超过1%。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j536",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "封闭群动物具有较强的繁殖力和生活力，对疾病抵抗力强，因而广泛应用于预试验、教学和一般实验中。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j537",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "封闭群动物具有类似于人类群体遗传异质性的遗传组成，因此在人类遗传研究、药物筛选和毒性试验等方面起着不可替代的作用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j538",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "杂交群动物应可按以下方式命名：此雌性亲代名称在前，雄性亲代名称居后，二者之间以大写英文字母“X”相连表示杂交。将以上部分用括号括起，再在其后标明F1。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j539",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "杂交群动物的生产是比较简单的，采用两个近交系进行杂交而得。将两个基因型不同的近交品系纯合子作为亲代，互相交配所产生的子一代即可形成F1代杂交群动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j540",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "繁殖杂交F1小鼠的目的，为了能在一定时间内，提供较大量的遗传均一的实验动物,因此交配方法最好采用循环交配或定期交配进行生产。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j541",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "杂交群动物具有杂交优势，生命力强，适应性和抗病力强，繁殖旺盛等优点，在很大的程度上可以克服因近交繁殖所引起的近交衰退现象。可广泛地适用于营养、药物、病原微生物和毒性实验。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j542",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "杂交群动物具有近交系动物基本相似的遗传均质性。虽然它的基因不是纯合子，但基因型是整齐一致的，遗传性是稳定的，表现型也一致，因此它基本上具有近交系动物的特点，对各种实验结果重复性好。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j543",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系动物具有明确的品系背景资料，包括品系名称、近交代数、遗传组成、主要生物学特性等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j544",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生化标记基因检测法是近交系动物遗传纯度常规检测中的常规方法。近交系小鼠选择位于10个染色体上的13个生化位点，近交系大鼠选择9个生化位点，作为遗传检测的生化标记。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j545",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "近交系动物经生化标记基因检测法检测发现有一个位点的标记基因与标准遗传概貌不一致，则为可疑，增加检样位点数目和增加检测方法后重检，确实只有一个标记基因改变可命名为同源突变系。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j546",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物易受到自然界微生物、寄生虫的侵袭，一般多带细菌、病毒和寄生虫，显性或隐性感染某些疾病，所以需要进行实验动物微生物学、寄生虫学质量控制。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j547",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "清洁级小鼠需控制的病原菌指标为有沙门菌、单核细胞增生性李斯特杆菌、假结核耶尔森菌、小肠结肠炎耶尔森菌、皮肤病原真菌、念珠状链杆菌、支原体、鼠棒状杆菌、泰泽病原体和大肠埃希菌O115。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j548",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "清洁级小鼠需要控制的病毒指标是淋巴细胞脉络丛脑膜炎病毒、汉坦病毒、鼠痘病毒、小鼠肝炎病毒、仙台病毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j549",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "清洁级大鼠需控制的病原菌指标为沙门菌、单核细胞增生性李斯特杆菌、假结核耶尔森菌、小肠结肠炎耶尔森菌、皮肤病原真菌、念珠状链杆菌、支原体、鼠棒状杆菌、泰泽病原体。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j550",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "清洁级大鼠需要控制的病毒指标是汉坦病毒、仙台病毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j551",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SPF级小鼠需控制的病原菌指标为沙门菌、单核细胞增生性李斯特杆菌、假结核耶尔森菌、小肠结肠炎耶尔森菌、皮肤病原真菌、念珠状链杆菌、支原体、鼠棒状杆菌、泰泽病原体、大肠埃希菌O115、嗜肺巴氏杆菌、肺炎克雷伯杆菌、金黄色葡萄球菌、乙型溶血性链球菌和绿脓杆菌。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j552",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SPF级小鼠需要控制的病毒指标是淋巴细胞脉络丛脑膜炎病毒、汉坦病毒、鼠痘病毒、小鼠肝炎病毒、仙台病毒、小鼠肺炎病毒、呼肠孤病毒Ⅲ型、小鼠细小病毒、小鼠脑脊髓炎病毒、小鼠腺病毒及多瘤病毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j553",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SPF级大鼠需控制的病原菌指标为沙门菌、单核细胞增生性李斯特杆菌、假结核耶尔森菌、小肠结肠炎耶尔森菌、皮肤病原真菌、念珠状链杆菌、支原体、鼠棒状杆菌、泰泽病原体、支气管鲍特杆菌、嗜肺巴氏杆菌、肺炎克雷伯杆菌、金黄色葡萄球菌、乙型溶血性链球菌和绿脓杆菌。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j554",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SPF级大鼠需要控制的病毒指标是汉坦病毒、仙台病毒、小鼠肺炎病毒、呼肠孤病毒Ⅲ型、大鼠细小病毒RV株、大鼠细小病毒H-1株及大鼠冠状病毒/大鼠涎泪腺炎病毒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j555",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SPF级动物由于排除了特定的病原体，避免了病原体的隐性感染或潜伏感染对实验结果的干扰；避免了条件性致病菌对实验的干扰。因此实验结果准确可靠，在生物医学各个领域的研究中得到了广泛的应用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j556",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物与普通动物相比，无菌动物早期生长较慢、性成熟较晚、产仔数量少但成活率高、寿命较长。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j557",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物与普通动物相比，无菌动物早期生长较快、性成熟较早、产仔数量多但成活率低、寿命较长。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j558",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物消化功能较普通动物差，肠壁变薄、绒毛短而肠蠕动缓慢，无菌动物小鼠排稀、软粪便，肝脏重量下降、解毒能力差，心肾器官变小。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j559",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物由于缺乏微生物的刺激，免疫系统发育不良、血清中IgM、IgG水平低，免疫功能处于原始状态。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j560",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物盲肠肥大，比普通动物要大5-6倍，无菌豚鼠的盲肠可达体重的1/3。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j561",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物抗辐射能力强，普通动物受辐射后往往由于细菌感染引起并发症而造成动物死亡。无菌动物就不存在这种情况。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j562",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物抗辐射能力差，受辐射后往往由于细菌感染引起并发症而造成动物死亡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j563",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物不一定来源于剖腹产或无菌卵的孵化。所以无菌动物适合于作一些特殊的研究试验，如微生物学寄生虫学研究、免疫学研究、肿瘤学研究、老年学研究、营养学研究、放射医学研究、心血管疾病研究、毒理和药理学研究等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j564",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "无菌动物机体内既无抗原，也无抗体，处于一种免疫“原始状态”，很适合于各种免疫功能的研究。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j565",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "悉生动物应用在许多微生物学研究上是一个突出的例子。只有选用悉生动物，才有可能了解到单一微生物和抗体之间的关系。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j566",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "悉生动物可以作为“哨兵”用于屏障系统饲养环境的检测，以保证所繁殖的SPF动物的质量；可以用于营养学的研究，以分析维生素在动物体内的合成利用；用于消化系统研究分析肠道菌群与胆汁代谢的关系等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j567",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物微生物和寄生虫的检测频率要求：普通动物、清洁动物、无特定病原体动物，每三个月至少检测动物一次；无菌动物，每年至少检测动物一次。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j568",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物的遗传质量控制主要包括两个方面内容，一是科学地进行引种、繁殖和生产，即对生产过程进行控制；二是建立定期地遗传监测制度，对产品的质量进行控制。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j569",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "因实验动物多被限制在一个极其特定的环境中，它的生活和它对环境的自主选择要受到限制，因而对实验动物环境就要进行控制。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j570",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物环境设施主要包括外环境和内环境，外环境主要是指实验动物饲育和实验场所外的周围环境，内环境主要是指实验动物饲育和实验场所内的环境。内外环境因素对实验动物有直接作用和间接作用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j571",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的建设，必需满足环境控制的要求，这就要求相关设施必须经过验收，试运转期间未出偏差，交付使用时已具备了环境控制达标的能力。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j572",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物设施饲养动物后应采取很多配合措施，辅之严格的管理工作，如主要进风口空气洁净度及各进风口风速的定期测定。通过测定探索出各级空气过滤器滤材的更换时间。确保进风量及空气洁净度是维持通风换气，气压梯度的主要关键。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j573",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物设施内环境控制及维持只要有好的硬件条件，管理制度和工作人员的素质并不很重要。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j574",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生产型设施指用于实验动物繁育、生产的建筑物、设备以及包括运行管理在内的总和。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j575",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生产使用型设施指用于实验动物繁育、生产的建筑物、设备以及包括运行管理在内的总和。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j576",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物使用型设施指以研究、试验、教学、生物制品药品生产等为目的进行动物饲育、试验的建筑物，设备以及包括运行管理在内的总和。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j577",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物生产型设施指以研究、试验、教学、生物制品药品生产等为目的进行动物饲育、试验的建筑物，设备以及包括运行管理在内的总和。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j578",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "环境因素是直接影响实验动物进化、生态反应和生长的所有外界条件的总和。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j579",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "各种动物对环境的适应能力并不相同。近交系动物的基因纯合程度可达98．6％以上。由于基因纯合，动物失去了杂合基因型能较广泛的适应环境的能力。因此，它在繁殖与生长中需要更为严格的环境条件。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j580",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物饲养的目的是为了进行动物实验。环境条件不仅影响实验动物的品质，还直接影响动物实验的科学性、动物反应的敏感性、实验结果的可重复性。所以，必须严格控制实验动物的环境条件。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j581",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "温度对实验动物的影响主要表现在生殖、泌乳、机体抵抗力、生长、形态、新陈代谢和实验反应性等方面。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j582",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气湿度的大小对实验动物的散热率不一定有显著影响，但高温、高湿的环境，尤其不利于动物的散热。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j583",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "噪声对实验动物生殖生理不一定会造成严重不良影响。但有时可使大、小鼠生育力减退，妊娠障碍和流产，甚至出现食仔现象。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j584",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "噪声对实验结果也有很大影响。声音刺激会引起心跳、呼吸次数及血压增加，血糖值出现明显不同。噪声能使小鼠发生白细胞数的变动，免疫机能变化，大鼠出现高血压，心脏肥大，电解质变化，肾上腺皮质酮分泌增加。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j585",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "光照对实验动物影响主要表现在生殖、生理行为上。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j586",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "气流及风速对实验动物影响主要表现在疾病传播，损害动物与工作人员健康。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j587",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生物洁净技术：指以有生命微粒控制为对象的洁净技术。它强调将工程学和卫生学措施结合起来，采用多种手段，形成了一种有效控制微生物的综合措施，其技术意义是除掉细菌要比控制细菌繁殖更重要，这是生物洁净技术的一个很重要原则。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j588",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "一般生物洁净技术设施，主要控制有生命微粒对工作对象的污染，同时其内部材料要能经受各种灭菌制剂侵蚀，内部一般保持负压。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j589",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生物学安全洁净技术设施，主要控制工作对象有生命微粒对外界和人的污染，内部保持正压。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j590",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "洁净工作服的屏蔽效率不仅与它的材质有关，而且与它的密封性有关，由于考虑到使用方便和人体舒适性的要求，事实上很难做到完全屏蔽（包括全身吸气服在内），所以，人体散发的尘粒和细菌，仅仅依靠洁净工作服是不可能做到完全控制的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j591",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "通风就是以通风换气的方法改善室内的空气环境，主要是控制室内有害物含量不超过卫生标准，把局部地点或整个房间内污染空气排至室外，把新鲜空气或符合卫生标准的空气送入室内。前者称为排风，后者称为送风，为此而设置的设备及管道称为通风系统。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j592",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生物洁净技术设施通风系统目的，是要将经过净化的洁净空气不断地送入室内，从而达到稀释（或挤排）室内尖埃、微生物。并不断将室内污染空气排至室外，使室内浓度不超过规定的上限浓度，从而维持平衡。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j593",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "集中式空调系统：集中冷源（冷机、水泵）系统，并将全部空气处理设备（风机、空气表冷器、加湿器、过滤器、加热器等）都集中在同一机房内，将处理过的空气通过风道（管）、风口送至实验动物屏障设施区域内。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j594",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "混合式空调系统：集中冷源（冷机、水泵）系统，并将全部空气处理设备（风机、空气表冷器、加湿器、过滤器、加热器等）都集中在同一机房内，将处理过的空气通过风道（管）、风口送至实验动物屏障设施区域内。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j595",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "局部式空调系统：它不需要集中空调机房，而是将局部空调机组分散设置在需要进行空气调节的实验动物屏障设施内或紧靠近的房间、天花板、地下技术夹层内。局部空调机组由冷冻机、通风机、空气加热器、表冷器和过滤器等组成。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j596",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "混合式空调系统所处理的空气部分取自室外，部分取自室内再循环空气，循环空气的多少，由洁净工作区需要和可能来确定。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j597",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "正确选择空气调节系统，要依据实验动物生产规模或开展动物实验的多少、建筑性质、空气调节负荷变化情况及温度。湿度。风速、压力、洁净级别等控制参数的精度等因素，技术管理水平，经济效益等来确定。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j598",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "合理的空气调节方案要与实验动物设施的工艺流程相符合。以设施外最不利的环境参数为依据，结合实际情况，在满足环境控制要求的前提下，避免片面追求高精度、大面积、全自动的不合理选择。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j599",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气乱流，又称为空气单向流。乱流方式的洁净设施构造简单，施工方便，投资和运行费用较小，因而实验动物设施等大多数洁净室都采用此方式。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j600",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "乱流方式主要是利用稀释作用，使室内尘源产生的灰尘均匀扩散而被“冲淡”。它的原则是满足工艺和人的卫生要求，避免涡流把工作区外的灰尘卷入工作区，以减少产品的污染机会。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j601",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气层流，又称为空气非单向流。层流方式的洁净设施构造简单，施工方便，投资和运行费用较小，因而实验动物设施等大多数洁净室都采用此方式。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j602",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "层流方式是指流线平行、流向单一、具有一定的和均匀的断面速度的气流组织方式，送入房间的气流充满整个洁净室断面，它像“活塞作用”那样把室内随时产主的灰尘压至下风侧，再把灰尘排至室外。由于这种方式是以要求室内断面上有一定风速为前提的，所以洁净室的净化空调系统开动后能立即（1min以内）达到稳定状态。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j603",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气过滤器中粗效空气过滤器宜设置在新风口。一般采用易于清洗和更换的粗、中孔泡沫塑料或其它滤料用于新凤过滤，过滤对象是大于10μm的尘粒，严禁使用油浸过滤器。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j604",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气过滤器中中效空气过滤器设置在设施系统的正压处。一般采用中，细孔泡沫塑料或其它纤维，滤料的过滤器，用于过滤新风及回风，延长高效空气过滤器使用年限，过滤对象是1-10μm的尘粒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j605",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气过滤器中高效空气过滤器设置在设施系统的正压处。一般采用中，细孔泡沫塑料或其它纤维，滤料的过滤器，用于过滤新风及回风，延长高效空气过滤器使用年限，过滤对象是1-10μm的尘粒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j606",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "空气过滤器中中效空气过滤器设置在设施系统的末端。一般采用玻璃纤维滤纸，石棉纤维滤纸和合成纤维滤纸等三类滤料的滤器，主要用于过滤小于1μm的尘粒。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j607",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生物洁净技术设施内洁净度要求为10万级以下的空气净化处理，应采用初效、中效、高效空气过滤器三级过滤。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j608",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "感染性动物实验设施通常的防护主要靠物理学隔离原理，采用负压通风达到防止有害气溶胶扩散的目的。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j609",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "隔离装置内的空气、饲料、水、垫料和设备均为无菌，动物和物料的动态传递须经特殊的传递系统，该系统既能保证与环境的绝对隔离，又能满足转运动物时保持内环境一致。该环境设施适用于饲育无特定病原体、悉生及无菌实验动物。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j610",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施应选建在远离疫区和公害污染的地区，有便利和充足的后勤供应（水、电、给排水系统和交通运输等）。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j611",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施建设应坚固、耐用、经济、有防虫、鸟和鼠等野生动物的能力，施工和建筑材料要严格符合设计要求，最好预留可扩大的余地。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j612",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施最好为独立结构，具有各种完整的相应职能区域，做到区域隔离以便满足对各种不同动物品种、品系饲养和保证动物质量的需要。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j613",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施应该有必要的保证满足设施功能、环境和微生物控制的设备和措施。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j614",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施应能保证动物健康，人员安全，并不对周围环境造成污染。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j615",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施应该有适当地防灾和安全（应急发电、防火、防生物污染、防灾等突发事故）应对措施，保证设施正常运转。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j616",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的总体设计应严格遵守国家和地方对建设的相关法律、法规和规定。在城市规划、消防安全、环境保护、卫生防疫、建筑要求等方面按着现有法规进行切合实际的设计。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j617",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的设计应全面布局，预计发展趋势，明确建设的可行性。设施的应用目的是指导设计的最基本指南，重要的是饲养品种，微生物控制等级，动物实验的种类和范围。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j618",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的设计应以国家实验动物的相关标准为设计依据，确定微生物控制级别，相应设施类型即可确定。要按国家标准中相应规定，根据环境控制要求、建筑要求、区划要求、按建筑规范进行设计。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j619",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施尤其是屏障环境是一个高耗能建筑，其电能及其他运转消耗会占将来总运转成本的60％以上，可见节能设计是将来设施运转能否进行的主要问题，在保障达到使用目的的前提下，尽可能采取节能设计。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j620",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "屏障环境实验动物设施区域应划分明确，布局紧凑，方便运行，注意对特殊功能单元的物理隔离和有机联系，主要功能区动物饲育和实验单元在总面积中所占比例尽可能大。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j621",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "屏障环境实验动物设施区域人员、物品、动物的进出路线单向流动，尽可能避免往返交叉。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j622",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "屏障环境实验动物设施区域气流方向应从高洁净区向低洁净区。气压梯度遵守洁净走廊>洁净准备室>动物生产区（实验区）>污物走廊>非洁净区。   （",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j623",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的走廊应考虑到必要设备的运输，一般宽在2m左右，地面与墙壁的接合处应为弧形，以便于清洁。为防止墙体损坏，最好加护栏或缓冲装置。各种水、电、管、线应尽量安排在走廊或走廊上部夹层中，并且不暴露在明处。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j624",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的门：除负压室之外原则上应向外开，应向压力大的方向开启。门宽和所需设备及饲育用具的大小相称。门要求气密性好，室内装锁，能自行关闭。把手、门锁不外露。门上设观察孔。最好用耐水、耐药性的金属密封门。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j625",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的窗：屏障环境多不设外窗或尽可能少设窗。一般动物除需要自然采光与通风的场所外，不宜设置外窗。设有外窗的动物室，如猴类动物房，应在墙上加设栏栅和铁丝网以防止动物逃跑。寒冷地区窗上有防结霜措施。在非清洁区设置的外窗，尽量做到气密性完好。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j626",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的地面要用耐水、耐磨、耐腐蚀性材料制成。一般常用环氧树脂，硬面混凝土、水磨石、氯丁二烯橡胶、硬橡胶等常用保护性涂层。地面要光滑防水。地面接墙处圆弧面",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j627",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的墙壁：内壁粉刷用难以开裂、耐水、耐腐蚀、耐磨、耐冲击材料制成。墙面无断裂，光滑平整，各接角处接合严密，最好做成圆弧形。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j628",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物设施的天花板要用耐水、耐腐蚀材料制成。室顶平整光滑。通常紫外线消毒灯、照明灯、超高效空气过滤器及进风口会安于天花板上。灯具及进气口周围必须密封。进气口可以自由拆卸清洗、消毒。要加防水层防止漏水。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j629",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "屏障环境设施内动物饮水的灭菌小规模通常在普通自来水中加入次氯酸钠；另一种水的处理方法是在水中加入盐酸；第三种方法是用多孔的5μm、1μm陶器过滤器做两次过滤；第四种方法是用紫外线照射，为了达到良好的灭菌效果，许多动物室常将两种方法结合起来使用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j630",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "屏障环境设施内动物饮水应灭菌处理。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j631",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "物料的灭菌如垫料、笼架、鼠盒和其他供应品等均采用高压灭菌，屏障动物室多采用通道式双门高压灭菌器，不能采用高压灭菌的物料可采用药液浸泡法消毒，屏障动物室通常通过药液渡槽将不能高压灭菌的物料传入屏障内。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j632",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "污染物会影响实验动物设施内消毒灭菌，粪便、脏垢、油污常使消毒药液不能直接作用于微生物，从而降低消毒的效果，彻底消毒前必须先洗净脏垢、油污，特别要注意清洗死角。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j633",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "酸度（pH）会影响实验动物设施内消毒灭菌，环境酸度的微小变化对消毒药的活性影响很大，如氯胺T的最佳活性是pH6～7，二氯异氰尿钠在pH6～10，季胺化合物在pH9～10的碱性环境下最有效。因此，要根据环境酸碱度选用恰当的消毒剂。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j634",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "中和物质会影响实验动物设施内消毒灭菌，如阴离子清洁剂能降低氨化合物的活性，四醛化合物消毒之前最好用阳离子清洁剂，氨能中和福尔马林等。其他如硬水、肥皂、多种去污剂等也会使消毒剂失效。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j635",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "用过的垫料是实验动物室固体废弃物中（包括垫料、动物排泄物、动物尸体、纸张及其他物品）数量最大的废弃物，废弃物的量涉及废弃物处理费用的高低，减少废弃物的量是解决废弃物污染问题的最佳途径，可依据最大动物饲养空间估算废弃垫料的生产量，以安排贮存空间、运送工具和人力。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j636",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "废弃物应定期清理，不做长期储存，动物房舍亦应设有足够的贮存空间，贮存暂时无法立刻处理的废弃物。废弃物储存区与其他区室分隔，尽量远离动物饲养区、人员休息区或场内主要运输线上。废弃物贮存室必须密闭，避免臭气外泄和防止苍蝇、蟑螂、啮齿类动物侵入。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j637",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物尸体是实验动物设施产生的主要废弃物之一。动物房舍中必须设置容量充足的冷藏设备以暂时贮存尸体。感染病原微生物或放射性物质的动物尸体，可以直接做掩埋处理或焚烧，感染性的动物尸体应该用装载生物危害物质的塑胶袋妥善包装，经蒸汽高温高压灭菌后，再以一般处理无害性动物尸体方法如置人冷冻库冷冻保存，尸体由冷冻库取出后需先解冻再予焚烧以避免燃烧不完全及浪费燃料。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j638",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "根据我国国家技术监督局发布的实验动物环境设施监测标准，环境监测的其他指标除氨气是动态的，其余都是具有静态和动态两重含义的指标。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j639",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "我国对实验动物设施采取许可证管理办法，申请获得许可证时，必定通过国家指定环境监测中心的监测，并出示环境监测达标证明。此外，在不定期的抽检中，也会对有动物状况下某一时刻的环境状况进行环境监测。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j640",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物环境监测有两个目的：一是了解设施内环境特性，从而可评价其功能，证实环境控制的程度；二是了解设施内环境是否持续合格，通过及时调控，从而保障设施的正常运行。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j641",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物环境设施检测仪器、仪器的量程、精度与分辩率应符合设施检测指标要求，可不必按计量部门的要求管理和使用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j642",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物环境设施内环境技术指标检测一般要求为静态检测。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j643",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SOP是标准化操作规程的简称，通常是指常规实验室操作要求如何进行，可不必以书面文件制订的规程，对于书面文件制定的规程要讲究可操作性、实用性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j644",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SOP(标准化操作规程）中记录每天应有1人记录、1人复核；原始记录中如有错误的地方可以随意涂改，记录如有相同地方，不能用“——”等方式表示。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j645",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "SOP(标准化操作规程）中记录每天只有1人记录；原始记录中如有错误的地方不得随意涂改，记录如有相同地方，不能用“——”等方式表示。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j646",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物笼器具制作须保证动物的健康、舒适，制作笼具的原材料要无毒。笼具要有可收容一定动物量的容积，符合动物要求的最小空间值。内外边角圆滑无毛剌。保证不损伤动物，尤其是足部。笼具要有利于通风、散热，给动物以舒适的内环境。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j647",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "不同级别的实验动物，其饮水的卫生标准是不一样的。对普通级动物来说，符合卫生标准的城市居民饮用水即可供其直接饮用。对于清洁级及其以上级别的实验动物来说，其饮用水必须经过灭菌处理。清洁级动物亦可应用酸化水（pH2.5～3.0）。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j648",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "给水设备必须按各级别实验动物的管理要求定期清洗消毒。饮水不必每天更换，也可以将饮水瓶由一个鼠盒随意移到另一个鼠盒上。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j649",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "隔离器随功能不同可分为饲养隔离器，动物实验隔离器和手术隔离器等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j650",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "隔离器是保种及进行各种动物实验的最安全的设备。其维护要求简单，空间占有小，可用高品质动物进行试验的特点，使其具有广泛的应用价值。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j651",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "层流和普通气流不同，是具有线性流向的气流。层流架有前过滤器和高效过滤器，通过送风系统或吸引系统形成正压或负压两种层流空气。前者从架内吹出无菌无尘的层流空气，后者是室内空气由室内先进入饲育架，由吸引装置吸出污染空气经过过滤净化后排出动物室外。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j652",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "生物安全柜又称之为生物安全罩，是一种前开式正压通风柜。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j653",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "当有毒化学物质或放射性核物质被用作微生物研究或制药的添加物时，应使用专为此设计制造的II级生物安全柜。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j654",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "单体通风净化笼盒(IVC)是在动物笼盒中装置净化通风换气的饲养设备，适用于普通级以上动物实验、饲养。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j655",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "普通笼器具，是指不带有强制性空气净化装置的笼器具，它包括笼箱、笼架和饮水瓶以及带空气过滤帽的塑料笼等。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j656",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物垫料要求容易获得，易于运输，便于储存，价格便宜。无灰尘，无污染，无芳香烃类气味，对人和动物无害。干燥，有良好的吸湿性，舒适，便于做窝，具有良好的保温性。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j657",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "污秽的垫料应勤予清除并换以新垫料，以保持动物的清洁，干爽。更换的频度视动物的大小、密度、粪尿排出量和垫料的脏污程度，一般每周更换2次，如发现垫料被水浸湿，鼠盒内有死鼠，必须及时更换垫料。在有些情况下，垫料更换不应过度频繁，如怀孕后期及哺乳初期等阶段。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j658",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物个体需得到均衡的营养成分，以维持正常的生理机能，其营养需求会因动物个体的生理状况如维持。生长及繁殖阶段，动物种类、年龄、性别而有所差异。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j659",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "动物的营养素包括水、蛋自质及氨基酸、碳水化合物与脂肪、矿物质和维生素。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j660",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "同种但不同品系的动物，因遗传基因的表达程度不同而影响营养的需求，如近交系小鼠与封闭群动物对蛋白质饲料需求，近交系小鼠要高些。灵长类动物或豚鼠，因缺乏L－谷氨酸氧化酶，必须人工添加维生素C。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j661",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "实验动物饮水量主要受动物的生理阶段、饲料性质及环境温度的影响。幼年动物、哺乳动物饮水量较多。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j662",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "不同种类的实验动物和不同的实验目的，对饲料的加工要求也各不相同。如常用实验动物大鼠、小鼠、豚鼠、兔的饲料，应制成具有一定硬度、不同直径规格的颗粒饲料较为适合其摄食习性。狗、猫则以膨化饲料为好。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j663",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "成品实验动物饲料贮存要分类存放，标志清楚，注明生产日期，不得与原料混贮。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j664",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "一般饲料存放量不要过多，贮存时间不宜过长。原粮贮存3～6个月，粉状饲料1～2个月，动物性饲料1～3个月，成品颗粒料以不超过1个月为宜。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j665",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲料中多种成分经光照射后会起化学变化而破坏分解。常见者如核黄素、叶酸及维生素B12，因此制作、贮存、运送时，应将饲料放在阴暗处以减少营养成分的破坏。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j666",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲料制作过程中如搅拌过度，会增加营养成分如维生素Ａ的氧化，添加抗氧化剂有助于减缓氧化的过程。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j667",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲料经干热和蒸汽处理会导致营养成分的变化，甚至产生有毒的物质和抗养分吸收的物质。加热处理对饲料的物理性状也会有影响，另外加热处理不当，会导致饲料发霉脂肪酸氧化，适口性下降。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j668",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "采购的实验动物饲料除必需的维生素、微量元素、氨基酸添加剂外，通常不加任何饲料添加剂，但为了防止动物发生疾病，应加少量的抗生素。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j669",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "饲料的质量与稳定性会随储藏温度及湿度的变化而变化。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j670",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "贮存的颗粒饲料含水率应低于11％，高于11％的饲料易霉变。贮藏在空调环境的由天然原料制造的饲料，应在6个月内使用完毕。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j671",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在制造及储存含高脂肪的特殊饲料时，应注意不饱和脂肪酸极易被氧化，造成必需脂肪 酸的不足。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j672",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "在喂给高脂肪酸饲科，宜额外添加维生素，以减少体内过氧化反应。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j673",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "氨基酸又分为必需氨基酸和非必需氨基酸两大类。前者是动物体内不能合成或合成速度及数量不能满足正常生长需要，必须由饲料中供给的氨基酸；后者是体内能合成，不需要由饲料中供给的氨基酸。不同动物对必需氨基酸需求的种类存在差异。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j674",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "脂肪能供给幼龄动物必需脂肪酸，如缺乏，则大鼠皮肤鳞片化，尾部坏死，生长停止，繁殖性能降低，严重可引起水肿及皮下出血。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j675",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "氯是制造胃内盐酸的原料，实验动物体内及乳汁均含有一定数量的氯，饲料中加入一走量食盐以补充氯，起到调味、刺激唾液分泌、促进淀粉酶活性的作用。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "T"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j676",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "商品化饲料的标签要求可根据用户需要再是否附有标签。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j677",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "能溶于脂肪的称水溶性维生素，如维生素K、E；能溶于水的称脂溶性维生素，如维生素B族和维生素C。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-j678",
+  "bank": "labanimal",
+  "type": "judge",
+  "stem": "能溶于脂肪的称脂溶性维生素，如维生素B族和维生素C；能溶于水的称水溶性维生素，如维生素K、E。",
+  "options": {
+   "T": "正确",
+   "F": "错误"
+  },
+  "answer": [
+   "F"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "医学动物实验学-判断.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s001",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物科学自 __________诞生以来，至今已成为一门具有自己理论体系的独立性学科。",
+  "options": {
+   "A": "19世纪50年代",
+   "B": "19世纪70年代",
+   "C": "20世纪50年代",
+   "D": "20世纪70年代"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s002",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物又称             。",
+  "options": {
+   "A": "狭义实验动物",
+   "B": "广义实验动物",
+   "C": "经济动物",
+   "D": "无特定病原体动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s003",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验用动物又称            。",
+  "options": {
+   "A": "狭义实验动物",
+   "B": "广义实验动物",
+   "C": "经济动物",
+   "D": "无特定病原体动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s004",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________的出现，为分子生物学、特别是人类功能基因组学研究提供了最好的技术平台。",
+  "options": {
+   "A": "转基因动物",
+   "B": "无菌动物和悉生动物",
+   "C": "免疫缺陷动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s005",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________的出现，使器官移植成为可能，并使人们发现了与移植相关的组织性抗原，从而为人类的器官移植奠定基础。",
+  "options": {
+   "A": "转基因动物",
+   "B": "无菌动物和悉生动物",
+   "C": "免疫缺陷动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s006",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________的出现，促进了肠道微生物菌丛的研究，使人们认识微生物与免疫、与营养、与人类疾病和衰老的关系。",
+  "options": {
+   "A": "转基因动物",
+   "B": "无菌动物和悉生动物",
+   "C": "免疫缺陷动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s007",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________ 的出现，使人体的肿瘤能异种移植到裸鼠，为抗癌药的筛选和研究肿瘤做出了贡献。",
+  "options": {
+   "A": "转基因动物",
+   "B": "无菌动物和悉生动物",
+   "C": "免疫缺陷动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s008",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物资源       是必然趋势。",
+  "options": {
+   "A": "专一化",
+   "B": "单纯化",
+   "C": "多样化",
+   "D": "有序化"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s009",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "人类第一个基因组草图于__________完成，宣告了人类基因组计划的完成。",
+  "options": {
+   "A": "2000年6月",
+   "B": "2001年6月",
+   "C": "2002年6月",
+   "D": "2003年6月"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s010",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________是继人之后第二个开始并完成基因组测序工程的哺乳类动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "猴",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s011",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "与人类的功能基因的同源性高达90%以上。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "猴",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s012",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________因其与人类的基因组序列、发育、生化代谢及生理特点相似性而成为研究人类基因功能的最为理想的模式动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "猴",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s013",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "__________ 作为基因改造动物的材料可以真实的模拟人类，因此其基因组的改造和操纵对于功能基因与基因信息学的研究具有不可替代的作用。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "猴",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s014",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "善待动物不仅仅是考虑动物的福利，也是因受虐待的动物 __________  。",
+  "options": {
+   "A": "会反抗而伤害人",
+   "B": "会反抗而伤害动物自己",
+   "C": "会反抗而捣毁仪器设备",
+   "D": "精神的变化会影响实验结果"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s015",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠的妊娠期为______天。",
+  "options": {
+   "A": "19-21",
+   "B": "29-31",
+   "C": "9-10",
+   "D": "39-41"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s016",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列动物属于啮齿目的为  ______。",
+  "options": {
+   "A": "犬",
+   "B": "大鼠",
+   "C": "猫",
+   "D": "绵羊"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s017",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠的哺乳期为______天。",
+  "options": {
+   "A": "10-12",
+   "B": "25-30",
+   "C": "9-10",
+   "D": "20-22"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s018",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鉴别未成年小鼠的性别方法为______。",
+  "options": {
+   "A": "根据生殖器与肛门之间的距离长短以及其中间连线有无毛而确定",
+   "B": "根据动物的尾巴的长短而决定",
+   "C": "根据动物毛色而决定",
+   "D": "根据动物活动状态而决定"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s019",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "雌性小鼠有______对乳头。",
+  "options": {
+   "A": "5",
+   "B": "1",
+   "C": "3",
+   "D": "2"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s020",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "初生小鼠为 ___________。",
+  "options": {
+   "A": "红色",
+   "B": "粉红色",
+   "C": "白色",
+   "D": "黄色"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s021",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列______ 不是昼伏夜出的动物。",
+  "options": {
+   "A": "犬",
+   "B": "兔",
+   "C": "大鼠",
+   "D": "小鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s022",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠______天开始睁眼。",
+  "options": {
+   "A": "2-4",
+   "B": "6-8",
+   "C": "8-10",
+   "D": "12—13"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s023",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "正常情况下小鼠的直肠温度为______摄氏度。",
+  "options": {
+   "A": "36.5",
+   "B": "37.5",
+   "C": "38.5",
+   "D": "39.5"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s024",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "成年小鼠的体重为______克。",
+  "options": {
+   "A": "10-12",
+   "B": "25-30",
+   "C": "9-10",
+   "D": "18-40"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s025",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "KM小鼠属于______动物。",
+  "options": {
+   "A": "近交系动物",
+   "B": "杂交群动物",
+   "C": "封闭群动物",
+   "D": "SPF动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s026",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "BALB／ｃ小鼠属于______动物。",
+  "options": {
+   "A": "无菌动物",
+   "B": "杂交群动物",
+   "C": "封闭群动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s027",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "C57BL／６Ｊ小鼠属于______动物。",
+  "options": {
+   "A": "无菌动物",
+   "B": "杂交群动物",
+   "C": "清洁动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s028",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "ＤＢＡ小鼠属于_________动物。",
+  "options": {
+   "A": "普通动物",
+   "B": "杂交群动物",
+   "C": "无菌动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s029",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "Ｃ３Ｈ小鼠属于______动物。",
+  "options": {
+   "A": "清洁动物",
+   "B": "近交系动物",
+   "C": "杂交群动物",
+   "D": "F1代动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s030",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "A/He小鼠属于______动物。",
+  "options": {
+   "A": "清洁动物",
+   "B": "封闭群动物",
+   "C": "近交系动物",
+   "D": "杂交群动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s031",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "新生大鼠的体重为______克。",
+  "options": {
+   "A": "5-6",
+   "B": "10-12",
+   "C": "15-16",
+   "D": "18-20"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s032",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "成年大鼠的体重为______克。",
+  "options": {
+   "A": "150-160",
+   "B": "250-450",
+   "C": "160-180",
+   "D": "18-22"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s033",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠______日龄开始睁眼。",
+  "options": {
+   "A": "5-6",
+   "B": "10-12",
+   "C": "14-17",
+   "D": "18-20"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s034",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在生物医学研究中使用量最大的动物为______。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s035",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一般小鼠的寿命为______年。",
+  "options": {
+   "A": "5",
+   "B": "6",
+   "C": "1-2",
+   "D": "4"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s036",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠的生育期为______年。",
+  "options": {
+   "A": "0.5",
+   "B": "1",
+   "C": "2",
+   "D": "3"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s037",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______过量可导致小鼠繁殖紊乱和胚胎畸形。",
+  "options": {
+   "A": "维生素A",
+   "B": "维生素C",
+   "C": "维生素B族",
+   "D": "维生素D"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s038",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "雌性KM小鼠的每胎产仔数为______只。",
+  "options": {
+   "A": "20",
+   "B": "6",
+   "C": "8-15",
+   "D": "4"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s039",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠的妊娠期为______天 。",
+  "options": {
+   "A": "21",
+   "B": "25",
+   "C": "15",
+   "D": "30"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s040",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠的哺乳期为______天。",
+  "options": {
+   "A": "21",
+   "B": "25",
+   "C": "15",
+   "D": "30"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s041",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "封闭群大鼠的每胎产仔数平均为______只。",
+  "options": {
+   "A": "8",
+   "B": "16",
+   "C": "4",
+   "D": "20"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s042",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠______天开始长牙。",
+  "options": {
+   "A": "8-10",
+   "B": "20",
+   "C": "5",
+   "D": "15"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s043",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠的正常体温为______℃。",
+  "options": {
+   "A": "36.5",
+   "B": "37.5",
+   "C": "38.5",
+   "D": "39.5"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s044",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠是______。",
+  "options": {
+   "A": "常年多发情动物",
+   "B": "秋季单发情动物",
+   "C": "春季单发情动物",
+   "D": "春秋季单发情动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s045",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一般大鼠的寿命为________年。",
+  "options": {
+   "A": "5",
+   "B": "6",
+   "C": "2-3",
+   "D": "8"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s046",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "ACI大鼠品系大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "杂交群动物",
+   "C": "无菌动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s047",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "F344大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "杂交群动物",
+   "C": "无菌动物",
+   "D": "近交系动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s048",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "SHR大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "近交系动物",
+   "C": "无菌动物",
+   "D": "杂交群"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s049",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "BN 大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "近交系动物",
+   "C": "封闭群动物",
+   "D": "杂交群"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s050",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "AGUS 大鼠属于________。",
+  "options": {
+   "A": "封闭群动物",
+   "B": "近交系动物",
+   "C": "无菌动物",
+   "D": "杂交群"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s051",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "SD大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "近交系动物",
+   "C": "封闭群动物",
+   "D": "杂交群"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s052",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "Wistar大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "近交系动物",
+   "C": "无菌动物",
+   "D": "封闭群动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s053",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "Long-Evans 大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "近交系动物",
+   "C": "无菌动物",
+   "D": "封闭群动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s054",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "Brown-Norway 大鼠属于________。",
+  "options": {
+   "A": "普通动物",
+   "B": "近交系动物",
+   "C": "无菌动物",
+   "D": "封闭群动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s055",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠属于________。",
+  "options": {
+   "A": "脊椎动物门",
+   "B": "环节动物门",
+   "C": "扁形动物门",
+   "D": "节肢动物门"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s056",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠属于________动物。",
+  "options": {
+   "A": "偶蹄目",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s057",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "初生大鼠为 ________。",
+  "options": {
+   "A": "红色",
+   "B": "粉红色",
+   "C": "白色",
+   "D": "黄色"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s058",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠属于________动物。",
+  "options": {
+   "A": "偶蹄目",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s059",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______散热器官是尾巴。",
+  "options": {
+   "A": "豚鼠",
+   "B": "大鼠",
+   "C": "地鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s060",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠属于________。",
+  "options": {
+   "A": "脊椎动物门",
+   "B": "环节动物门",
+   "C": "扁形动物门",
+   "D": "节肢动物门"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s061",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠属于________动物。",
+  "options": {
+   "A": "啮齿目",
+   "B": "食肉目",
+   "C": "爬行纲",
+   "D": "偶蹄目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s062",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠属于________。",
+  "options": {
+   "A": "脊椎动物门",
+   "B": "环节动物门",
+   "C": "扁形动物门",
+   "D": "节肢动物门"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s063",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠有________对乳腺。",
+  "options": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s064",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "体内缺少VC合成酶的动物为________。",
+  "options": {
+   "A": "豚鼠",
+   "B": "小鼠",
+   "C": "地鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s065",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠的妊娠期为________天。",
+  "options": {
+   "A": "30",
+   "B": "40",
+   "C": "58",
+   "D": "68"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s066",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠的哺乳期为______天。",
+  "options": {
+   "A": "21",
+   "B": "25",
+   "C": "10",
+   "D": "16"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s067",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________一出生后就有视力。",
+  "options": {
+   "A": "豚鼠",
+   "B": "小鼠",
+   "C": "地鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s068",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________无尾巴。",
+  "options": {
+   "A": "豚鼠",
+   "B": "小鼠",
+   "C": "大鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s069",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠出生时体重为________克。",
+  "options": {
+   "A": "75-100",
+   "B": "110-120",
+   "C": "40-50",
+   "D": "50-60"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s070",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠的每胎产仔数平均为________只。",
+  "options": {
+   "A": "1-2",
+   "B": "5-6",
+   "C": "3-4",
+   "D": "6-8"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s071",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "豚鼠的寿命一般为______年。",
+  "options": {
+   "A": "8",
+   "B": "2",
+   "C": "4",
+   "D": "6"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s072",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在免疫学研究中________作为首选动物。",
+  "options": {
+   "A": "小鼠",
+   "B": "地鼠",
+   "C": "大鼠",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s073",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是草食性动物。",
+  "options": {
+   "A": "小鼠",
+   "B": "豚鼠",
+   "C": "大鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s074",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是进行维生素C缺乏导致的坏血病研究的重要动物。",
+  "options": {
+   "A": "小鼠",
+   "B": "豚鼠",
+   "C": "大鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s075",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是最早获得无菌动物的实验动物。",
+  "options": {
+   "A": "小鼠",
+   "B": "地鼠",
+   "C": "大鼠",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s076",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "地鼠属于________动物。",
+  "options": {
+   "A": "啮齿目",
+   "B": "食肉目",
+   "C": "爬行纲",
+   "D": "偶蹄目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s077",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________无胆囊。",
+  "options": {
+   "A": "小鼠",
+   "B": "兔",
+   "C": "大鼠",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s078",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________有冬眠现象和假妊娠。",
+  "options": {
+   "A": "猫",
+   "B": "地鼠",
+   "C": "小鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s079",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________在哺乳类动物中妊娠期最短。",
+  "options": {
+   "A": "猫",
+   "B": "兔",
+   "C": "小鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s080",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "地鼠的哺乳期为________天。",
+  "options": {
+   "A": "21",
+   "B": "25",
+   "C": "10",
+   "D": "16"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s081",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "地鼠的妊娠期为________。",
+  "options": {
+   "A": "21",
+   "B": "25",
+   "C": "10",
+   "D": "16"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s082",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "中国地鼠有________对乳腺。",
+  "options": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s083",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______在人工饲养饲养过程中，其牙齿十分尖硬，可咬断细铁丝，兴奋时会发出金属性音响。",
+  "options": {
+   "A": "猫",
+   "B": "兔",
+   "C": "小鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s084",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "金黄地鼠有________对乳腺。",
+  "options": {
+   "A": "3-4",
+   "B": "4-5",
+   "C": "5-6",
+   "D": "6-7"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s085",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "中国地鼠的寿命为________天。",
+  "options": {
+   "A": "4-5",
+   "B": "3-4",
+   "C": "2-2.5",
+   "D": "4-5"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s086",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "地鼠为________。",
+  "options": {
+   "A": "全年多发情动物",
+   "B": "季节性多发情动物",
+   "C": "季节性单发情动物",
+   "D": "全年单发情动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s087",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "啮齿目动物中________具有贮存食物的颊囊。",
+  "options": {
+   "A": "大鼠",
+   "B": "豚鼠",
+   "C": "小鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s088",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔属于________动物。",
+  "options": {
+   "A": "爬行纲",
+   "B": "食肉目",
+   "C": "兔形目",
+   "D": "偶蹄目"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s089",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在眼科实验研究中，________是首选动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "兔",
+   "C": "小鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s090",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "圆小囊是________体内特有的解剖结构。",
+  "options": {
+   "A": "大鼠",
+   "B": "兔",
+   "C": "小鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s091",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔的妊娠期为________天。",
+  "options": {
+   "A": "32",
+   "B": "42",
+   "C": "22",
+   "D": "52"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s092",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________的耳大，上面血管清晰便于取血和注射。",
+  "options": {
+   "A": "猪",
+   "B": "兔",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s093",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔的哺乳期期为________天。",
+  "options": {
+   "A": "12",
+   "B": "42",
+   "C": "32",
+   "D": "52"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s094",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______两耳长大高举，耳根细，耳端尖，形同柳叶，毛色为白色。",
+  "options": {
+   "A": "大耳白兔",
+   "B": "新西兰兔",
+   "C": "青紫兰兔",
+   "D": "中国本兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s095",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是刺激性排卵动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "兔",
+   "C": "小鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s096",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________有季节性换毛现象。",
+  "options": {
+   "A": "大鼠",
+   "B": "地鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s097",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔有________对乳腺。",
+  "options": {
+   "A": "2",
+   "B": "6",
+   "C": "4",
+   "D": "5"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s098",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔的寿命为______年。",
+  "options": {
+   "A": "8",
+   "B": "6",
+   "C": "4",
+   "D": "2"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s099",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________有假妊娠现象",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s100",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________动物有食粪癖。",
+  "options": {
+   "A": "大鼠",
+   "B": "猫",
+   "C": "小鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s101",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________的胸腔结构与其它动物不同。",
+  "options": {
+   "A": "大鼠",
+   "B": "地鼠",
+   "C": "兔",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s102",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔对缺________有较强的耐受能力。",
+  "options": {
+   "A": "铁",
+   "B": "磷",
+   "C": "锌",
+   "D": "钙"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s103",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "兔的正常体温为______℃。",
+  "options": {
+   "A": "36.2",
+   "B": "37.2",
+   "C": "38.2",
+   "D": "39.2"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s104",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬属于________动物。",
+  "options": {
+   "A": "爬行纲",
+   "B": "啮齿目",
+   "C": "哺乳纲",
+   "D": "偶蹄目"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s105",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________的视力很差且红、绿色盲。",
+  "options": {
+   "A": "大鼠",
+   "B": "地鼠",
+   "C": "犬",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s106",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________几乎没有汗腺，夏天靠加快呼吸来散热。",
+  "options": {
+   "A": "大鼠",
+   "B": "地鼠",
+   "C": "小鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s107",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬的正常体温________ ℃。",
+  "options": {
+   "A": "36.8",
+   "B": "38.8",
+   "C": "37.8",
+   "D": "39.8"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s108",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬是________。",
+  "options": {
+   "A": "常年多发情动物",
+   "B": "秋季单发情动物",
+   "C": "春季单发情动物",
+   "D": "春秋季单发情动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s109",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________属于季节性单发情动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "豚鼠",
+   "C": "小鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s110",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬的妊娠期为________天。",
+  "options": {
+   "A": "30",
+   "B": "40",
+   "C": "60",
+   "D": "50"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s111",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬的哺乳期为________天。",
+  "options": {
+   "A": "30",
+   "B": "40",
+   "C": "50",
+   "D": "60"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s112",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬的性周期为________ 天。",
+  "options": {
+   "A": "120",
+   "B": "160",
+   "C": "180",
+   "D": "190"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s113",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬对________耐受力强。",
+  "options": {
+   "A": "脂肪",
+   "B": "粗纤维",
+   "C": "蛋白",
+   "D": "糖类"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s114",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "条件反射试验中，常用________。",
+  "options": {
+   "A": "大鼠",
+   "B": "豚鼠",
+   "C": "小鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s115",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫是________。",
+  "options": {
+   "A": "常年多发情动物",
+   "B": "季节性单发情动物",
+   "C": "季节性多发情动物",
+   "D": "春秋季性发情动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s116",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________ 有善攀登和跳跃的特性。",
+  "options": {
+   "A": "兔",
+   "B": "豚鼠",
+   "C": "猫",
+   "D": "犬"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s117",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________属于季节性多发情动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "豚鼠",
+   "C": "猫",
+   "D": "犬"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s118",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________属于刺激性排卵动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "豚鼠",
+   "C": "犬",
+   "D": "猫"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s119",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________喜爱孤独而自由的生活，很少三五成群在一起栖息。",
+  "options": {
+   "A": "大鼠",
+   "B": "猫",
+   "C": "犬",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s120",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫的哺乳期为________天。",
+  "options": {
+   "A": "30",
+   "B": "40",
+   "C": "50",
+   "D": "60"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s121",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫的妊娠期为________ 天。",
+  "options": {
+   "A": "40",
+   "B": "700",
+   "C": "50",
+   "D": "63"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s122",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫有________对乳头。",
+  "options": {
+   "A": "4",
+   "B": "7",
+   "C": "5",
+   "D": "6"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s123",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______对呕吐反应灵敏，受到机械和化学刺激易发生咳嗽。",
+  "options": {
+   "A": "猪",
+   "B": "豚鼠",
+   "C": "犬",
+   "D": "猫"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s124",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______与其它动物不同，能按照光线的强弱灵敏地调节瞳孔。",
+  "options": {
+   "A": "猪",
+   "B": "豚鼠",
+   "C": "犬",
+   "D": "猫"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s125",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫属于______动物 。",
+  "options": {
+   "A": "爬行纲",
+   "B": "啮齿目",
+   "C": "哺乳纲",
+   "D": "偶蹄目"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s126",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫除________ 外，其余季节均可发情。",
+  "options": {
+   "A": "春季",
+   "B": "秋季",
+   "C": "夏季",
+   "D": "冬季"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s127",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "具有较发达的智力，能用手操纵工具的动物为________。",
+  "options": {
+   "A": "猪",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s128",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫的饲料中应重点补充________。",
+  "options": {
+   "A": "维生素",
+   "B": "粗纤维",
+   "C": "蛋白",
+   "D": "糖类"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s129",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猕猴属于________。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "偶蹄目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s130",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猕猴的哺乳期为________个月以上。",
+  "options": {
+   "A": "6",
+   "B": "3",
+   "C": "2",
+   "D": "4"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s131",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猕猴的妊娠期为________ 天左右。",
+  "options": {
+   "A": "140",
+   "B": "165",
+   "C": "150",
+   "D": "180"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s132",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______与人的生殖生理非常接近。",
+  "options": {
+   "A": "猪",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s133",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "地鼠与________一样都有贮存食物的颊囊。",
+  "options": {
+   "A": "猕猴",
+   "B": "犬",
+   "C": "猪",
+   "D": "猫"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s134",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______具有月经现象。",
+  "options": {
+   "A": "猪",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s135",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猕猴与 ______一样，体内不能合成维生素C。",
+  "options": {
+   "A": "豚鼠",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "小鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s136",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在制造和鉴定脊髓灰质炎疫苗时使用________。",
+  "options": {
+   "A": "豚鼠",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s137",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "_______的主要组织相容性抗原（RHLA）同人的HLA抗原相似，有高度的多态性。",
+  "options": {
+   "A": "豚鼠",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s138",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小型猪属于________。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "灵长目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s139",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________有到处乱拱的习性。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "猕猴",
+   "D": "猫"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s140",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小型猪是________。",
+  "options": {
+   "A": "常年多发情动物",
+   "B": "季节性单发情动物",
+   "C": "季节性多发情动物",
+   "D": "春秋季性发情动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s141",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小型猪的哺乳期为________个月。",
+  "options": {
+   "A": "2",
+   "B": "3",
+   "C": "1",
+   "D": "4"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s142",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小型猪的妊娠期为________ 天左右。",
+  "options": {
+   "A": "104",
+   "B": "124",
+   "C": "114",
+   "D": "134"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s143",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小型猪的正常体温平均为________摄氏度。",
+  "options": {
+   "A": "39",
+   "B": "38",
+   "C": "37",
+   "D": "36"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s144",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在人的皮肤烧伤实验中________是首选的动物。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "兔",
+   "D": "猫"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s145",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长爪沙鼠属于________。",
+  "options": {
+   "A": "爬行纲",
+   "B": "偶蹄目",
+   "C": "哺乳纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s146",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长爪沙鼠的大小界于______之间。",
+  "options": {
+   "A": "大鼠、小鼠",
+   "B": "大鼠、地鼠",
+   "C": "大鼠、豚鼠",
+   "D": "豚鼠、地鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s147",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长爪沙鼠的成年平均重为________克。",
+  "options": {
+   "A": "89",
+   "B": "100",
+   "C": "78",
+   "D": "60"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s148",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长爪沙鼠是________。",
+  "options": {
+   "A": "常年多发情动物",
+   "B": "季节性单发情动物",
+   "C": "季节性多发情动物",
+   "D": "春秋季性发情动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s149",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长爪沙鼠的平均寿命为______年。",
+  "options": {
+   "A": "1-2",
+   "B": "5-6",
+   "C": "2-4",
+   "D": "6-7"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s150",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长爪沙鼠的性成熟时间是 ______周龄。",
+  "options": {
+   "A": "10-12",
+   "B": "6-8",
+   "C": "8-10",
+   "D": "14-16"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s151",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________在应激状态下，肾上腺释放糖皮质激素和黄体酮明显增加。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "沙鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s152",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________动物体形与家兔相似。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "长爪沙鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s153",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________具有类似人类的自发性癫痫病发作的特点。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "兔",
+   "D": "长爪沙鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s154",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________具有独特的脑血管解剖特征,很容易利用它建立脑缺血模型",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "长爪沙鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s155",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是草食物性动物",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "猫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s156",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________有换毛现象。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s157",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠兔性成熟日龄为______天。",
+  "options": {
+   "A": "50",
+   "B": "60",
+   "C": "40",
+   "D": "70"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s158",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠兔的哺乳期为______ 天。",
+  "options": {
+   "A": "50",
+   "B": "20",
+   "C": "40",
+   "D": "30"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s159",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是形成自然过剩排卵、过剩着床的动物。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s160",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "可用______替代兔对猪瘟苗、羊厌气三联苗的检验。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s161",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "旱獭属于________。",
+  "options": {
+   "A": "爬行纲",
+   "B": "偶蹄目",
+   "C": "哺乳纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s162",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是冬眠动物。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "旱獭"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s163",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "旱獭的冬眠期约为________天。",
+  "options": {
+   "A": "160",
+   "B": "120",
+   "C": "100",
+   "D": "140"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s164",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________无汗腺，无膀胱。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "鸡"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s165",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "树鼩属于________。",
+  "options": {
+   "A": "灵长目",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s166",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________老龄后于尾根部、两后腿外侧、腰臀部出现块状脱毛现象，呈花斑形外貌，类似于人类斑秃。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "树鼩"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s167",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鸡的正常体温为______摄氏度。",
+  "options": {
+   "A": "41.5",
+   "B": "38.5",
+   "C": "37.5",
+   "D": "39.5"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s168",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是生物医学研究中最常用的禽类动物。",
+  "options": {
+   "A": "鸭",
+   "B": "鸡",
+   "C": "鹅",
+   "D": "鸽"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s169",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______红细胞有细胞核。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鼠兔",
+   "D": "鸡"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s170",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______无牙齿，主要靠肌胃和沙粒磨碎食物。",
+  "options": {
+   "A": "小型猪",
+   "B": "鸡",
+   "C": "鼠兔",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s171",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鸡属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "鸟纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s172",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鸽属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "鸽形目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s173",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鸽与________一样视觉很敏锐。",
+  "options": {
+   "A": "猪",
+   "B": "猫",
+   "C": "兔",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s174",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______的听觉和视觉非常发达，对于姿势的平横反应很敏锐。",
+  "options": {
+   "A": "猪",
+   "B": "兔",
+   "C": "鸽",
+   "D": "犬"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s175",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______属于变温动物，能根据环境的变化而调节体温。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "鱼",
+   "D": "犬"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s176",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鱼在水中主要靠________来呼吸。",
+  "options": {
+   "A": "皮肤",
+   "B": "鳃",
+   "C": "肺",
+   "D": "黏液"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s177",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________的繁殖行为多样，有卵生的，也有胎生的。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "鱼",
+   "D": "犬"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s178",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鱼的饲料必须提供________，缺乏它会引起鱼代谢紊乱，营养障碍，生长停滞，体弱多病。",
+  "options": {
+   "A": "脂肪酸",
+   "B": "维生素",
+   "C": "糖类",
+   "D": "蛋白质"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s179",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______既不是构成机体结构的物质，又不能提供能源，但参与新陈代谢的调节，控制鱼的生长发育过程，提高机体的抗病力。",
+  "options": {
+   "A": "脂肪酸",
+   "B": "维生素",
+   "C": "糖类",
+   "D": "蛋白质"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s180",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鱼的饲料中蛋白质的含量应大于______%。",
+  "options": {
+   "A": "10",
+   "B": "30",
+   "C": "20",
+   "D": "40"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s181",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______有冬眠现象。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "青蛙",
+   "D": "鱼"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s182",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "青蛙、蟾蜍与______一样有冬眠现象。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "地鼠",
+   "D": "鱼"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s183",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "青蛙、蟾蜍在饲养过程中______是最关键的因素。",
+  "options": {
+   "A": "饲料的质量",
+   "B": "环境温度",
+   "C": "水的质量",
+   "D": "饲养密度"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s184",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是草食性反刍动物。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "猪",
+   "D": "兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s185",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是多胃草食性动物。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "猪",
+   "D": "兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s186",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "马属于_   _____。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "偶蹄目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s187",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "牛属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "奇蹄目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s188",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "羊属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "奇蹄目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s189",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________属于哺乳纲、奇蹄目 。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "羊",
+   "D": "猪"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s190",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "牛是多胃动物，它有________个胃。",
+  "options": {
+   "A": "2",
+   "B": "4",
+   "C": "3",
+   "D": "5"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s191",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "绵羊是多胃动物，它有________个胃 。",
+  "options": {
+   "A": "2",
+   "B": "4",
+   "C": "3",
+   "D": "5"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s192",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "羊的妊娠期为________天。",
+  "options": {
+   "A": "120",
+   "B": "140",
+   "C": "130",
+   "D": "150"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s193",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "羊的哺乳期为________天。",
+  "options": {
+   "A": "160",
+   "B": "140",
+   "C": "130",
+   "D": "150"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s194",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "山羊一般在________发情。",
+  "options": {
+   "A": "春季",
+   "B": "冬季",
+   "C": "夏季",
+   "D": "秋季"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s195",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______属于变温动物，依外界热源来调节体温。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "羊",
+   "D": "蛇"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s196",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是草食动物，多属于神经兴奋的类型，易受惊吓，具有较好的记忆能力。",
+  "options": {
+   "A": "猫",
+   "B": "犬",
+   "C": "羊",
+   "D": "马"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "单选题A.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m001",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "国际实验动物科学协会（ICLAS）的主要工作目标   ______ 。",
+  "options": {
+   "A": "提倡全球范围内实验动物与生物研究资源的进步",
+   "B": "促进全球范围内实验动物科学知识与资源的合作共享",
+   "C": "通过建立标准及资源支持，促进高质量实验动物的监控与生产",
+   "D": "促进人们在科学研究实验中遵循伦理原则合理使用动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m002",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物科学的研究范围包括 ______   。",
+  "options": {
+   "A": "实验动物饲育学",
+   "B": "实验动物医学",
+   "C": "比较医学",
+   "D": "动物实验技术"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m003",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物医学研究内容包括 ______  。",
+  "options": {
+   "A": "实验动物的各种疾病的病因、症状、病理特征、疾病发生与发展规律、诊断及防治措施等",
+   "B": "实验动物微生物质量的等级分类标准、检测方法、控制措施",
+   "C": "微生物对动物实验的干扰",
+   "D": "风险性动物实验与人畜共患病的防治措施"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m004",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "比较医学是以实验动物为替身研究人类，通过建立人类疾病的动物模型及模型系统，来研究 ______的变化规律，从而战胜人类疾病。",
+  "options": {
+   "A": "人类相应疾病的发生发展规律和诊断、预防、治疗",
+   "B": "宿主抗力机制",
+   "C": "疾病的临床变化",
+   "D": "药物、致癌物质、残留毒物的作用"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m005",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验用动物包括 _________ 。",
+  "options": {
+   "A": "实验动物",
+   "B": "野生动物",
+   "C": "经济动物",
+   "D": "观赏动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m006",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "新的实验动物种系或新的模型动物为生命科学的各个领域提供了 ______。",
+  "options": {
+   "A": "可靠的手段",
+   "B": "有用的技术平台",
+   "C": "先进的工具",
+   "D": "新型的材料"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m007",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______实验动物保种单位保存品系在2000种以上，已基本被国际实验动物界所公认。",
+  "options": {
+   "A": "Jackson 实验室",
+   "B": "英国BK公司",
+   "C": "美国查士利华公司",
+   "D": "美国国立卫生研究院（NIH）"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m008",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "21世纪实验动物生产更趋向于的发展道路。",
+  "options": {
+   "A": "专业化",
+   "B": "商品化",
+   "C": "规模化",
+   "D": "集约化"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m009",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "21世纪动物实验将形成的服务网络。",
+  "options": {
+   "A": "专建专用",
+   "B": "开放性",
+   "C": "政府统一控制",
+   "D": "区域性"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m010",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "功能基因组学将会解决储存在基因组中的遗传语言， ______。",
+  "options": {
+   "A": "揭示基因之间相互作用和关系",
+   "B": "大规模、系统的研究基因功能及其在生理和病理过程中的作用",
+   "C": "揭示单基因和多基因协同表达和功能相互作用的奥秘",
+   "D": "认识、分离、鉴定、克隆所有基因"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m011",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "当前国外实验动物的“3R”运动指的是动物实验的 ______ 。",
+  "options": {
+   "A": "减少",
+   "B": "替代",
+   "C": "废止",
+   "D": "优化"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m012",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "反对或不允许用动物作实验是愚昧的，这是因为 ______。",
+  "options": {
+   "A": "在对人的各种生理现象和病理机制及疾病的防治研究中，实验动物是人的替代者",
+   "B": "实验动物是“活的精密仪器”",
+   "C": "实验动物是医药工业上生产疫苗、诊断用血清、某些诊断用抗原、免疫血清等的重要材料",
+   "D": "实验动物是检验生物医药质量的天平，制药和化工产品如不用实验动物进行安全评价，应用于人类将会造成十分严重的恶果"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m013",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列哪些行为符合“3R ” ______",
+  "options": {
+   "A": "重视动物的生活与实验环境",
+   "B": "分批购买实验动物用于同一动物实验",
+   "C": "采用麻醉镇静、镇痛、安乐死等手段",
+   "D": "给予手术动物良好的术后护理"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m014",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物质量的不标准，会导致 ______",
+  "options": {
+   "A": "科研论文的科学性及可行性降低，科研成果得不到公认",
+   "B": "动物实验的敏感性、重复性差，致使动物浪费严重",
+   "C": "实验动物的大批死亡",
+   "D": "生物制剂、药品的安全性、有效性评价试验得不到承认，影响出口"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m015",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列说法属于实验动物特定含义的是 ______     。",
+  "options": {
+   "A": "经人工培育，遗传背景明确，来源清楚",
+   "B": "人工饲养的动物",
+   "C": "对其携带的微生物、寄生虫实行人工控制",
+   "D": "用于科学实验，药品、生物制品的生产和检定及其他科学研究"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m016",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列哪些是动物福利应包括的内容 ______    。",
+  "options": {
+   "A": "让动物有适当的居所",
+   "B": "减少动物的伤病",
+   "C": "保证动物表达天性的自由",
+   "D": "减少动物恐惧和焦虑的心情"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m017",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物福利除了生理福利，还应有哪些要素组成 ______   。",
+  "options": {
+   "A": "环境福利",
+   "B": "卫生福利",
+   "C": "行为福利",
+   "D": "心理福利"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m018",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "国家《实验动物质量管理办法》规定  ______ 。",
+  "options": {
+   "A": "国家实验动物生产繁育单位的实验动物种子必须由国家种子中心统一引进",
+   "B": "实验动物的生产和使用实行统一的许可证管理制度",
+   "C": "实验动物的质量由科技部直接进行监督管理",
+   "D": "实验动物的质量由国家和省两级监督管理"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m019",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "我国实验动物质量保证体系由  ______组成。",
+  "options": {
+   "A": "动物生产管理中心",
+   "B": "国家和地方实验动物质量检测中心",
+   "C": "国家种子中心",
+   "D": "有关法令规章"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m020",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "我国已建立的实验动物种子中心有  ______。",
+  "options": {
+   "A": "国家啮齿类实验动物种子中心北京中心",
+   "B": "国家啮齿类实验动物种子中心上海分中心",
+   "C": "Beagle犬国家种子中心",
+   "D": "实验兔国家种子中心"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m021",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物许可证包括 ______ 。",
+  "options": {
+   "A": "实验动物管理许可证",
+   "B": "实验动物生产许可证",
+   "C": "实验动物销售许可证",
+   "D": "实验动物使用许可证"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m022",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "需要“实验动物从业人员岗位证书”的人员是  ______。",
+  "options": {
+   "A": "从事实验动物和动物实验的科技人员",
+   "B": "从事实验动物和动物实验的专业管理人员",
+   "C": "从事实验动物和动物实验的技术工人",
+   "D": "实验动物笼器具、垫料生产人员"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m023",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物从业人员上岗考试的内容其中有 ______。",
+  "options": {
+   "A": "实验动物基本概念、动物福利、保护、政策法规",
+   "B": "实验动物质量控制",
+   "C": "实验动物室的设计和建设",
+   "D": "动物实验基础和动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m024",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "国家实验动物种子中心必须具备下列条件 ______。",
+  "options": {
+   "A": "长期从事实验动物保种工作",
+   "B": "有较强的实验动物研究技术力量和基础条件",
+   "C": "有合格的实验动物繁育设施和检测仪器",
+   "D": "有突出的实验动物保种技术和研究成果"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m025",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "从事动物实验人员应 ______。",
+  "options": {
+   "A": "熟练掌握动物实验基本操作技能",
+   "B": "了解有关实验动物和动物实验的管理法规和制度",
+   "C": "取得科技主管部门统一颁发的上岗资格证书",
+   "D": "熟练掌握动物繁育技术"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m026",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列动物属于啮齿类的为______。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "犬",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m027",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物按遗传学控制的原理，可分为______。",
+  "options": {
+   "A": "近交系动物",
+   "B": "杂交群动物",
+   "C": "封闭群动物",
+   "D": "SPF动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m028",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物按微生物学控制的原理，可分为______。",
+  "options": {
+   "A": "无菌动物",
+   "B": "清洁动物",
+   "C": "封闭群动物",
+   "D": "普通动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m029",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列属于近交品系小鼠主要有______。",
+  "options": {
+   "A": "BALB／ｃ",
+   "B": "DBA",
+   "C": "C57BL／6J",
+   "D": "Ｃ3Ｈ"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m030",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小鼠属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m031",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列属于封闭群小鼠主要有______。",
+  "options": {
+   "A": "ICR",
+   "B": "KM",
+   "C": "CFW",
+   "D": "NIH"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m032",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小鼠在生命科学研究中主要应用于______方面。",
+  "options": {
+   "A": "安全和毒性试验",
+   "B": "生物效应和药物效价测定",
+   "C": "药物的筛选",
+   "D": "微生物、寄生虫病学研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m033",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "通过______方法可以判断雌性大鼠已经交配过。",
+  "options": {
+   "A": "阴道涂片",
+   "B": "阴道栓检查",
+   "C": "活动状态",
+   "D": "饮食状况"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m034",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "雌性大鼠处于______可以接受雄行动物的交配。",
+  "options": {
+   "A": "发情前期",
+   "B": "发情期",
+   "C": "静止期",
+   "D": "发情后期"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m035",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常见小鼠的毛色有______。",
+  "options": {
+   "A": "白色",
+   "B": "鼠灰色",
+   "C": "黑色",
+   "D": "棕色"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m036",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列属于近交品系大鼠主要有______。",
+  "options": {
+   "A": "ACI",
+   "B": "SHR",
+   "C": "F344",
+   "D": "BN"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m037",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列属于封闭群大鼠主要有______。",
+  "options": {
+   "A": "Wistar",
+   "B": "SD",
+   "C": "Long-Evans",
+   "D": "Brown-Nor way"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m038",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "大鼠在生物医学研究中的应用价值有______。",
+  "options": {
+   "A": "生理学研究",
+   "B": "营养学研究",
+   "C": "药物学研究",
+   "D": "肿瘤研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m039",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "大鼠的常见毛色有______。",
+  "options": {
+   "A": "白色",
+   "B": "棕色",
+   "C": "黑色",
+   "D": "黄色"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m040",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "大鼠属于______动物。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m041",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "豚鼠属于______动物。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m042",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "豚鼠的外貌特性有______。",
+  "options": {
+   "A": "头大",
+   "B": "无尾",
+   "C": "颈短",
+   "D": "耳圆"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m043",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "体内不能合成维生素C的动物为______。",
+  "options": {
+   "A": "豚鼠",
+   "B": "小鼠",
+   "C": "猕猴",
+   "D": "兔"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m044",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "豚鼠常见的毛色有______等。",
+  "options": {
+   "A": "白花",
+   "B": "黑花",
+   "C": "两色",
+   "D": "沙色"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m045",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "豚鼠的饲养管理过程中应注意______ 。",
+  "options": {
+   "A": "需从外界完全补给VC",
+   "B": "尽可能减少温度的波动",
+   "C": "环境清洁、干燥，经常更换垫料",
+   "D": "饲料新鲜，少更换饲料。"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m046",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "豚鼠在______ 研究等方面有应用价值。",
+  "options": {
+   "A": "免疫学研究",
+   "B": "血清学诊断",
+   "C": "营养学研究",
+   "D": "药理学研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m047",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常用的豚鼠有______品种。",
+  "options": {
+   "A": "英国种",
+   "B": "秘鲁种",
+   "C": "阿比西尼亚种",
+   "D": "安哥拉种"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m048",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______无胆囊。",
+  "options": {
+   "A": "大鼠",
+   "B": "兔",
+   "C": "中国地鼠",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m049",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "地鼠常见的颜色有______等颜色 。",
+  "options": {
+   "A": "野生色",
+   "B": "白色",
+   "C": "褐色",
+   "D": "白褐色"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m050",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______为全年多发情动物。",
+  "options": {
+   "A": "地鼠",
+   "B": "大鼠",
+   "C": "兔",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m051",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "中国地鼠现已培育出的近交系有______。",
+  "options": {
+   "A": "A/GY系F42",
+   "B": "C/GY系F17",
+   "C": "8Aa/GY系",
+   "D": "B/GY系F39"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m052",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "金黄地鼠在______等研究方面有应用价值。",
+  "options": {
+   "A": "肿瘤研究",
+   "B": "糖尿病的研究",
+   "C": "传染病研究",
+   "D": "组织移植"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m053",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "家兔属于______动物。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "爬行纲",
+   "D": "兔形目"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m054",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "家兔生活特性有______。",
+  "options": {
+   "A": "是草食性动物",
+   "B": "喜居安静、清洁、干燥、凉爽、空气新鲜的环境",
+   "C": "耐冷不耐热，有良好的卫生习惯",
+   "D": "有食癖"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m055",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______属于刺激性排卵动物。",
+  "options": {
+   "A": "地鼠",
+   "B": "大鼠",
+   "C": "兔",
+   "D": "猫"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m056",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______有换毛现象。",
+  "options": {
+   "A": "地鼠",
+   "B": "大鼠",
+   "C": "兔",
+   "D": "猫"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m057",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______有假妊娠现象。",
+  "options": {
+   "A": "地鼠",
+   "B": "大鼠",
+   "C": "兔",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m058",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______昼伏夜出。",
+  "options": {
+   "A": "地鼠",
+   "B": "大鼠",
+   "C": "小鼠",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m059",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "兔的颜色有______。",
+  "options": {
+   "A": "白色",
+   "B": "灰色",
+   "C": "黑色",
+   "D": "咖啡色"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m060",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______是草食性动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "地鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m061",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "兔是靠______来散热的。",
+  "options": {
+   "A": "耳",
+   "B": "呼吸",
+   "C": "皮肤",
+   "D": "汗腺"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m062",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物实验中常用的兔的品种有______。",
+  "options": {
+   "A": "大耳白兔",
+   "B": "新西兰兔",
+   "C": "青紫兰兔",
+   "D": "中国本兔"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m063",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "家兔在医学生物学的应用有______。",
+  "options": {
+   "A": "免疫学、急性动物实验",
+   "B": "药品、生物制品的检定",
+   "C": "胆固醇代谢、动脉粥样硬化研究",
+   "D": "皮肤、眼科等方面的研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m064",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬属于______动物。",
+  "options": {
+   "A": "爬行纲",
+   "B": "食肉目",
+   "C": "哺乳纲",
+   "D": "偶蹄目"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m065",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬的生物学特性有______。",
+  "options": {
+   "A": "反应灵敏，适应性强",
+   "B": "视力差",
+   "C": "几乎没有汗腺",
+   "D": "喜吃肉类脂肪，习惯啃骨头"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m066",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬有______神经类型。",
+  "options": {
+   "A": "多血质（活泼型）——均衡的灵活型",
+   "B": "粘液质（安静型）——均衡的迟钝型",
+   "C": "胆汁质（不可抑制型）——不均衡兴奋占优势的兴奋型",
+   "D": "忧郁质（衰弱型）——兴奋和抑制均不发达的类型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m067",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬是______。",
+  "options": {
+   "A": "季节性发情动物",
+   "B": "夏季单发情动物",
+   "C": "冬季单发情动物",
+   "D": "春秋季单发情动物"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m068",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列动物中，______属于季节性发情动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "猫",
+   "C": "小鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m069",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬的发情期分为______。",
+  "options": {
+   "A": "发情前期",
+   "B": "发情期",
+   "C": "发情后期",
+   "D": "静止期"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m070",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬的饲养管理应注意______。",
+  "options": {
+   "A": "需要有运动场地，排除吠声对周围环境的干扰",
+   "B": "注意各种营养成分的配合",
+   "C": "定期驱虫，免疫接种疫苗",
+   "D": "保持环境卫生清洁，做好隔离检疫工作"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m071",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "Beagle犬有______特性。",
+  "options": {
+   "A": "体形小，毛短",
+   "B": "温驯易捕，亲近人",
+   "C": "对环境适应力强，抗病力强",
+   "D": "性成熟早，产仔多"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m072",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "Beagle犬在______等研究方面有应用价值。",
+  "options": {
+   "A": "药理、毒理学实验",
+   "B": "实验外科学",
+   "C": "基础医学研究",
+   "D": "行为学、肿瘤学研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m073",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬的发情季节一般在______。",
+  "options": {
+   "A": "春季",
+   "B": "冬季",
+   "C": "夏季",
+   "D": "秋季"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m074",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猫的生活特性有______。",
+  "options": {
+   "A": "孤独而自由的生活",
+   "B": "牙齿和爪十分尖锐，善捕捉、攀登",
+   "C": "受到机械和化学刺激易发生咳嗽",
+   "D": "平衡感好，瞬膜反应敏感等"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m075",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猫的发情季节在______。",
+  "options": {
+   "A": "春季",
+   "B": "冬季",
+   "C": "夏季",
+   "D": "秋季"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m076",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猫有哪些应用价值______。",
+  "options": {
+   "A": "生理学研究",
+   "B": "药理学研究",
+   "C": "传染性疾病及其它疾病的研究",
+   "D": "疾病动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m077",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猫的饲养管理应注意______。",
+  "options": {
+   "A": "补充维生素",
+   "B": "有活动场地",
+   "C": "做好隔离检疫工作",
+   "D": "环境要求清洁干燥"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m078",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猕猴属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "灵长目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m079",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "通过______可以判断猕猴是否怀孕。",
+  "options": {
+   "A": "雌猴的体征",
+   "B": "月经",
+   "C": "激素实验等检查",
+   "D": "乳头变化"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m080",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______具有颊囊。",
+  "options": {
+   "A": "猕猴",
+   "B": "豚鼠",
+   "C": "地鼠",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m081",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猕猴在______等研究方面有应用价值。",
+  "options": {
+   "A": "生理学研究",
+   "B": "药理学、毒理学研究研究",
+   "C": "传染性疾病及其它疾病的研究",
+   "D": "疾病动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m082",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小型猪属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "偶蹄目",
+   "C": "爬行纲",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m083",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小型猪的生物学特性有______。",
+  "options": {
+   "A": "性格温驯，易于调教",
+   "B": "喜群居，嗅觉灵敏",
+   "C": "到处乱拱的习性",
+   "D": "对外界温、湿度变化敏感"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m084",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小型猪的饲养管理应注意______。",
+  "options": {
+   "A": "防止过肥，过重",
+   "B": "饲喂要定时定量",
+   "C": "饮水要充分供给",
+   "D": "保持清洁卫生的环境"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m085",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "目前国内小型猪常用的品系有______。",
+  "options": {
+   "A": "西双版纳近交系小耳猪",
+   "B": "贵州小型香猪",
+   "C": "广西巴马小型猪",
+   "D": "五指山小型猪"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m086",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "目前国外小型猪常用的品系有______。",
+  "options": {
+   "A": "埃塞克斯（Essen）小型猪",
+   "B": "科西嘉（Corsica）小型猪",
+   "C": "阿咪尼（oh mini）猪",
+   "D": "克劳思咪尼（Clawn mini）小型猪"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m087",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "长爪沙鼠又名______。",
+  "options": {
+   "A": "长爪沙土鼠",
+   "B": "黄耗子",
+   "C": "沙耗子",
+   "D": "蒙古沙鼠"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m088",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "长爪沙鼠属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "仓鼠科",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m089",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "长爪沙鼠的特性有______特点。",
+  "options": {
+   "A": "小型草食动物",
+   "B": "全年多发情动物",
+   "C": "成年鼠易发生咬斗",
+   "D": "有一定的神经质"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m090",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "长爪沙鼠在______等方面有应用价值。",
+  "options": {
+   "A": "细菌学、病毒学、寄生虫研究",
+   "B": "脑神经病、肿瘤的研究",
+   "C": "内分泌学研究",
+   "D": "代谢病研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m091",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______是常年多发情动物。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "猫",
+   "D": "长爪沙鼠"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m092",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鼠兔的换毛季节一般在______。",
+  "options": {
+   "A": "春季",
+   "B": "冬季",
+   "C": "夏季",
+   "D": "秋季"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m093",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "旱獭属于______。",
+  "options": {
+   "A": "哺乳纲",
+   "B": "啮齿目",
+   "C": "松鼠科",
+   "D": "食肉目"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m094",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______是冬眠动物。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "地 鼠",
+   "D": "旱獭"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m095",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______散热是靠呼吸而不是靠出汗。",
+  "options": {
+   "A": "小型猪",
+   "B": "犬",
+   "C": "鸡",
+   "D": "旱獭"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m096",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鸡的饲养管理应注意______。",
+  "options": {
+   "A": "环境温度",
+   "B": "营养要求",
+   "C": "卫生防疫",
+   "D": "空气新鲜"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m097",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______的视觉很敏锐。",
+  "options": {
+   "A": "猪",
+   "B": "猫",
+   "C": "鸽",
+   "D": "犬"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m098",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鱼在水中的气体交换可以通过______来进行。",
+  "options": {
+   "A": "皮肤",
+   "B": "鳃",
+   "C": "肺",
+   "D": "黏液"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m099",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鱼在______等方面有应用价值。",
+  "options": {
+   "A": "胚胎学的研究",
+   "B": "生理生化方面的研究",
+   "C": "内分泌学的研究",
+   "D": "肿瘤学等方面的研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m100",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "青蛙、蟾蜍在饲养过程中应注意_____。",
+  "options": {
+   "A": "蛇害",
+   "B": "环境温度",
+   "C": "水的质量",
+   "D": "饲养密度"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m101",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______在生长过程有变态现象。",
+  "options": {
+   "A": "地鼠",
+   "B": "蟾蜍",
+   "C": "青蛙",
+   "D": "旱獭"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m102",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "牛是______。",
+  "options": {
+   "A": "多胃动物",
+   "B": "单胃动物",
+   "C": "单胃草食物性动物",
+   "D": "多胃草食物动物"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m103",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "马是______。",
+  "options": {
+   "A": "多胃动物",
+   "B": "单胃动物",
+   "C": "单胃草食物性动物",
+   "D": "多胃草食物动物"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m104",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______是单胃草食物性动物。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "羊",
+   "D": "兔"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m105",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______属于哺乳纲、偶蹄目。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "羊",
+   "D": "猪"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m106",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "牛有______特性。",
+  "options": {
+   "A": "反刍动物，采食量大",
+   "B": "牛的睡眠时间很短",
+   "C": "比较耐寒，不耐热",
+   "D": "有补偿性生长特性"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m107",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "马有______特性。",
+  "options": {
+   "A": "性情急噪",
+   "B": "具有较好的记忆能力",
+   "C": "对抗原物质的反应比较敏感",
+   "D": "有特殊的消化系统"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m108",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "绵羊有______特性。",
+  "options": {
+   "A": "绵羊温顺",
+   "B": "喜欢干燥、清洁环境",
+   "C": "怕热、不怕冷",
+   "D": "反刍动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m109",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______是多胃反刍动物。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "绵羊",
+   "D": "兔"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m110",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "爬行类的食性可分______。",
+  "options": {
+   "A": "草食性",
+   "B": "肉食性",
+   "C": "杂食性",
+   "D": "食昆虫性"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m111",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______属于变温动物。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "鱼",
+   "D": "蛇"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m112",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "______属于哺乳纲。",
+  "options": {
+   "A": "牛",
+   "B": "马",
+   "C": "羊",
+   "D": "猪"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m113",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "病毒的微生物学特征有______。",
+  "options": {
+   "A": "只含有一种核酸，DNA或RN",
+   "B": "严格的细胞内寄生，没有完整的酶系统，不能独立的进行生长和繁殖",
+   "C": "对一般的抗生素和作用于微生物代谢途径的药物敏感",
+   "D": "没有核糖体和转运RN"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m114",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "病毒有哪些抵抗力______。",
+  "options": {
+   "A": "病毒对低温的抵抗力强",
+   "B": "所有病毒对电磁辐射都敏感",
+   "C": "大多数病毒能保存于50%甘油中",
+   "D": "酸碱的抵抗力差异不大"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m115",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物病毒可分成______类型。",
+  "options": {
+   "A": "人畜共患病原体",
+   "B": "烈性传染病病原体",
+   "C": "动物的主要传染病病原体",
+   "D": "污染生物制剂的病原体"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m116",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "确诊病毒的存在的微生物学诊断方法______。",
+  "options": {
+   "A": "检查包涵体",
+   "B": "接种动物、鸡胚以及细胞",
+   "C": "应用荧光抗体技术或免疫电镜技术",
+   "D": "血清学等方法"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m117",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "细菌分为______。",
+  "options": {
+   "A": "霉菌",
+   "B": "螺旋菌",
+   "C": "杆菌",
+   "D": "球菌"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m118",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "细菌在生长繁殖过程中，对气体也有要求，其中主要是需要______。",
+  "options": {
+   "A": "氢气",
+   "B": "氧气",
+   "C": "二氧化碳",
+   "D": "二氧化硫"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m119",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "传染性疾病对实验动物生产和使用带来哪些危害______。",
+  "options": {
+   "A": "携带人畜共患病原体，直接危害人类和动物的健康",
+   "B": "影响动物的生产，烈性传染病可导致整个动物群的毁灭",
+   "C": "使整个动物群带毒，带毒群体很难净化，会反复爆发疾病",
+   "D": "干扰实验结果"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m120",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物传染病流行的基本环节是______。",
+  "options": {
+   "A": "传染锁链",
+   "B": "传染源",
+   "C": "传播途径",
+   "D": "传染病易感的动物"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m121",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "以下哪些属于传染源______。",
+  "options": {
+   "A": "患病动物",
+   "B": "污染的垫料、饲料",
+   "C": "外表健康的带菌动",
+   "D": "空气"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m122",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物传染病的流行强度除大流行外，还有______等流行形式。",
+  "options": {
+   "A": "散发性",
+   "B": "地方流行性",
+   "C": "流行性",
+   "D": "爆发"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m123",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "垂直传播方式有______。",
+  "options": {
+   "A": "交配、舔咬等",
+   "B": "经胎盘传播",
+   "C": "经卵传播",
+   "D": "经产道传播"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m124",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物不采用疫苗接种和药物防治疾病原因______。",
+  "options": {
+   "A": "干扰实验结果，而使实验无效",
+   "B": "成为潜在的传染源",
+   "C": "经济上也不合算",
+   "D": "药物无效"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m125",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "主要的灭菌方法有______。",
+  "options": {
+   "A": "热灭菌法",
+   "B": "冷灭菌法",
+   "C": "消毒灵",
+   "D": "Co60辐照灭菌法"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m126",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "主要的消毒方法有______。",
+  "options": {
+   "A": "化学药液浸泡法",
+   "B": "清洗",
+   "C": "熏蒸消毒法",
+   "D": "热消毒法"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m127",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鼠痘的流行病学的特点是______。",
+  "options": {
+   "A": "传染源主要是病鼠和隐性带毒鼠",
+   "B": "皮肤病灶和粪尿向外排毒，污染周围环境",
+   "C": "病毒可经皮肤伤口侵入机体，也可经呼吸道和消化道感染",
+   "D": "一年四季均可发生"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m128",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鼠痘的主要临床症状有______。",
+  "options": {
+   "A": "急性病例，小鼠突然死亡",
+   "B": "一侧或两侧眼睛流泪，角膜溃疡穿孔",
+   "C": "皮肤型，病鼠口鼻及眼睑肿胀破溃",
+   "D": "头面部肿胀，脚肿，断尾或脱脚"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m129",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鼠痘给实验研究带来哪些影响______。",
+  "options": {
+   "A": "突然死亡，实验中断",
+   "B": "慢性病例，出现全身症状，使实验结果混乱",
+   "C": "污染环境，使病毒广泛传播，严重影响科研工作",
+   "D": "隐性感染小鼠，许多应激因素可使病毒激活而使本病流行"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m130",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "淋巴细胞性脉络丛脑膜炎主要临床症状有______。",
+  "options": {
+   "A": "皮肤型",
+   "B": "大脑型",
+   "C": "内脏型",
+   "D": "迟发型疾病"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m131",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "淋巴细胞性脉络丛脑膜炎给实验研究带来哪些影响______。",
+  "options": {
+   "A": "人类感染该疾病可引起流感样症状和脑膜炎",
+   "B": "对机体免疫系统有影响",
+   "C": "对肿瘤学研究具有影响",
+   "D": "对代谢研究有影响"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m132",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鼠肝炎的主要临床症状有哪些______。",
+  "options": {
+   "A": "嗜神经型肝炎病毒常引起中枢神经系统坏死",
+   "B": "嗜肠型肝炎病毒常引起肠内壁损伤",
+   "C": "嗜肝型肝炎病毒可引起肝坏死",
+   "D": "嗜肺型肝炎病毒可引起肺坏死"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m133",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "流行性出血热的流行病学的特点______。",
+  "options": {
+   "A": "自然宿主主要是小型啮齿类动物",
+   "B": "大、小鼠多表现为隐性感染，并长期向外排毒",
+   "C": "污染尘埃飞沫物形成气溶胶吸入感染被认为是最主要的传播途径",
+   "D": "也可以通过胎盘垂直传播"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m134",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "兔病毒性出血热主要临床症状有哪些______。",
+  "options": {
+   "A": "超急性型无任何前兆或稍有呆滞而突然死亡",
+   "B": "急性型精神很差体温高达41℃以上，死前突然兴奋挣扎",
+   "C": "慢性型多见于3月龄小兔，多数病兔可耐受而逐渐康复",
+   "D": "病兔突然死亡，临死前兴奋、挣扎、抽搐、惨叫"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m135",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬瘟热常用的血清学诊断方法有______。",
+  "options": {
+   "A": "中和试验",
+   "B": "补体结合试验",
+   "C": "荧光抗体法",
+   "D": "ELISA试验"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m136",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬瘟热常采用免疫接种的部位______。",
+  "options": {
+   "A": "脑内注射",
+   "B": "皮下注射",
+   "C": "肌肉注射",
+   "D": "静脉注射"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m137",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬细小病毒主要临床症状有______。",
+  "options": {
+   "A": "3～4周龄仔犬多呈急性心肌炎症状，病死率达80%～100%",
+   "B": "5～6周龄幼犬发病初期出现肠炎症状，剧烈腹泻，继而有心肌炎症状",
+   "C": "青年犬多数先发生呕吐，继而腹泻",
+   "D": "老龄犬很少呈显性感染"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m138",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验室诊断犬细小病毒感染的方法有______。",
+  "options": {
+   "A": "电镜与免疫电境观察病毒",
+   "B": "临床症状",
+   "C": "流行特点",
+   "D": "血凝和血凝抑制试验等血清学方法"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m139",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "狂犬病临床表现有______。",
+  "options": {
+   "A": "极度兴奋、狂躁、意识丧失",
+   "B": "极度喜饮水",
+   "C": "局部或全身麻痹",
+   "D": "典型的病理变化为非化脓性脑炎"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m140",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "预防控制狂犬病的措施有______。",
+  "options": {
+   "A": "实验用犬进行疫苗接种",
+   "B": "一旦发病，立即向有关部门报告疫情和扑杀发病动物，彻底消毒环境",
+   "C": "病犬立即进行治疗",
+   "D": "杀死扔掉"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m141",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬病毒性肝炎可分为______。",
+  "options": {
+   "A": "犬肺炎型",
+   "B": "犬神经型",
+   "C": "犬肝炎型",
+   "D": "犬呼吸道型"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m142",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬病毒性肝炎传播的途径有______。",
+  "options": {
+   "A": "产道",
+   "B": "消化道感染",
+   "C": "外寄生虫为媒介传染",
+   "D": "空气通过呼吸道感染"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m143",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬病毒性肝炎主要临床症状有______。",
+  "options": {
+   "A": "精神不振，食欲稍差",
+   "B": "体温升高至40~41℃",
+   "C": "右腹部有压痛，扁桃体发炎",
+   "D": "白细胞总数显著减少，血液凝固时间延长"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m144",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "检测血清中犬病毒性肝炎病毒的抗体的方法有_____。",
+  "options": {
+   "A": "补体结合反应",
+   "B": "ELISA",
+   "C": "间接血凝反应",
+   "D": "荧光"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m145",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬病毒性肝炎给实验研究带来影响有______。",
+  "options": {
+   "A": "犬发病和死亡，造成实验中断",
+   "B": "改变机体的酶系统和免疫反应性，影响实验研究的正常进行",
+   "C": "对实验人员造成危害",
+   "D": "对所有温血动物染病"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m146",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猫泛白细胞减少症临床表现为______。",
+  "options": {
+   "A": "以高热、呕吐、精神萎顿",
+   "B": "高死亡率",
+   "C": "腹泻、高度脱水",
+   "D": "明显的白细胞减少"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m147",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猫泛白细胞减少症传染途径有______。",
+  "options": {
+   "A": "直接接触",
+   "B": "经消化道",
+   "C": "呼吸道",
+   "D": "胎盘垂直"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m148",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猴B病毒病流行病学的特点是______。",
+  "options": {
+   "A": "野生猴B病毒抗体阳性率远高于自繁猴",
+   "B": "不同年龄、性别的猴均可感染B病毒",
+   "C": "不同性别的猴可感染B病毒有差异",
+   "D": "随年龄增长，B病毒抗体阳性率呈上升趋势"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m149",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猴B病毒病主要临床症状有______。",
+  "options": {
+   "A": "口腔病变，表现为水泡性溃疡或局部淋巴结肿大",
+   "B": "皮肤也易出现水泡和溃疡",
+   "C": "大多数猴临床症状明显",
+   "D": "病猴鼻内有少量粘液或脓性分泌物，常并发结膜炎和腹泻"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m150",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猴B病毒病预防控制的措施有______。",
+  "options": {
+   "A": "单笼饲养",
+   "B": "定期检疫，淘汰阳性猴，逐步建立无B病毒感染猴群",
+   "C": "以自繁猴进行实验为主",
+   "D": "对野外捕获的野生猴，严格进行隔离检疫"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m151",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "沙门氏菌病流行病学的特点是______。",
+  "options": {
+   "A": "各种年龄的实验动物均可感染，但幼年实验动物更易感",
+   "B": "患病实验动物和带菌者是本病的主要传染源",
+   "C": "粪便、尿、乳汁以及流产的胎儿等均可排出病菌",
+   "D": "本病一年四季均可发生"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m152",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "沙门氏菌病主要临床症状有______。",
+  "options": {
+   "A": "急性型多呈爆发性流行，发病急，死亡快",
+   "B": "亚急性型动物被毛蓬松，食欲不振、腹泻、呆滞，呈肠炎症状",
+   "C": "慢性型症状较轻，消瘦或下痢样稀便",
+   "D": "部分呈隐性感染"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m153",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "泰泽氏病的流行病学的特点是______。",
+  "options": {
+   "A": "与气候、饲料等因素及饲养管理和卫生条件无关",
+   "B": "幼龄实验动物特别是初断乳的实验动物感染较严重，而且死亡率很高",
+   "C": "患病动物和带菌动物均可成为传染源",
+   "D": "由消化道、呼吸道等途径传播"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m154",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "布氏杆菌病的流行病学的特点是______。",
+  "options": {
+   "A": "传染源是发病动物",
+   "B": "主要传播途径是消化道",
+   "C": "发病动物的精液中有大量的病原菌存在",
+   "D": "可以通过破损的皮肤、粘膜侵入机体"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m155",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "巴氏杆菌病主要临床症状有______。",
+  "options": {
+   "A": "严重的鼻腔炎、副鼻腔炎",
+   "B": "动物肺炎",
+   "C": "嗜肺巴氏杆菌可引起小鼠和大鼠肺炎、中耳炎、结膜炎、皮下溃疡",
+   "D": "神经性疾病"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m156",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "支原体病原体特征有______。",
+  "options": {
+   "A": "能够独立生活的较小的微生物",
+   "B": "可以通过细胞滤器",
+   "C": "没有细胞壁，呈高度多形性",
+   "D": "营养要求不高，生长速度快"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m157",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "支原体病原体流行病学的特点是______。",
+  "options": {
+   "A": "各种年龄的大、小鼠均易感，幼龄鼠更易感",
+   "B": "患病动物和带菌动物是主要传染源",
+   "C": "可经垂直传播途径传染，也可经接触、空气等途径传",
+   "D": "各种应激可促进本病的发生和流行"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m158",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "支原体感染动物给实验研究带来影响主要有______。",
+  "options": {
+   "A": "动物大量死亡，实验中断",
+   "B": "影响生殖产科学方面的研究",
+   "C": "干扰肿瘤学、生殖生物学、基因剔除小鼠等生命科学研究",
+   "D": "关节炎支原体主要侵袭大鼠，引起多发性关节炎"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m159",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "肺炎克雷伯杆菌病的流行病学的特点是______。",
+  "options": {
+   "A": "人不可感染",
+   "B": "本病多呈散发或地方性流行，春秋季节发病",
+   "C": "克雷伯杆菌存在于土壤、水及农产品中",
+   "D": "动物主要是经呼吸道感染，也有经肠道感"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m160",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "肺炎克雷氏杆菌病主要临床症状有______",
+  "options": {
+   "A": "慢性经过性",
+   "B": "呼吸道感染为常见",
+   "C": "颈部淋巴结肿大、肺炎",
+   "D": "可引起肾和肝脓肿"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m161",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "志贺氏菌病的流行病学的特点是______。",
+  "options": {
+   "A": "对人有致病性",
+   "B": "是经消化道感染",
+   "C": "发病猕猴和病原菌携带者是主要的传染病源",
+   "D": "呈散发或地方性流行"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m162",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "预防控制结核病的措施有______。",
+  "options": {
+   "A": "加强检疫、隔离，防止疾病传入",
+   "B": "每年进行2～4次预防性消毒",
+   "C": "定期用结核菌素进行全群检疫",
+   "D": "饲喂犬、猫的肉制品应充分煮沸、消毒，牛乳必须巴氏消毒"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m163",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "支气管败血波氏杆菌病的致病病原菌包括______。",
+  "options": {
+   "A": "支气管波氏杆菌病",
+   "B": "百日咳波氏杆菌",
+   "C": "副百日咳波氏杆菌",
+   "D": "支气管败血波氏杆病"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m164",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "支气管败血波氏杆菌病主要临床症状有______。",
+  "options": {
+   "A": "豚鼠拒食，伴有进行性体重下降和呼吸团难，导致虚脱和死亡，肺炎",
+   "B": "非人灵长类患病动物从鼻腔排出粘液性或粘液脓性鼻漏",
+   "C": "患病家兔分别为鼻炎型和支气管肺炎型",
+   "D": "鼻炎长期不愈，鼻腔流出粘液脓性分泌物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m165",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "支气管败血波氏杆菌病预防控制措施有______。",
+  "options": {
+   "A": "良好的饲养管理",
+   "B": "定期进行健康检查",
+   "C": "豚鼠不可与其他动物饲养在同一个房间内",
+   "D": "可用灭活的菌苗"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m166",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "棒状杆菌病的流行病学的特点是______。",
+  "options": {
+   "A": "呈隐性感染",
+   "B": "机体免疫功能降低时，会呈急性爆发",
+   "C": "专性感染大、小鼠，不分年龄、性别和品系",
+   "D": "各品种间无的差异"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m167",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "棒状杆菌病主要临床症状有______。",
+  "options": {
+   "A": "厌食、衰弱、消瘦、体重减轻",
+   "B": "眼和鼻腔流出分泌物、呼吸困难",
+   "C": "皮肤破溃",
+   "D": "关节肿胀"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m168",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "如何预防控制棒状杆菌病______。",
+  "options": {
+   "A": "对动物进行定期预防治疗",
+   "B": "控制动物饲养和实验的环境",
+   "C": "动物饲养在屏障系统内",
+   "D": "使用清洁级以上级别的动物"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m169",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "根据真菌的形态学特点，可将真菌分为两大类，分别是______。",
+  "options": {
+   "A": "酵母样真菌",
+   "B": "丝状真菌（霉菌）",
+   "C": "浅部真菌",
+   "D": "深部真菌"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m170",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物中常见的病原真菌除了条件致病性真菌外，______也是最常见的两类致病性真菌。",
+  "options": {
+   "A": "浅部真菌",
+   "B": "酵母样真菌",
+   "C": "深部真菌",
+   "D": "丝状真菌（霉菌）"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m171",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "真菌毒素对机体的影响主要是通过______途径实现的。",
+  "options": {
+   "A": "直接影响",
+   "B": "通过污染食物和饲料的间接影响",
+   "C": "通过产生代谢产物影响机体",
+   "D": "通过对动物机体的致癌作用"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m172",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "按照寄生虫对宿主的选择性可以划分为______。",
+  "options": {
+   "A": "暂时寄生虫",
+   "B": "单宿主寄生虫",
+   "C": "多宿主寄生虫",
+   "D": "体内寄生虫"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m173",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "按照寄生虫对寄生宿主及部位的适应性划分为______。",
+  "options": {
+   "A": "固需寄生虫",
+   "B": "单宿主寄生虫",
+   "C": "多宿主寄生虫",
+   "D": "兼性寄生虫"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m174",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "按照寄生虫寄生时间的长短可以划分为______。",
+  "options": {
+   "A": "固需寄生虫",
+   "B": "暂时寄生虫",
+   "C": "永久寄生虫",
+   "D": "兼性寄生虫"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m175",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "按照寄生虫在宿主身体上的寄生部位不同而划分为______。",
+  "options": {
+   "A": "体内寄生虫",
+   "B": "暂时寄生虫",
+   "C": "体外寄生虫",
+   "D": "兼性寄生虫"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m176",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "寄生虫的发育过程通常比较复杂，不同的发育阶段寄生于不同的宿主。如果寄生虫的成虫和幼虫分别寄生于不同的宿主，那么我们常常把宿主分为两类______。",
+  "options": {
+   "A": "第一宿主",
+   "B": "第二宿主",
+   "C": "终末宿主",
+   "D": "中间宿主"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m177",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物寄生虫感染的来源主要有3个，即中间宿主、______",
+  "options": {
+   "A": "终末宿主",
+   "B": "垫料、水和饲料",
+   "C": "传播媒介",
+   "D": "实验人员"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m178",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在实验动物的饲养过程中，对寄生虫的综合防治是极其重要的，其措施主要包括以下三个方面：驱虫以及______。",
+  "options": {
+   "A": "环境卫生",
+   "B": "动物饲养方式",
+   "C": "严格的管理制度",
+   "D": "饲养人员的控制"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m179",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物真菌性疾病主要有两大类______。",
+  "options": {
+   "A": "消化道真菌感染",
+   "B": "皮肤真菌感染",
+   "C": "呼吸道真菌感染",
+   "D": "组织胞浆菌感染"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m180",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物中大鼠、小鼠、豚鼠、兔、沙鼠和灵长类动物感染的真菌主要有______。",
+  "options": {
+   "A": "须发癣",
+   "B": "小孢子菌",
+   "C": "絮状表皮癣菌",
+   "D": "卡氏肺孢子虫"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m181",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在实验动物组织胞浆菌的诊断中，实验室确诊主要有以下两种方法______。",
+  "options": {
+   "A": "刮取动物皮屑进行实验室诊断",
+   "B": "以临床症状判断",
+   "C": "直接用荧光抗体技术检查动物的咽喉分泌物",
+   "D": "用培养的方法分离鉴定病原体"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m182",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "啮齿类动物易感寄生虫较多，而且啮齿类动物尤其是______可以作为中间宿主，从而成为传播病原体的主要媒介。",
+  "options": {
+   "A": "大鼠",
+   "B": "兔",
+   "C": "小鼠",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m183",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "蠕虫病的诊断手段主要有______。",
+  "options": {
+   "A": "临床症状",
+   "B": "生前诊断",
+   "C": "死后诊断",
+   "D": "病理学诊断"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m184",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "蠕虫病的诊断主要有生前诊断和死后诊断两大部分，死后诊断主要是通过对动物进行死亡诊断，收集寄生于动物体的蠕虫的数量并观察虫体对宿主寄生部位造成的病理变化，主要手段就是______",
+  "options": {
+   "A": "虫卵的检查",
+   "B": "成虫的检查",
+   "C": "全身性蠕虫学剖解法",
+   "D": "个别脏器的剖解法"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m185",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物血液内的寄生性原虫主要有伊氏锥虫以及______。",
+  "options": {
+   "A": "焦虫",
+   "B": "住白细胞虫",
+   "C": "贾第虫",
+   "D": "旋毛虫"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m186",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物粪便内的原虫的病原学检查，主要是对______的检查。",
+  "options": {
+   "A": "卡氏肺囊虫",
+   "B": "球虫卵囊",
+   "C": "结肠小袋虫",
+   "D": "弓形虫"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m187",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "弓形虫病的传染源主要有______。",
+  "options": {
+   "A": "患病动物",
+   "B": "正常动物",
+   "C": "免疫能力下降的动物",
+   "D": "带虫动物"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m188",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物中以______对弓形虫最为敏感，豚鼠、兔也能人工感染。此病主要经口、胎盘、皮肤、粘膜感染。秋冬季和早春此病易发。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "地鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m189",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "弓形虫病的诊断方法主要有______。",
+  "options": {
+   "A": "临床症状诊断",
+   "B": "流行病学诊断",
+   "C": "病原学诊断",
+   "D": "血清学诊断"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m190",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "弓形虫病的预防主要是着眼于防止实验动物的饲料、饮水被猫粪便污染，消灭野鼠。为避免人体感染，接触实验动物后要清洗消毒，儿童不要与猫狗玩耍，孕妇更不要与猫接触。治疗可用______合用，效果较好。",
+  "options": {
+   "A": "广谱抗生素",
+   "B": "磺胺类药物",
+   "C": "喹诺酮类药物",
+   "D": "抗菌增效剂"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m191",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "根据兔球虫病的临床症状，可将球虫病分为两大类型______",
+  "options": {
+   "A": "肠球虫病",
+   "B": "肺球虫病",
+   "C": "肝球虫病",
+   "D": "消化道球虫病"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m192",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常见的体外寄生虫主要包括螨、______等几大类型。",
+  "options": {
+   "A": "焦虫",
+   "B": "蚤",
+   "C": "虱",
+   "D": "钩虫"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m193",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物感染体外寄生虫后，常常会引起实验动物皮炎、脱毛、剧痒、囊肿、瘦弱、______。",
+  "options": {
+   "A": "贫血",
+   "B": "死亡",
+   "C": "繁殖力下降",
+   "D": "体温持续升高"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m194",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物螨病主要发生在冬季和秋末夏初，健康动物可通过______而感染，饲养员也可起到传播作用。",
+  "options": {
+   "A": "接触正常动物",
+   "B": "接触患病动物",
+   "C": "空气传播",
+   "D": "接触带有螨虫的用具"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m195",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "疥螨寄生于______。",
+  "options": {
+   "A": "皮下",
+   "B": "皮肤表面",
+   "C": "外耳道",
+   "D": "腹股沟及被毛深部"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m196",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "痒螨寄生于______。",
+  "options": {
+   "A": "皮下",
+   "B": "皮肤表面",
+   "C": "外耳道",
+   "D": "腹股沟及被毛深部"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m197",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物感染螨病的特征性症状主要有皮肤发炎以及______。",
+  "options": {
+   "A": "体重骤降",
+   "B": "剧痒",
+   "C": "脱毛",
+   "D": "异食粪癖"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m198",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "血液寄生虫的易感动物主要有______。",
+  "options": {
+   "A": "犬",
+   "B": "啮齿类动物",
+   "C": "兔",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m199",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常见的实验动物血液寄生虫病主要有______。",
+  "options": {
+   "A": "蛲虫病",
+   "B": "钩口线虫病",
+   "C": "钩虫病",
+   "D": "丝虫病"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m200",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物寄生虫的控制重在预防，加强日常卫生管理水平，______等都是行之有效的方法。",
+  "options": {
+   "A": "消除传染源",
+   "B": "对所有动物进行免疫",
+   "C": "切断传播途径",
+   "D": "淘汰整群动物"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m201",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于染色标记法，错误的是 ______。",
+  "options": {
+   "A": "单一颜色可标记1－10号",
+   "B": "两种颜色只可编到20号",
+   "C": "三种颜色只可编到30号",
+   "D": "四种颜色可编到40号"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m202",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物常用编号方法 ______。",
+  "options": {
+   "A": "染色法",
+   "B": "耳缘剪孔法",
+   "C": "拔毛法",
+   "D": "烙印法"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m203",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "去除动物被毛的方法有 ______。",
+  "options": {
+   "A": "烙印法",
+   "B": "拔毛法",
+   "C": "剃毛法",
+   "D": "脱毛法"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m204",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有关动物被毛的去除正确的是 ______。",
+  "options": {
+   "A": "拔毛法用于慢性实验",
+   "B": "大动物慢性手术时常用剃毛法",
+   "C": "剪毛法是急性实验中常用的方法",
+   "D": "脱毛法所用的脱毛剂是0.9%氯化钠"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m205",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "腹腔和静脉给药麻醉法常用麻醉药是 ______。",
+  "options": {
+   "A": "戊巴比妥钠、硫喷妥钠",
+   "B": "安定",
+   "C": "水合氯醛",
+   "D": "氨基甲酸乙酯"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m206",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有关口服给药法正确的是 ______。",
+  "options": {
+   "A": "药物混入饲料或饮水中让动物自由摄取",
+   "B": "可以采用将药物掺入肉里给犬口服",
+   "C": "此法简便，且给药剂量准确",
+   "D": "兔子口服给药常用灌胃针注入"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m207",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常采用前肢皮下头静脉或后肢外侧小隐静脉注射的动物 ______。",
+  "options": {
+   "A": "豚鼠",
+   "B": "大鼠",
+   "C": "犬",
+   "D": "兔"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m208",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "豚鼠的静脉注射一般采用部位 ______。",
+  "options": {
+   "A": "尾静脉",
+   "B": "耳缘静脉",
+   "C": "前肢皮下头静脉",
+   "D": "后肢小隐静脉"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m209",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猪的静脉注射常采用 ______。",
+  "options": {
+   "A": "耳静脉注射",
+   "B": "颈静脉注射",
+   "C": "小隐静脉注射",
+   "D": "股静脉注射"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m210",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物实验中，采用的注射方法有 ______。",
+  "options": {
+   "A": "皮内、皮下注射",
+   "B": "肌肉静脉注射",
+   "C": "腹腔注射",
+   "D": "鞘内注射"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m211",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "大鼠、小鼠和豚鼠皮下注射部位 ______。",
+  "options": {
+   "A": "耳根部",
+   "B": "颈后肩胛间",
+   "C": "胸部",
+   "D": "腹部两侧"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m212",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "家兔皮下注射部位通常为 ______。",
+  "options": {
+   "A": "背部",
+   "B": "大腿外侧",
+   "C": "耳根部",
+   "D": "腹部"
+  },
+  "answer": [
+   "A",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m213",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "皮内注射应 ______。",
+  "options": {
+   "A": "注射部位脱毛、消毒",
+   "B": "用左手拇指轻轻提起动物皮肤",
+   "C": "针头水平刺入皮下",
+   "D": "注射后皮肤表面出现白色桔皮样隆起"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m214",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "家兔肌肉注射部位 ______。",
+  "options": {
+   "A": "臀部肌肉",
+   "B": "腰椎旁肌肉",
+   "C": "股部肌肉",
+   "D": "前肢肌肉"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m215",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小鼠和大鼠采血方法 ______。",
+  "options": {
+   "A": "剪尾采血",
+   "B": "眼眶后静脉丛采血",
+   "C": "股动脉采血",
+   "D": "断头采血"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m216",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "剪尾采血描述正确的 ______。",
+  "options": {
+   "A": "小鼠剪去尾尖1－2mm",
+   "B": "小鼠每次可取血0.1ml",
+   "C": "大鼠剪去尾尖3－5mm",
+   "D": "大鼠每次可取血2ml"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m217",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "眼眶后静脉丛采血 ______。",
+  "options": {
+   "A": "小鼠一次可采血0.2－0.3ml",
+   "B": "垂直从内眼角刺入",
+   "C": "短期内可重复采血",
+   "D": "大鼠一次可采血0.5ml"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m218",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "犬最常用的采血法是 ______。",
+  "options": {
+   "A": "心脏采血",
+   "B": "颈静脉采血",
+   "C": "前肢内侧皮下头静脉",
+   "D": "后肢外侧小隐静脉"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m219",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "猴采血可以 ______。",
+  "options": {
+   "A": "毛细血管采血、静脉采血",
+   "B": "毛细血管采血可在猴拇指、足跟等处",
+   "C": "后肢皮下静脉、颈外静脉",
+   "D": "需血少时，经毛细血管采血"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m220",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常用实验动物集尿法有 ______。",
+  "options": {
+   "A": "膀胱穿刺法",
+   "B": "代谢笼法",
+   "C": "导尿法",
+   "D": "压迫膀胱法"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m221",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物安乐死的原则有 ______。",
+  "options": {
+   "A": "尽量减少动物痛苦",
+   "B": "方法容易操作",
+   "C": "保证实验人员安全",
+   "D": "不影响动物实验结果"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m222",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "处死实验动物的常用方法有 ______。",
+  "options": {
+   "A": "化学药物致死法",
+   "B": "断头法",
+   "C": "空气栓塞法，急性失血法",
+   "D": "击打法、烙印法"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m223",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "肿瘤研究动物品系的选择应注意哪几点？ ______",
+  "options": {
+   "A": "高癌系",
+   "B": "低癌系",
+   "C": "年龄、体重和性别",
+   "D": "容易诱发"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m224",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物的哪些指标会发生昼夜节律性变化 ______。",
+  "options": {
+   "A": "体温",
+   "B": "血糖",
+   "C": "基础代谢率",
+   "D": "光照"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m225",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物实验用药的影响因素 ______。",
+  "options": {
+   "A": "给药途径",
+   "B": "制剂",
+   "C": "剂量",
+   "D": "动物与人的剂量换算"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m226",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物实验中，对照的方法有 ______。",
+  "options": {
+   "A": "空白对照、实验对照",
+   "B": "标准对照、配对对照",
+   "C": "组间对照、历史对照",
+   "D": "正常值对照"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m227",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列影响动物实验结果的因素哪些属于实验技术方面的因素 ______。",
+  "options": {
+   "A": "温、湿度",
+   "B": "动物选择",
+   "C": "手术技巧",
+   "D": "给药方法"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m228",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "如无特殊要求，选择动物应剔除 ______。",
+  "options": {
+   "A": "怀孕",
+   "B": "哺乳",
+   "C": "健康动物",
+   "D": "有病动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m229",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "会影响实验结果的环境条件 ______。",
+  "options": {
+   "A": "寒冷、炎热",
+   "B": "光照",
+   "C": "通风不良",
+   "D": "噪音"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m230",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "尿液是高渗的动物生活在 ______。",
+  "options": {
+   "A": "淡水中",
+   "B": "海水中",
+   "C": "陆地上",
+   "D": "沙漠中"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m231",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "草食类动物尿液 ______。",
+  "options": {
+   "A": "酸性",
+   "B": "特殊的臭味",
+   "C": "碱性",
+   "D": "粘度高"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m232",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "肉食类动物尿液 ______。",
+  "options": {
+   "A": "酸性",
+   "B": "特殊的臭味",
+   "C": "碱性",
+   "D": "粘度高"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m233",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列哪些实验适宜用犬 ______。",
+  "options": {
+   "A": "条件反射实验",
+   "B": "眼和血管刺激试验",
+   "C": "甲状旁腺摘除试验",
+   "D": "慢性毒性试验"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m234",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "适宜进行外周微循环观察的实验动物及部位是 ______。",
+  "options": {
+   "A": "小鼠耳廓",
+   "B": "金黄地鼠颊囊",
+   "C": "兔耳廓透明窗",
+   "D": "大鼠耳廓"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m235",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有关小鼠的描述正确的是 ______。",
+  "options": {
+   "A": "体型小",
+   "B": "易激怒",
+   "C": "易于饲养管理",
+   "D": "对外来刺激敏感"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m236",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "自身不能合成维生素C的实验动物是 ______。",
+  "options": {
+   "A": "兔",
+   "B": "豚鼠",
+   "C": "猕猴",
+   "D": "大鼠"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m237",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列描述正确的是 ______。",
+  "options": {
+   "A": "豚鼠对人型结核杆菌高度易感",
+   "B": "豚鼠的腹腔是一个天然滤器，有很强的抗微生物感染能力",
+   "C": "家兔对人型结核杆菌也敏感",
+   "D": "豚鼠是结核病诊断及病理研究的首选实验动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m238",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "典型的刺激性排卵动物是 ______。",
+  "options": {
+   "A": "鼠",
+   "B": "犬",
+   "C": "兔",
+   "D": "猫"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m239",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "对吗啡产生中枢抑制的动物是 ______。",
+  "options": {
+   "A": "家犬",
+   "B": "兔",
+   "C": "猴",
+   "D": "人"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m240",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "对吗啡产生中枢兴奋的动物是 ______。",
+  "options": {
+   "A": "猫",
+   "B": "兔",
+   "C": "猴",
+   "D": "小鼠"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m241",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "适宜选用封闭群动物的实验是 ______。",
+  "options": {
+   "A": "人类遗传研究",
+   "B": "药物筛选",
+   "C": "毒性试验",
+   "D": "以上都不是"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m242",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "科学研究中选用近交系大鼠和小鼠是由于 ______。",
+  "options": {
+   "A": "实验结果的准确性",
+   "B": "实验结果的重复性",
+   "C": "近产系动物品系内个体间的遗传一致性",
+   "D": "操作简单"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m243",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "裸鼠的特征有 ______。",
+  "options": {
+   "A": "全身无毛",
+   "B": "先天性无胸腺、T淋巴细胞缺失",
+   "C": "细胞免疫机能缺陷",
+   "D": "对异体移植物几乎无免疫排斥反应"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m244",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "作药物动力学参数测定时选用动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "犬",
+   "D": "猴"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m245",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "作药物分布实验时，选用 ______较好。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "犬",
+   "D": "猴"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m246",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "一般药理研究常选用的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "犬",
+   "D": "猫"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m247",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "一般药理实验，观察循环和呼吸系统指标时常用 ______。",
+  "options": {
+   "A": "犬",
+   "B": "大鼠",
+   "C": "小鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m248",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "一般药理实验，观察循环和呼吸系统时一般不宜用 ______。",
+  "options": {
+   "A": "犬",
+   "B": "大鼠",
+   "C": "小鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m249",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "促智药研究一般使用动物是 ______。",
+  "options": {
+   "A": "健康成年小鼠",
+   "B": "健康成年大鼠",
+   "C": "幼鼠",
+   "D": "老年鼠"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m250",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "镇痛药研究一般选用 ______。",
+  "options": {
+   "A": "雌性",
+   "B": "健康成年雄性小鼠",
+   "C": "健康成年雄性大鼠",
+   "D": "以上都不行"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m251",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "镇咳药筛选的动物首选豚鼠，理由是 ______。",
+  "options": {
+   "A": "对化学刺激很敏感",
+   "B": "对机械刺激很敏感",
+   "C": "刺激喉上神经引起咳嗽",
+   "D": "以上都不是"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m252",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常用实验动物中，有呕吐反射的是 ______。",
+  "options": {
+   "A": "犬",
+   "B": "猴",
+   "C": "猫",
+   "D": "兔"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m253",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常用实验动物中，无呕吐反射的是 ______。",
+  "options": {
+   "A": "兔",
+   "B": "豚鼠",
+   "C": "小鼠",
+   "D": "鸽"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m254",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "利尿药物或抗利尿药物的研究一般选用动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "犬",
+   "D": "兔"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m255",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "适合用于药物对循环系统作用机制分析的动物是 ______。",
+  "options": {
+   "A": "兔",
+   "B": "猫",
+   "C": "豚鼠",
+   "D": "猴"
+  },
+  "answer": [
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m256",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "对封闭群大小鼠而言，正确的是 ______。",
+  "options": {
+   "A": "就整体而言，遗传特性保持相对稳定性",
+   "B": "群内个体具有一定杂合性",
+   "C": "动物实验中接近自然种属的反应特点",
+   "D": "一般不选做药物的LD50实验"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m257",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "不行使麻醉的状态下，切割树鼩的皮肤、肌肉、硬脑膜时的表现 _____。",
+  "options": {
+   "A": "不耐受疼痛",
+   "B": "大量流涎",
+   "C": "无异常行为",
+   "D": "很少挣扎"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m258",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "生殖毒性试验包括 ______。",
+  "options": {
+   "A": "一般生殖毒性试验",
+   "B": "致畸敏感期毒性试验",
+   "C": "围产期毒性试验",
+   "D": "哺乳期毒性试验"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m259",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "一般生殖毒性试验的观察内容有 ______。",
+  "options": {
+   "A": "雄性的特征和生育力",
+   "B": "雌性的交配力及受孕率",
+   "C": "死胎、活胎数",
+   "D": "胎仔外观、内脏、骨骼的变化"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m260",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "致畸敏感期毒性试验主要观察 ______。",
+  "options": {
+   "A": "雌性的交配能力",
+   "B": "黄体数、吸收胎数",
+   "C": "死胎数、活胎数",
+   "D": "胎仔的外观、内脏、骨骼的异常"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m261",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "围产期毒性试验的主要目的是观察 ______。",
+  "options": {
+   "A": "分娩期的长短",
+   "B": "子代的生存、生长、发育及行为",
+   "C": "泌乳情况",
+   "D": "胎仔的外观、骨骼畸形"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m262",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "长期毒性试验的目的是 ______。",
+  "options": {
+   "A": "观察由于蓄积对机体产生的毒性反应及严重程度",
+   "B": "提供毒性反应的靶器官及其损害是否可逆",
+   "C": "确定无毒反应的剂量",
+   "D": "为拟定人用安全剂量提供参考"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m263",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物选择的基本原则是 ______。",
+  "options": {
+   "A": "尽量选择研究对象的功能、代谢、结构及疾病性质与人类相似的动物",
+   "B": "选用解剖、生理特点符合实验目的要求的实验动物",
+   "C": "选择高标准的实验动物",
+   "D": "符合实验动物选择的一般原则"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m264",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "皮肤病学研究中适宜选用的实验动物 ______。",
+  "options": {
+   "A": "裸鼠",
+   "B": "近交系小鼠",
+   "C": "青蛙",
+   "D": "小型猪"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m265",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "建立人类疾病动物模型主要作用和意义 ______。",
+  "options": {
+   "A": "避免人体实验造成的伤害",
+   "B": "应用动物模型可研究平时不易见到的疾病",
+   "C": "可提供发病率低，潜伏期和病程长的疾病的动物模型",
+   "D": "克服困难因素，增加方法学上的可比性"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m266",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物模型设计应遵循的基本原则：_____  。",
+  "options": {
+   "A": "相似性、重复性",
+   "B": "可靠性",
+   "C": "适用性和可控性",
+   "D": "易行性和经济性"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m267",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "保证人类疾病动物模型重复性的措施 ______。",
+  "options": {
+   "A": "尽量选用标准化实验动物",
+   "B": "在标准化动物实验设施内完成动物模型复制工作",
+   "C": "实验者操作技术，熟练程度方面尽可能保持一致",
+   "D": "对动物质量和环境设施的要求并不重要，关键是操作技术"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m268",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "属于按产生原因分类的动物模型是 ______。",
+  "options": {
+   "A": "诱发性动物模型",
+   "B": "自发性动物模型",
+   "C": "疾病的基本病理过程动物模型",
+   "D": "生物医学动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m269",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "属诱发性动物模型的是 ______。",
+  "options": {
+   "A": "物理因素诱发动物模型",
+   "B": "化学因素诱发动物模型",
+   "C": "生物因素诱发动物模型",
+   "D": "复合因素诱发动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m270",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "诱发性动物模型的优点 ______。",
+  "options": {
+   "A": "简单、方便",
+   "B": "有些人类疾病不能用人工方法诱发动物疾病模型",
+   "C": "其它因素容易控制",
+   "D": "短时间复制大量的动物模型"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m271",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "自发性动物模型的优点 ______。",
+  "options": {
+   "A": "种类多",
+   "B": "疾病的发生排除了人为的因素",
+   "C": "疾病的发生发展与人类相应疾病相似",
+   "D": "应用价值很高"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m272",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "影响动物模型质量的因素有 ______。",
+  "options": {
+   "A": "致模因素",
+   "B": "动物因素",
+   "C": "实验技术因素",
+   "D": "环境因素"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m273",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "根据中医症候分类动物模型有 ______。",
+  "options": {
+   "A": "阴虚动物模型",
+   "B": "血虚动物模型",
+   "C": "理气药动物模型",
+   "D": "厥脱症动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m274",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "属于中药理论分类的动物模型 ______。",
+  "options": {
+   "A": "血虚动物模型",
+   "B": "泻下药动物模型",
+   "C": "清热药动物模型",
+   "D": "理气药动物模型"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m275",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "属于T淋巴细胞功能缺陷动物是 ______。",
+  "options": {
+   "A": "裸小鼠",
+   "B": "Beige小鼠",
+   "C": "Beagle犬",
+   "D": "裸大鼠"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m276",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "先天性免疫缺陷动物包括 ______。",
+  "options": {
+   "A": "裸鼠",
+   "B": "CBA/N小鼠",
+   "C": "AIDS小鼠",
+   "D": "SCID小鼠"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m277",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "属于联合免疫缺陷动物的是 ______。",
+  "options": {
+   "A": "SCID小鼠",
+   "B": "T.NK细胞缺陷小鼠",
+   "C": "CBA/N小鼠",
+   "D": "T."
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m278",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "相对裸小鼠而言，用裸大鼠用于人体肿瘤的移植的研究，是因为 ______。",
+  "options": {
+   "A": "体形大",
+   "B": "提供足够的血样",
+   "C": "提供足够的瘤组织",
+   "D": "易于进行外科手术"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m279",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "诱发性动物肿瘤的诱发方式有 ______。",
+  "options": {
+   "A": "物理性诱发",
+   "B": "原位诱发",
+   "C": "异位诱发",
+   "D": "化学性诱发"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m280",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列叙述正确的是 ______。",
+  "options": {
+   "A": "自发性肿瘤更接近人发病情况",
+   "B": "大部分自发性肿瘤动物模型通过人为定向培养而成",
+   "C": "诱发性肿瘤动物模型，诱发因素和条件可人为控制",
+   "D": "以上说法都不正确"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m281",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "被公认为的模式动物有 ______。",
+  "options": {
+   "A": "兔",
+   "B": "果蝇",
+   "C": "线虫",
+   "D": "小鼠"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m282",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "获得遗传工程动物模型的基本技术手段 ______。",
+  "options": {
+   "A": "显微注射转基因技术",
+   "B": "基因定位突变技术",
+   "C": "基因化学诱变技术",
+   "D": "放射性诱变技术"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m283",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "转基因动物在医学研究中主要有哪些方面的应用 ______。",
+  "options": {
+   "A": "在免疫学研究中的应用",
+   "B": "在病毒性疾病研究中的应用",
+   "C": "在遗传病研究中的应用",
+   "D": "在肿瘤学及心血管疾病研究中的应用"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m284",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物科学的重要性可概括 为_。",
+  "options": {
+   "A": "是现代科学技术的重要组成部分",
+   "B": "是生命科学的基础和条件",
+   "C": "是衡量一个国家或一个科研单位科学研究水平的重要标志",
+   "D": "新的科学技术革命更需要实验动物科学"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m286",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列哪些是由国家科技部颁布的有关实验动物管理的政策法规",
+  "options": {
+   "A": "《实验动物管理条例》",
+   "B": "《实验动物质量管理办法》",
+   "C": "《关于善待实验动物的指导性意见》",
+   "D": "《北京市实验动物管理条例》"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m287",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "目前，我国己设立的国家实验动物质量检测中心 有_。",
+  "options": {
+   "A": "中国药品生物制品检定所",
+   "B": "中国医学科学院实验动物研究所",
+   "C": "上海生物制品研究所",
+   "D": "中国农业科学院上海寄生虫研究所"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m288",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "国家实验动物种子中心的主要任务 是_。",
+  "options": {
+   "A": "引进、收集和保存实验动物品种、品系",
+   "B": "研究实验动物保种新技术",
+   "C": "培育实验动物新品种、品系",
+   "D": "为国内外用户提供标准的实验动物种子"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m289",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "国内在实验动物学领域有哪些重要的网 站_。",
+  "options": {
+   "A": "http://www.Lascn.net",
+   "B": "www.sydw.com",
+   "C": "www.slaccas.com",
+   "D": "www.isdw.org"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m290",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "国家实验动物控制标准有哪 些_。",
+  "options": {
+   "A": "实验动物微生物学等级及监测",
+   "B": "实验动物寄生虫学等级及监测",
+   "C": "哺乳类实验动物的遗传质量控制",
+   "D": "实验动物配合饲料、环境及设施控制"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m291",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "亚系的命名方法是在原品系的名称后加一道斜线，斜线后标明亚系的符号。亚系的符号可以是_。",
+  "options": {
+   "A": "数字",
+   "B": "培育或产生亚系单位或人的缩写英文名称",
+   "C": "数字后再加保持者的缩写英文名称",
+   "D": "以上都不是"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m292",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列亚系实验动物命名正确的是 _。",
+  "options": {
+   "A": "DBA/1",
+   "B": "A/HE",
+   "C": "C57BL/6J",
+   "D": "BALB/c"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m293",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "杂交群动物主要特性 _。",
+  "options": {
+   "A": "具有杂交优势，生命力强，适应性和抗病力强，繁殖旺盛",
+   "B": "很大的程度上可以克服因近交繁殖所引起的近交衰退现象",
+   "C": "具有与近交系动物基本相似的遗传均质性",
+   "D": "以上说法都不正确"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m294",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "近交系小鼠发生遗传漂移的原因有 _。",
+  "options": {
+   "A": "外来基因组杂交进一个近交系",
+   "B": "近交系的基因在某些位点上仍存在杂合性",
+   "C": "DNA序列突变导致遗传突变",
+   "D": "以上说法都不正确"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m295",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "对实验动物进行微生物学、寄生虫学质量控制是因为 _。",
+  "options": {
+   "A": "携带人畜共患病病原体，直接威胁人类和动物的健康",
+   "B": "烈性传染病可导致整个动物群毁灭",
+   "C": "整个动物群带毒，带毒群体难以净化，会反复爆发疾病",
+   "D": "干扰实验结果导致实验中止、重复性差，造成人力、物力和时间的极大浪费"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m296",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "与普通动物相比，无菌动物有哪些特征 _。",
+  "options": {
+   "A": "无菌动物早期生长较慢、性成熟较晚、产仔数量少但成活率高、寿命较长",
+   "B": "无菌动物消化功能较普通动物差，肝脏重量下降、解毒能力差，心肾器官变小",
+   "C": "无菌动物由于缺乏微生物的刺激，免疫系统发育不良",
+   "D": "无菌动物盲肠肥大"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m297",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列哪些是实验动物寄生虫引起人畜共患的疾病 _。",
+  "options": {
+   "A": "弓形虫病",
+   "B": "囊虫病",
+   "C": "蛔虫病",
+   "D": "各种螨虫引起的皮肤搔痒等皮肤病"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m298",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物寄生虫学检测方法主要有 _。",
+  "options": {
+   "A": "用肉眼观察或借助于放大镜对动物进行仔细观察",
+   "B": "透明胶带粘取法",
+   "C": "被毛检查法",
+   "D": "皮肩刮取法"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m299",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常用的啮齿类实验动物有_。",
+  "options": {
+   "A": "小鼠、兔",
+   "B": "膝鼠、地鼠",
+   "C": "小鼠、大鼠",
+   "D": "沙鼠、旱獺"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m300",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "小鼠是一种产后发情的动物，在性周期的哪些阶段可接受雄性动物的交配 _",
+  "options": {
+   "A": "发情期",
+   "B": "发情后期",
+   "C": "静止期",
+   "D": "发情前期"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m301",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列说法正确的是   。",
+  "options": {
+   "A": "雌鼠生殖器与肛门之间的距离较短且中间连线无毛",
+   "B": "雌鼠生菹器与肛门之间的距离较长且中间连线无毛",
+   "C": "雄鼠生殖器与肛门之间的距离较短且中间连线有毛",
+   "D": "雄鼠生殖器与肛门之间的距离较长且中间连线有毛"
+  },
+  "answer": [
+   "A",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m303",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在生活习性上，下列哪些动物群居性较好",
+  "options": {
+   "A": "兔",
+   "B": "小鼠",
+   "C": "大鼠",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m304",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在生物学研究中使用量由高到低排列正确的是 。",
+  "options": {
+   "A": "小鼠、大鼠，兔",
+   "B": "小鼠、大鼠，豚鼠",
+   "C": "藤鼠、兔、犬",
+   "D": "兔、豚鼠、犬"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m305",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "—般情况下，妊娠期约60天的有 _。",
+  "options": {
+   "A": "小鼠",
+   "B": "兔",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m306",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在分类学上属于哺乳纲、食肉目的有 。",
+  "options": {
+   "A": "猫",
+   "B": "犬",
+   "C": "小鼠",
+   "D": "大鼠"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m307",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在分类学上属于哺乳纲、偶蹄目的_。",
+  "options": {
+   "A": "小型猪",
+   "B": "马",
+   "C": "牛",
+   "D": "羊"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m308",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在生物学上属于杂食性的动物_。",
+  "options": {
+   "A": "小型猪",
+   "B": "猕猴",
+   "C": "兔",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m309",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "树駒在生物医学研究中有哪些应用 。",
+  "options": {
+   "A": "甲型肝炎的研究",
+   "B": "乙型肝炎的研究",
+   "C": "肿瘤及病毒学的研究",
+   "D": "胆石症的研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m310",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列有关实验动物妊娠期长短，说法正确的是_。",
+  "options": {
+   "A": "小鼠妊娠期时间比豚鼠长",
+   "B": "小鼠妊娠期时间比地鼠长",
+   "C": "地鼠妊娠期时间比豚鼠短",
+   "D": "豚鼠妊娠期时间比地鼠短"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m311",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有关犬在实验研究中的作用，下列说法不正确的是 。",
+  "options": {
+   "A": "犬的皮肤汗腺发达，是散热的主要器官",
+   "B": "犬的神经、血液循环系统发达，适用于失血性休克、条件反射等实验研究",
+   "C": "用犬做条件反射时，常用红绿信号作为条件刺激",
+   "D": "犬的消化系统不发达，不适合进行消化系统的慢性实验"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m312",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "树駒属于_动物.",
+  "options": {
+   "A": "爬行纲",
+   "B": "啮齿目",
+   "C": "哺乳纲",
+   "D": "灵长目"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m313",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物传染病的传播途径可分为水平传播和垂直传播，其中水平传播的方式包括_。",
+  "options": {
+   "A": "空气飞沫传播",
+   "B": "水、食物、垫料传播",
+   "C": "虫媒传播",
+   "D": "经胎盘传播"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m314",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "以下可经胎盘传播的包括 _。",
+  "options": {
+   "A": "支原体",
+   "B": "淋巴细胞性脉络丛脑膜炎病毒",
+   "C": "鸡白血病病毒",
+   "D": "沙门菌"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m315",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列疾病的传播属于垂直传播的有 _。",
+  "options": {
+   "A": "支原体",
+   "B": "淋巴细胞性脉络丛脑膜炎病毒",
+   "C": "鸡白血病病毒",
+   "D": "犬疱疹病毒"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m316",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物传染病具有一定的流行强度，它包括哪几种形式 _。",
+  "options": {
+   "A": "流行范围",
+   "B": "传播速度",
+   "C": "发病率的高低",
+   "D": "病例间的联系程度"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m318",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "许多实验动物可感染沙门菌，最常见的是_。",
+  "options": {
+   "A": "鼠伤寒",
+   "B": "肠炎沙门菌",
+   "C": "流感样症状",
+   "D": "脑膜炎"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m320",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "哺乳期约21天的实验动物有_。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m321",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有冬眠现象的哺乳动物",
+  "options": {
+   "A": "青蛙",
+   "B": "蟾蜍",
+   "C": "旱獭",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m322",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "--属于变温动物，可根据外界环境来调节体温。",
+  "options": {
+   "A": "大鼠",
+   "B": "鱼",
+   "C": "蛇",
+   "D": "鸡"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m323",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物应用疫苗或治疗剂可能干扰实验结果，而使实验无效如使用抗生素或磺胺类药物可使动物的  _等脏器产生毒性损伤，影响实验结果。",
+  "options": {
+   "A": "肝",
+   "B": "胆",
+   "C": "肾",
+   "D": "胃肠道"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m324",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物对某一病原体的易感性高低与病原体的种类和毒理强弱有关，但实验动物特异的免疫状态也是决定状态。一般可采用疫苗的有_。",
+  "options": {
+   "A": "大鼠",
+   "B": "犬",
+   "C": "猫",
+   "D": "猴"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m325",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "实验动物的隔离措施主要用于 _。",
+  "options": {
+   "A": "新引入的动物",
+   "B": "患病动物",
+   "C": "可疑感染动物",
+   "D": "将要死亡的动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m326",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "标准体重的实验动物给药量，下列说法正确的 有_。",
+  "options": {
+   "A": "小鼠腹腔注射给药量应该不超过1.0ml",
+   "B": "大鼠腹腔注射给药量应该不超过2.0ml",
+   "C": "猫腹腔注射给药量应该不超过5.0ml",
+   "D": "兔子腹腔注射给药量应该不超过5.0ml"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m327",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列做法中，不符合《实验动物管理条例》的是_。",
+  "options": {
+   "A": "实验动物的保种、饲育不一定要采用国内或国外公认的品种、品系",
+   "B": "应用实验动物应当根据不同的实验目的，选用相应的合格实验动物",
+   "C": "实验动物工作单位从国外进口实验动物原种，无须向国家科术部指定的保种、育种和质量监测单位登记",
+   "D": "实验动物繁育室和动物实验室应设在同一区域，按同样的要求进行管理"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m328",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于实验动物工作人员的管理，下列说法正确 的_。",
+  "options": {
+   "A": "专业从事实验工作的单位，应当根据需要配备适当比例的高、中和初级科技人员和饲育人员",
+   "B": "各类实验动物工作人员必须取得从业人员上岗证，并持证上岗",
+   "C": "各类实验动物工作人员必须遵守实验动物管理法规、制度，熟练掌握操作规程",
+   "D": "实验动物工作人员必须具备大专以上学历"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m329",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有关实验动物许可证的监督和管理，错误的是_。",
+  "options": {
+   "A": "出售实验动物时，可不提供实验动物质量合格证",
+   "B": "在同一单位内，如高等院校，实验动物许可证各部门可共用",
+   "C": "许可证实行年检管理制度",
+   "D": "许可证有效期满，无需重新审查即可发证"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m330",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列小鼠命名与其表示的意义相符的是_。",
+  "options": {
+   "A": "CBA/J表示CBA近交系的亚系",
+   "B": "(C57BL/6XDBA/2)F,表示由C57BL/6和DBA/2杂交的子一代动物",
+   "C": "CXB1可表示由BALB/c与C57BL两个近交系杂交育成的重组近交系",
+   "D": "B10.129—\" —12'表示该同源导入近交系的遗传背景为129/J,导入B10的基因为\"一12*,基因提供者为近交系B10"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m331",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "肯定一个实验结果最好采用两种以上的动物进行比较观察，常用的实验序列是。",
+  "options": {
+   "A": "小鼠、大鼠、犬、猴",
+   "B": "小鼠、大鼠、犬、小型猪",
+   "C": "小鼠、大鼠、猴、小型猪",
+   "D": "大鼠、小鼠、猴、小型猪"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m332",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物对实验处理的反应可以用以下公式表示：R=(A+B+C)*D+E,对此公式的意义的解释正确的是_。",
+  "options": {
+   "A": "A表示品种品系特有的反应",
+   "B": "B表示动物种的共同反应",
+   "C": "(A+B+C)可总括为动物的遗传因素",
+   "D": "D表示环境因素"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m333",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "影响实验动物的环境因素有多种，其中属于生物因素的是 _。",
+  "options": {
+   "A": "温度",
+   "B": "饲养密度",
+   "C": "社会地位",
+   "D": "微生物"
+  },
+  "answer": [
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m334",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "感染性动物实验设施管理的SOP主要有 _。",
+  "options": {
+   "A": "—般管理SOP",
+   "B": "特殊管理SOP",
+   "C": "安全设备SOP",
+   "D": "动物实验SOP"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m335",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "解决动物保护与利用动物的矛盾的叙述正确的是 _。",
+  "options": {
+   "A": "不再允许使用实验动物进行科学实验",
+   "B": "寻求动物的替代物或替代方法（技术）",
+   "C": "科学、合理地使用动物，包括合理开发动物资源和善待动物",
+   "D": "把动物保护和动物利用人为地对立起来，对动物保护不予理睬"
+  },
+  "answer": [
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m336",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于动物实验的说法正确的 有_。",
+  "options": {
+   "A": "动物实验是人类有目的地探索未知世界的一种行为",
+   "B": "动物实验是探索生命奥秘的必经之路",
+   "C": "动物实验应该严格设计各项条件",
+   "D": "在动物实验中应选用高级别的并符合国家标准的实验动物"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m337",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常见的麻醉剂_有_。",
+  "options": {
+   "A": "戊四氮",
+   "B": "美解眠",
+   "C": "的卡因",
+   "D": "氯胺酮"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m340",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常见的复苏与抢救用药有_",
+  "options": {
+   "A": "碳酸氢钠",
+   "B": "肾上腺素",
+   "C": "的卡因",
+   "D": "利多卡因"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m342",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于实验动物鸡，下列说法正确的有_。",
+  "options": {
+   "A": "鸡的正常体温是41.5‘C",
+   "B": "鸡耐寒怕热，没有汗腺",
+   "C": "鸡没有膀胱",
+   "D": "鸡散热主要靠伸展双翅，流涎"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m344",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鸡胚能生产的生物疫苗有_。",
+  "options": {
+   "A": "小儿麻疹疫苗",
+   "B": "黄热病疫苗",
+   "C": "狂犬病疫苗",
+   "D": "猪瘟疫苗"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m345",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鸡胚能生产的疫苗有_。",
+  "options": {
+   "A": "狂犬病疫苗",
+   "B": "鸡新城疫I系苗",
+   "C": "马立克氏疫苗",
+   "D": "山羊传染性胸膜肺炎浓缩苗"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m346",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列说法正确的 有_。",
+  "options": {
+   "A": "鸡的红细胞呈椭圆形，核大，染色后胞浆呈红色，核为深紫色，在炎症吞噬反应试验中，可以用鸡红细胞作为炎性渗出液内白细胞的吞噬异物，观察吞噬功能和过程",
+   "B": "鸡马立克氏病是由疱疹病毒引起的肿瘤病",
+   "C": "可以采取摘除公鸡睾丸，进行雄性激素代谢的研究",
+   "D": "鸡可以作为研究高血脂症、动脉粥样硬化的动物模型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m348",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "订购实验动物需要加强计划性，主要原因 有_o",
+  "options": {
+   "A": "实验动物可供使用的时间短",
+   "B": "供应使用量的峰谷落差很大，使用的规格要求千变万化",
+   "C": "国内大型实验动物中心很少，一般实验动物保有量不是很大，不制定计划很可能买不到合适的动物",
+   "D": "繁殖规律的难控性，繁殖生产的必要周期"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m349",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "鸡可用于感染性疫病的研究，如支原体感染引起 的_。",
+  "options": {
+   "A": "肺炎",
+   "B": "关节炎",
+   "C": "慢性呼吸道疾病",
+   "D": "卵巢炎"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m350",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "在营养学研究中，鸡可以用 于_的研究。",
+  "options": {
+   "A": "B族维生素缺乏症",
+   "B": "碘缺乏症",
+   "C": "维生素D缺乏症",
+   "D": "钙磷代谢的调节"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m351",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于鸽在生物医学研究中应用，下列说法正确的 有_。",
+  "options": {
+   "A": "鸽的听觉和视觉非常发达，对于姿势的平衡反应也很敏锐。故在生理学实验中常用鸦观察迷路与姿势的关系",
+   "B": "当破坏鸽子一侧半规管后，其肌紧张协调发生障碍，运动时会失去正常的姿势，但静止时不会",
+   "C": "可用切除鸽大脑半球的方法来观察其大脑半球的一般功能",
+   "D": "单纯切除鸽大脑皮层对其正常生活影响不大"
+  },
+  "answer": [
+   "A",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m352",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于负的生物学特性，下列说法正确的有_。",
+  "options": {
+   "A": "鱼类属于变温动物",
+   "B": "现已被开发利用做动物实验的鱼类达100种，极少数(如黄鱼等)己能在实验条件下人工饲养繁菹，但多数实验用鱼，均为从市场上购买或直接从水中捕捞",
+   "C": "金的皮肤具有很强的气体交换功能",
+   "D": "鱼真皮内含有色素细胞，因而鱼的皮肤具有各种颜色"
+  },
+  "answer": [
+   "A",
+   "B",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m353",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "动物实验需要做好的准备工作有_。",
+  "options": {
+   "A": "实验场所",
+   "B": "仪器、药品、试剂",
+   "C": "实验动物",
+   "D": "动物饲养笼器具及饲料饮水等"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m354",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "关于鱼的生物学特性下列说法正确的有_。",
+  "options": {
+   "A": "消化系统比哺乳类简单得多，具有哺乳类大多数内分泌腺及特定的内分泌组织，有脑垂体、松果体、肾上腺等",
+   "B": "鱼泌尿系统比较完善，终端为尿生殖孔，且其繁殖行为多样，有卵生的，也有胎生的",
+   "C": "鱼的肾脏不仅有排泄功能.还是一个重要的造血器官",
+   "D": "鱼的心脏为两腔，心房心室各一个"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m355",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "维生素分为脂溶性维生素和水溶性维生素两大类，下列属于脂溶性维生素的有。",
+  "options": {
+   "A": "维生素A",
+   "B": "维生素D",
+   "C": "维生素E",
+   "D": "维生素K    E.维生素B6"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m357",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "常见的麻醉剂 有_。",
+  "options": {
+   "A": "水合氣醛",
+   "B": "1%盐酸普鲁卡因",
+   "C": "可拉明",
+   "D": "尼可刹米"
+  },
+  "answer": [
+   "A",
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m358",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "魚在肿瘤学方面的研究，说法正确的有_。",
+  "options": {
+   "A": "fe体很多组织都可发生肿瘤病变，无论自发性或诱发性肿瘤都较多，是理想的肿瘤研究的动物模型",
+   "B": "罗非鱼的肝脏、腮、眼、肾等组织器官易发生肿瘤",
+   "C": "二乙基亚硝胺易致金鱼肝癌",
+   "D": "鱼类是肿瘤研究的新资源，而且肿瘤有生物学特性与人类肿瘤相似"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m359",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "影响动物实验结果的动物因素 有_。",
+  "options": {
+   "A": "动物的种属",
+   "B": "动物的品种和品系",
+   "C": "动物的年龄",
+   "D": "动物的生理状态"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m360",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "蛙在生物医学研究中的应用_有_。",
+  "options": {
+   "A": "离体蛙心能维持收缩相当长的时间，利用这一特点，可以研究心脏的生理功能和药物对心脏的作用",
+   "B": "蛙类的腓肠肌和坐骨神经是研究外周神经功能和药物对周围神经、神经终板作用理想材料",
+   "C": "用青蛙的腹直肌，可以鉴定胆碱能药物，蛙类后肢血管清晰明显，用灌注法可以观察肾上腺素药和乙酰胆碱对血管的作用",
+   "D": "用于脊髓休克、脊髄反射和观察反射弧分布的实验研究，还可用于比较发育学、移植免疫学、肢体再生、致畸药物筛选、激素测定及肿瘤学方面的研究"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m361",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "马可以用 于_等方面的研究。",
+  "options": {
+   "A": "抗银环蛇毒马血清",
+   "B": "胎儿甲种球蛋白血清",
+   "C": "抗白喉血清",
+   "D": "抗破伤风抗血清"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m362",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "马能用 于_等遗传疾病方面的研究。",
+  "options": {
+   "A": "无虹膜症",
+   "B": "小脑退化症",
+   "C": "白斑病",
+   "D": "先天愚型"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m363",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "有哪些实验环境方面的因素会影响动物实验的结 果_。",
+  "options": {
+   "A": "温度和湿度",
+   "B": "光照",
+   "C": "麻醉深度",
+   "D": "动物饲养密度"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m364",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "染色法编号常用染液 有_。",
+  "options": {
+   "A": "3%~5%苦味酸溶液",
+   "B": "0.5%的中性品红溶液",
+   "C": "2%的硝酸银溶液",
+   "D": "10%的氨基黑溶液"
+  },
+  "answer": [
+   "A",
+   "B",
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s197",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "病毒是自然界已知的________的微生物。",
+  "options": {
+   "A": "最小",
+   "B": "中等",
+   "C": "最大",
+   "D": "大小难测"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s198",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "病毒对干燥的抵抗力与________有关。",
+  "options": {
+   "A": "病毒的分布",
+   "B": "病毒的大小",
+   "C": "病毒的种类",
+   "D": "病毒的形状"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s199",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "所有病毒在pH值为________时都比较稳定。",
+  "options": {
+   "A": "7",
+   "B": "3",
+   "C": "10",
+   "D": "5"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s200",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大多数病毒能保存于________甘油中。",
+  "options": {
+   "A": "30%",
+   "B": "50%",
+   "C": "75%",
+   "D": "100%"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s201",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "确诊病毒的存在可以通过检查________、接种动物和鸡胚以及细胞、应用荧光抗体技术或免疫电镜技术、血清学等方法来确定病毒的存在。",
+  "options": {
+   "A": "细胞",
+   "B": "组织",
+   "C": "包涵体",
+   "D": "器官"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s202",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "确定实验动物病毒性疾病，除了确诊病毒的存在，还可以通过检查________。",
+  "options": {
+   "A": "有无特异的流行病学存在",
+   "B": "有无特异的临床症状存在",
+   "C": "有无特异的病毒抗体存在",
+   "D": "有无特异的发生与分布"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s203",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "细菌是一种单细胞的微生物，一般要在________下才能看见。",
+  "options": {
+   "A": "放大镜",
+   "B": "显微镜",
+   "C": "望远镜",
+   "D": "电镜"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s204",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "细菌的外部形态较简单，仅有3种基本类型，即球状、杆状和________。",
+  "options": {
+   "A": "扁平状",
+   "B": "螺旋状",
+   "C": "柱状",
+   "D": "锥形"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s205",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "细菌有________、细胞膜、细胞浆、及细胞核等基本构造。",
+  "options": {
+   "A": "细胞壁",
+   "B": "细胞连接",
+   "C": "细胞纤维",
+   "D": "细胞孔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s206",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "细菌的化学组成中，________占主要成分。",
+  "options": {
+   "A": "蛋白",
+   "B": "水",
+   "C": "脂肪",
+   "D": "碳水化合物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s207",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "细菌的化学组成中固形物质由C、H、O、N四大元素构成，占菌体总重量的_______。",
+  "options": {
+   "A": "30%－35%",
+   "B": "10%－15%",
+   "C": "50%－65%",
+   "D": "75%－80%"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s208",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "不同生长期的细菌比重不同，一般均大于________。",
+  "options": {
+   "A": "3",
+   "B": "4",
+   "C": "2",
+   "D": "1"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s209",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "细菌的细胞壁和细胞浆均参与________的调节。",
+  "options": {
+   "A": "大气压",
+   "B": "比重",
+   "C": "渗透压",
+   "D": "舒张压"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s210",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "任何细菌生长繁殖均需要合适的营养条件、________、气体、pH值和渗透压。",
+  "options": {
+   "A": "适宜的空间",
+   "B": "适宜的环境温度",
+   "C": "适宜的容器",
+   "D": "适宜的实验室"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s211",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "理化因素对细菌的化学成分和________影响极大，因此可以用它来达到杀菌或抑菌的目的。",
+  "options": {
+   "A": "新陈代谢",
+   "B": "比重",
+   "C": "渗透压",
+   "D": "形态和大小"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s212",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对细菌影响较大的理化因素有温度、________、光线、声波、渗透压、消毒剂、pH值等。",
+  "options": {
+   "A": "噪音",
+   "B": "湿度",
+   "C": "换气",
+   "D": "气流速度"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s213",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________对细菌有明显的致死作用，是最有效的灭菌方法。",
+  "options": {
+   "A": "高湿",
+   "B": "高温",
+   "C": "低温",
+   "D": "低湿"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s214",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "pH值影响细菌的________，可以减弱或抑制细菌的生长，甚至引起细菌的死亡。",
+  "options": {
+   "A": "分布",
+   "B": "流行",
+   "C": "诊断方法",
+   "D": "营养代谢活动"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s215",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "传染病是指由病原微生物引起，具有一定的________和临床表现，并具有传染性的一类疾病。",
+  "options": {
+   "A": "潜伏期",
+   "B": "前驱期",
+   "C": "明显期",
+   "D": "转归期"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s216",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "传染病的发展过程包括以下阶段________。",
+  "options": {
+   "A": "前驱期、明显期(发病期)和转归期3个阶段",
+   "B": "潜伏期、前驱期、明显期(发病期)和转归期4个阶段",
+   "C": "潜伏期、前驱期、和转归3个阶段",
+   "D": "明显期(发病期)和转归期2个阶段"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s217",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物传染病的基本特征是能在实验动物之间________地通过媒介物（生物或非生物的传播媒介）相互传播，构成流行。",
+  "options": {
+   "A": "水平",
+   "B": "直接或间接",
+   "C": "垂直",
+   "D": "被动"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s218",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对传染性疾病的_______和控制是保证实验动物质量和动物实验结果准确必要的条件。",
+  "options": {
+   "A": "预防",
+   "B": "消毒",
+   "C": "治疗",
+   "D": "灭菌"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s219",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________、传播途径及对传染病易感的动物，称为传染锁链。",
+  "options": {
+   "A": "传染源",
+   "B": "空气",
+   "C": "饮水",
+   "D": "饲料"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s220",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "病原体由传染源排出后，经一定的方式再侵入到其他________所经的途径称为传播途径。",
+  "options": {
+   "A": "器具",
+   "B": "节肢动物",
+   "C": "易感动物",
+   "D": "传播媒介"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s221",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物的分泌物及排泄物污染的设施、饲料、饮水、垫料、空气和用具均可成为病原体的________。",
+  "options": {
+   "A": "传播媒介",
+   "B": "易感动物",
+   "C": "传染源",
+   "D": "水平传播"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s222",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物对某一病原体易感性的高低不仅与病原体的种类和毒力强弱有关，而且与实验动物特异的________有关。",
+  "options": {
+   "A": "品种品系",
+   "B": "免疫状态",
+   "C": "体形大小",
+   "D": "饲养密度"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s223",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物传染病的流行范围、传播速度、发病率的高低以及________称为流行强度。",
+  "options": {
+   "A": "临床症状",
+   "B": "动物发病时间",
+   "C": "传播方式",
+   "D": "病例间的联系程度"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s224",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "散发性是指传染性疾病在一定时间内呈________出现，而且各个病例在时间和空间上没有明显联系的现象。",
+  "options": {
+   "A": "局限性传播",
+   "B": "散在性发生或零星",
+   "C": "一定地区或动物群",
+   "D": "面积传播"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s225",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大流行性是指某些疾病具有来势猛、传播快、________、波及面广的流行现象。",
+  "options": {
+   "A": "对实验干扰大",
+   "B": "受害动物比例大",
+   "C": "对饲养和实验人员威胁大",
+   "D": "对大动物影响更大"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s226",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物应用疫苗或治疗制剂可能干扰实验结果，而使实验无效。如使用抗生素或磺胺类药物可使动物的________等脏器组织产生毒性损伤，影响实验结果。",
+  "options": {
+   "A": "肝、胆、肾",
+   "B": "胃肠道",
+   "C": "生殖系统",
+   "D": "肺"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s227",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "经过治疗或免疫的动物，外表虽然健康，但________，成为潜在的传染源。",
+  "options": {
+   "A": "对疾病的抵抗力差",
+   "B": "仍带菌或带毒",
+   "C": "生殖能力差",
+   "D": "好打架斗殴"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s228",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "注意卫生，加强消毒，________，是搞好预防工作的根本措施。",
+  "options": {
+   "A": "消灭节肢动物",
+   "B": "消灭野生动物",
+   "C": "消灭蚊蝇",
+   "D": "消灭病原体"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s229",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "饲养人员应严格按照不同等级实验动物的________要求进行规范操作，认真做好各种记录，发现情况，及时上报。",
+  "options": {
+   "A": "饲养条件",
+   "B": "饲养管理和卫生防疫",
+   "C": "微生物控制",
+   "D": "营养要求"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s230",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "各类实验动物应________，以防交叉感染。",
+  "options": {
+   "A": "分室饲养",
+   "B": "分笼饲养",
+   "C": "分盒饲养",
+   "D": "分楼饲养"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s231",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "饲料和垫料库房应保持________、通风、无虫、无鼠，饲料应达到相应的国家标准。",
+  "options": {
+   "A": "干燥",
+   "B": "湿润",
+   "C": "高温",
+   "D": "高湿"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s232",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "饲养人员和兽医技术人员应________进行健康检查，患有传染病的人员不应从事实验动物工作。",
+  "options": {
+   "A": "每月",
+   "B": "每年",
+   "C": "每季度",
+   "D": "每三年"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s233",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "若发生危害性大的疫病，如鼠痘、流行性出血热等应采取________综合性措施，淘汰、焚烧全部动物，对场地进行彻底消毒、空厩后，方可解除隔离封锁。",
+  "options": {
+   "A": "封锁消息等",
+   "B": "隔离封锁等",
+   "C": "淘汰患病动物等",
+   "D": "检查饲养和实验人员职责等"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s234",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物的隔离措施主要用于________、患病和可疑感染的大动物。",
+  "options": {
+   "A": "新出生的动物",
+   "B": "将要死亡的动物",
+   "C": "新引入的动物",
+   "D": "淘汰的动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s235",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "隔离是为了控制________，防止传染病的发生或蔓延。",
+  "options": {
+   "A": "野生动物",
+   "B": "传染源",
+   "C": "节肢动物",
+   "D": "买卖动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s236",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "隔离场所应离开________，小动物最好隔离在不锈钢隔离器中，大动物的隔离区应在生产区外的独立房舍中。",
+  "options": {
+   "A": "居民生活区",
+   "B": "闹市繁华区",
+   "C": "动物饲养繁殖区",
+   "D": "工业污染区"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s237",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在大型实验动物饲养场，为了防止由于引种带入新的病原菌，多采用________的方式引种。",
+  "options": {
+   "A": "引入新出生的动物",
+   "B": "引入即将可以配种的动物",
+   "C": "引入冷冻胚胎",
+   "D": "引入剖腹产动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s238",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "检疫就是利用各种动物传染病的诊断方法，对________进行疫病检查，检疫步骤与时间视各动物设施的需求而定。",
+  "options": {
+   "A": "实验动物脏器",
+   "B": "实验动物脑组织",
+   "C": "实验动物及其产品",
+   "D": "实验动物的血液"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s239",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "检疫的目的是确定有无________存在，避免新引进动物造成本设施内已经饲养的健康动物群感染疾病。",
+  "options": {
+   "A": "潜在性疾病",
+   "B": "体外寄生虫",
+   "C": "血液寄生虫",
+   "D": "病毒"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s240",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "新引进的啮齿类动物应该有供应商的实验动物_______，最新健康检测报告，检查运输的包装，注意运输途中是否被病原污染。",
+  "options": {
+   "A": "质量合格证书",
+   "B": "生产动物规模",
+   "C": "质量自检记录",
+   "D": "购买的动物规格记录"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s241",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "新引进的灵长类动物要避免人畜共患病，特别要防止________与结核病。",
+  "options": {
+   "A": "狂犬病",
+   "B": "出血热",
+   "C": "沙门氏菌",
+   "D": "B型疱疹病毒"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s242",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "新引进的犬和猫应该有供应商提供的最新健康报告，犬必须有________、传染性肝炎、犬病毒性出血热等免疫证明，无体外寄生虫、弓形体等",
+  "options": {
+   "A": "B型疱疹病毒",
+   "B": "犬瘟热",
+   "C": "布氏杆菌病",
+   "D": "巴氏杆菌病"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s243",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "主要的灭菌方法有热灭菌法、冷灭菌法和________。",
+  "options": {
+   "A": "X射线",
+   "B": "γ射线",
+   "C": "紫外线",
+   "D": "60Co辐照灭菌法"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s244",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "消毒比灭菌范围狭窄，它不能杀死细菌的________。",
+  "options": {
+   "A": "鞭毛",
+   "B": "芽胞",
+   "C": "纤毛",
+   "D": "DNA"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s245",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "湿热高压灭菌法121℃时需要保持时间________分钟。",
+  "options": {
+   "A": "25",
+   "B": "15",
+   "C": "10",
+   "D": "3"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s246",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "干热高压灭菌法160℃时需要保持________分钟。",
+  "options": {
+   "A": "45",
+   "B": "18",
+   "C": "7.5",
+   "D": "5"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s247",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "预真空高压灭菌法121℃需要保持________分钟。",
+  "options": {
+   "A": "3",
+   "B": "30",
+   "C": "15",
+   "D": "10"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s248",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "低压蒸汽加甲醛灭菌法70-80℃需要保持________。",
+  "options": {
+   "A": "30min",
+   "B": "15min",
+   "C": "2h",
+   "D": "5h"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s249",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物的饲养室和实验室熏蒸消毒方法是________。",
+  "options": {
+   "A": "15ml/m3福尔马林加7.5克高锰酸钾",
+   "B": "0.5%0.05%－0.2%的新洁而灭",
+   "C": "3%－5%的来苏儿",
+   "D": "0.1－1%漂白粉"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s250",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________热消毒药水清洗是良好的消毒方法。",
+  "options": {
+   "A": "370℃",
+   "B": "80℃",
+   "C": "50℃",
+   "D": "70℃"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s251",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物的饲养室和实验室进行熏蒸消毒，室温保持________。",
+  "options": {
+   "A": "37℃",
+   "B": "50℃",
+   "C": "25℃",
+   "D": "80℃"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s252",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "用15ml/m3福尔马林加7.5克高锰酸钾对实验动物的饲养室和实验室进行熏蒸消毒，熏蒸后静置________。",
+  "options": {
+   "A": "24-48 h",
+   "B": "48-72 h",
+   "C": "24-48 d",
+   "D": "2-4 h"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s253",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "用________洗刷墙壁、门窗、天花板和地面，必要时可以用2%的热烧碱水洗涤，再用高压水冲洗干燥。",
+  "options": {
+   "A": "强酸",
+   "B": "中性的洗涤液",
+   "C": "强碱",
+   "D": "自然水"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s254",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物的饲养室和实验室进行喷雾消毒，喷雾后关闭门窗，保持________。",
+  "options": {
+   "A": "2-3h",
+   "B": "2-3d",
+   "C": "2-3min",
+   "D": "20-30min"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s255",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠痘是实验小鼠的一种烈性传染病 ，临床表现有四肢、尾和头部肿胀、溃烂、 脚趾脱落，故又称________",
+  "options": {
+   "A": "肿胀病",
+   "B": "烂脚病",
+   "C": "烂尾病",
+   "D": "脱脚病"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s256",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠痘病毒可经________侵入机体，也可经呼吸道和消化道感染。",
+  "options": {
+   "A": "皮肤伤口",
+   "B": "肛门",
+   "C": "口腔",
+   "D": "鼻腔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s257",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "感染鼠痘康复小鼠可以通过粪便________，成为传播感染的主要传染源。",
+  "options": {
+   "A": "长期排毒",
+   "B": "定期排毒",
+   "C": "短期排毒",
+   "D": "偶尔排毒"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s258",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "感染鼠痘小鼠解剖观察可见明显________的肿大。",
+  "options": {
+   "A": "肺",
+   "B": "肝、脾",
+   "C": "心脏",
+   "D": "肾脏"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s259",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验小鼠感染鼠痘不仅会大批死亡，实验中断，而且________使病毒广泛传播，严重影响科研工作。",
+  "options": {
+   "A": "污染环境",
+   "B": "影响饲养人员健康",
+   "C": "影响实验人员健康",
+   "D": "肢体不全"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s260",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "预防控制鼠痘，严格建立检疫制度，防止________进入实验动物设施是最根本的预防措施。",
+  "options": {
+   "A": "所有动物",
+   "B": "隐性带毒鼠",
+   "C": "不同品种动物",
+   "D": "鼠痘病毒"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s261",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "淋巴细胞性脉络丛脑膜炎是一种人和多种动物共患的疾病，但只有持续感染的小鼠和急性感染的________才能传播病毒。",
+  "options": {
+   "A": "大鼠",
+   "B": "蒙古沙鼠",
+   "C": "金黄仓鼠",
+   "D": "猴"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s262",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "感染淋巴细胞性脉络丛脑膜炎康复后的小鼠的所有器官中，终生含有高滴度的病毒，可经唾液、鼻分泌物和________向外排毒。",
+  "options": {
+   "A": "皮肤",
+   "B": "尿液",
+   "C": "呼吸",
+   "D": "汗腺"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s263",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "感染淋巴细胞性脉络丛脑膜炎康复后的小鼠，成为无症状的带毒者，并通过子宫和乳汁传给后代，其后代可成为________。",
+  "options": {
+   "A": "短期带毒者",
+   "B": "终生带毒者",
+   "C": "少年期带毒",
+   "D": "老年期带毒者"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s264",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "感染淋巴细胞性脉络丛脑膜炎的小鼠，大脑型特征性的表现是抓着尾巴倒提时，小鼠头部震颤，肢体阵挛性惊厥，最终表现为________。",
+  "options": {
+   "A": "后肢强直性伸展",
+   "B": "立即死亡",
+   "C": "肢体旋转",
+   "D": "尾巴脱落"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s265",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "仙台病毒感染动物解剖时，可见鼠肺呈________，切开时有泡沫状血性液体",
+  "options": {
+   "A": "血红色",
+   "B": "灰白色",
+   "C": "杨梅色",
+   "D": "猪肝色"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s266",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物感染仙台病毒5～10天后，________病变愈加明显，偶尔有肺脓肿，恢复期的病灶为灰白色。",
+  "options": {
+   "A": "肝脏",
+   "B": "肺部",
+   "C": "脾",
+   "D": "心脏"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s267",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物感染仙台病毒后小鼠的体液免疫和________功能普遍下降，幼鼠发育不良。",
+  "options": {
+   "A": "组织免疫",
+   "B": "器官免疫",
+   "C": "细胞免疫",
+   "D": "动物免疫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s268",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "诊断小鼠仙台病毒主要采用________，补体结合反应、放射免疫试验和酶免疫测定法都是常用的诊断手段，其中以酶联免疫吸附试验法最为敏感。",
+  "options": {
+   "A": "免疫学方法",
+   "B": "血清学方法",
+   "C": "动物接种",
+   "D": "生化反应"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s269",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "仙台病毒感染后遗留的组织学改变易与________相混淆；对实验性化学致癌作用具有较强的影响，能抑制诱发肺癌",
+  "options": {
+   "A": "中毒性肠炎",
+   "B": "浸润性肺癌",
+   "C": "肝炎",
+   "D": "肺炎"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s270",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "仙台病毒感染妊娠大鼠后，其生殖繁育也会被严重干扰，易造成胚胎________。",
+  "options": {
+   "A": "畸形",
+   "B": "过大",
+   "C": "死亡",
+   "D": "过小"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s271",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "仙台病毒感染是最难以控制的疾病。美国杰克逊实验室采用过滤帽笼盒和________的方法可保持动物免受感染。",
+  "options": {
+   "A": "层流架",
+   "B": "隔离器",
+   "C": "胚胎移植",
+   "D": "剖宫产"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s272",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠肝炎多数情况下呈________或隐性感染，但在某些应激因素作用下而使机体抵抗力下降时容易引起急性发病和死亡。",
+  "options": {
+   "A": "急性",
+   "B": "亚临床感染",
+   "C": "慢性",
+   "D": "流行性"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s273",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "肝炎病毒感染的一般临床症状为抑郁倦怠，营养不良，体重减轻，________。",
+  "options": {
+   "A": "尿液减少",
+   "B": "尿液增加",
+   "C": "尿色变浅",
+   "D": "尿色变深"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s274",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "嗜神经型肝炎病毒常引起________坏死，导致后肢松弛麻痹，也可见到惊厥和旋转以及结膜炎。",
+  "options": {
+   "A": "中枢神经系统",
+   "B": "周围神经系统",
+   "C": "脊神经",
+   "D": "坐骨神经"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s275",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "血清学方法是确诊鼠肝炎病毒感染的重要手段，酶联免疫实验法和________检测法比较敏感，可以作为特异性诊断。",
+  "options": {
+   "A": "间接血凝",
+   "B": "免疫荧光",
+   "C": "血凝抑制",
+   "D": "免疫组化"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s276",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠肝炎病毒可改变各种免疫________。",
+  "options": {
+   "A": "细胞大小",
+   "B": "应答参数",
+   "C": "细胞数量",
+   "D": "组织器官"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s277",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "流行性出血热病毒的自然宿主主要是________，可传染给人，人类主要是由于接触带病毒的宿主动物及其排泄物而受感染。",
+  "options": {
+   "A": "小型啮齿类动物",
+   "B": "猴",
+   "C": "家犬",
+   "D": "家兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s278",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "流行病学观察表明，污染尘埃飞沫物形成________吸入感染被认为是流行性出血热最主要的传播途径。",
+  "options": {
+   "A": "气溶胶",
+   "B": "落下菌",
+   "C": "灰尘",
+   "D": "菌落"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s279",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "兔病毒性出血热在自然条件下，________是主要的传播方式，各种途径接种的人工感染均可引起发病。",
+  "options": {
+   "A": "垂直传播",
+   "B": "节肢动物传播",
+   "C": "空气传播",
+   "D": "消化道传播"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s280",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "目前有效的预防兔病毒性出血热的措施是________。",
+  "options": {
+   "A": "定期注射组织灭活疫苗",
+   "B": "动物剖腹产",
+   "C": "自繁动物",
+   "D": "定期外购动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s281",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬瘟热感染的动物从鼻液、唾液、眼分泌物和尿中排毒，从而污染饲料、水和器具，通过________传染。",
+  "options": {
+   "A": "消化道",
+   "B": "皮肤",
+   "C": "呼吸道",
+   "D": "产道"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s282",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬瘟热除了从消化道传播，也可由含毒的飞沫、空气经________传染。",
+  "options": {
+   "A": "眼",
+   "B": "呼吸道",
+   "C": "皮肤伤口",
+   "D": "饲料、用具"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s283",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬瘟热早期表现双相热型，即体温升高到39.5～41℃，持续2天左右，此时出现病毒血症，然后体温下降至________，约维持二三天后，体温再次升高到41℃以上。",
+  "options": {
+   "A": "略高于正常体温",
+   "B": "略低于正常体温",
+   "C": "正常体温",
+   "D": "严重低于正常体温"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s284",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "预防犬瘟热的合理措施是免疫接种。目前我国广泛使用的是________，经多年使用表明其安全有效，且可用于紧急接种",
+  "options": {
+   "A": "自身灭活疫苗",
+   "B": "自身弱毒疫苗",
+   "C": "鸡胚细胞培养弱毒疫苗",
+   "D": "肾细胞培养弱毒疫苗"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s285",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬细小病毒感染临床表现以急性出血性肠炎和________为特征。",
+  "options": {
+   "A": "非化脓性心肌炎",
+   "B": "化脓性心肌炎",
+   "C": "非化脓性肺炎",
+   "D": "化脓性肺炎"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s286",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬细小病毒传播途径主要经直接接触或通过________传染。",
+  "options": {
+   "A": "空气由呼吸道",
+   "B": "污染饲料由消化道",
+   "C": "产道垂直",
+   "D": "子宫垂直"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s287",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "天气寒冷，气温骤变、________或有并发感染等均可加重犬细小病毒病情和提高死亡率。",
+  "options": {
+   "A": "饲养密度过小",
+   "B": "喂养次数过频",
+   "C": "饲料过硬",
+   "D": "饲养密度过高"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s288",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬细小病毒感染在临床上表现各异，与年龄和免疫状态有密切关系。3～4周龄仔犬多呈急性心肌炎症状，病死率达_______。",
+  "options": {
+   "A": "30%～50%",
+   "B": "50%～60%",
+   "C": "60%～80%",
+   "D": "80%～100%"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s289",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "肠炎型犬细小病毒感染，犬腹泻，粪便呈________，最后由于心力衰竭和酸中毒而死亡。",
+  "options": {
+   "A": "灰黄色半固体",
+   "B": "杨梅色液体",
+   "C": "灰黄色液体",
+   "D": "绿色液体"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s290",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "狂犬病流行的________特别明显，以一个接着一个的顺序呈散发形式出现。",
+  "options": {
+   "A": "连锁性",
+   "B": "爆发性",
+   "C": "地方性",
+   "D": "季节性"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s291",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "狂犬病终因局部或全身________而死亡。",
+  "options": {
+   "A": "酸中毒",
+   "B": "麻痹",
+   "C": "心力衰竭",
+   "D": "呼吸困难"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s292",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "狂犬病是一种人畜共患的烈性传染病，一旦发病，实验研究需立即中止，并向有关部门报告疫情，________，房舍和周围环境彻底消毒，避免疫情扩散。",
+  "options": {
+   "A": "扑杀发病动物",
+   "B": "隔离发病动物",
+   "C": "检查发病动物",
+   "D": "治疗发病动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s293",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬病毒性肝炎传染的方式有多种，但不能通过________",
+  "options": {
+   "A": "消化道感染",
+   "B": "外寄生虫",
+   "C": "呼吸道感染",
+   "D": "直接接触"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s294",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫泛白细胞减少症根据流行病学、双相热型、临床症状、_______和病理组织学变化，可以做出初步诊断。",
+  "options": {
+   "A": "精神极度沉郁，被毛粗乱，呕吐频繁",
+   "B": "蹲伏不动，严重脱水，极度虚弱",
+   "C": "食欲减退",
+   "D": "特征性的白细胞减少"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s295",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是B病毒的自然宿主，感染率可达10%-60%。",
+  "options": {
+   "A": "恒河猴",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "家犬"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s296",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "恒河猴的幼仔被感染猴B病毒病后，可能由于________保护而呈现亚临床症状。",
+  "options": {
+   "A": "母源抗体免疫",
+   "B": "药物",
+   "C": "人工疫苗",
+   "D": "自身免疫系统不全"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s297",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "B病毒对实验人员和饲养人员有严重威胁，它会引起人的________，造成不可挽回的损失。",
+  "options": {
+   "A": "致死性肾感染",
+   "B": "致死性心感染",
+   "C": "致死性脑感染",
+   "D": "致死性脾感染"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s298",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "许多种类实验动物均可感染沙门氏菌，在实验动物中最常见的是鼠伤寒和________。",
+  "options": {
+   "A": "肺炎沙门氏菌",
+   "B": "肠炎沙门氏菌",
+   "C": "肝炎沙门氏菌",
+   "D": "肾炎沙门氏菌"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s299",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "沙门氏菌病是________。",
+  "options": {
+   "A": "人畜共患病",
+   "B": "啮齿动物性疾病",
+   "C": "非人灵长类疾病",
+   "D": "幼年实验动物性疾病"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s300",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "患病实验动物和________是沙门氏菌病的主要传染源。",
+  "options": {
+   "A": "霉变的饲料",
+   "B": "不洁的饮水",
+   "C": "各种应激",
+   "D": "带菌者"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s301",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物中的小鼠、________、仓鼠、兔、猫和猕猴等均可患泰泽氏病。",
+  "options": {
+   "A": "豚鼠",
+   "B": "大鼠",
+   "C": "地鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s302",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "泰泽氏病多发生于________季节，与气候、青饲料等因素及饲养管理和卫生条件不良有关。",
+  "options": {
+   "A": "春末至夏春",
+   "B": "夏末至秋春",
+   "C": "秋末至初春",
+   "D": "冬末至初春"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s303",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "泰泽氏病所致疾病有肠型和肝型两种。肠型患病动物临床表现，剧烈腹泻，粪便呈褐色糊状乃至水样，肛门周围、尾巴及后肢污秽，又称________。",
+  "options": {
+   "A": "“湿尾病”",
+   "B": "“环尾病”",
+   "C": "“脱尾病”",
+   "D": "“无尾病”"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s304",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "泰泽氏病诊断根据流行病学、临床症状可做出初步诊断。肝脏的冰冻切片，坏死灶内找到 _______可确诊。",
+  "options": {
+   "A": "螺旋菌",
+   "B": "毛样芽胞菌",
+   "C": "球杆菌或短杆菌",
+   "D": "毛样小孢子菌"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s305",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "布氏杆菌病对生殖实验研究会带来影响，由于________，而导致实验的中断。",
+  "options": {
+   "A": "动物死亡",
+   "B": "动物胚胎畸形",
+   "C": "动物难产",
+   "D": "动物的流产"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s306",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "预防布氏杆菌病，对狗群应在雌犬动情前数周用________进行普查，发现可疑病例，再用其他诊断方法进行确诊。",
+  "options": {
+   "A": "生化反应",
+   "B": "ELISA",
+   "C": "玻片凝集试验",
+   "D": "免疫荧光反应"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s307",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "多杀性巴氏杆菌可使动物发生出________，造成动物大批死亡。",
+  "options": {
+   "A": "鼻炎",
+   "B": "血性败血症",
+   "C": "中耳炎",
+   "D": "生殖道疾病"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s308",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________的大、小鼠最容易感染支原体。",
+  "options": {
+   "A": "中年",
+   "B": "幼龄鼠",
+   "C": "青年",
+   "D": "老年"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s309",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "支原体常定居于动物呼吸道和________粘膜，对动物致病力不强。",
+  "options": {
+   "A": "生殖道",
+   "B": "消化道",
+   "C": "口腔",
+   "D": "鼻腔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s310",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "环境中________浓度过高可促进支原体的生长，继而促进肺炎和中耳炎的发生。",
+  "options": {
+   "A": "氨",
+   "B": "氧",
+   "C": "二氧化碳",
+   "D": "二氧化硫"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s311",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "志贺氏菌属各菌型对人均有致病性，可引起________，有的菌型可引起急性胃肠炎。",
+  "options": {
+   "A": "颈部淋巴结肿大",
+   "B": "腹膜炎",
+   "C": "细菌性痢疾",
+   "D": "多发性关节炎"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s312",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "志贺氏菌在实验动物中主要危害________，是引起该种动物发病和死亡的重要病原。",
+  "options": {
+   "A": "小鼠",
+   "B": "猕猴群",
+   "C": "实验犬",
+   "D": "家兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s313",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________是一种人畜共患的慢性传染病，病理特征是在多种组织器官形成结核性肉芽肿（结核结节），继而结节中心干酪样坏死或钙化。",
+  "options": {
+   "A": "志贺氏菌病",
+   "B": "伪结核耶氏菌病",
+   "C": "沙门氏菌病",
+   "D": "结核病"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s314",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验小鼠、      似乎对自然感染支气管败血波氏杆菌有相当的抵抗力",
+  "options": {
+   "A": "仓鼠",
+   "B": "大鼠",
+   "C": "地鼠",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s315",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔感染支气管败血波氏杆菌特征是________长期不愈，鼻腔流出粘液脓性分泌物。",
+  "options": {
+   "A": "肠炎",
+   "B": "鼻炎",
+   "C": "肝炎",
+   "D": "心肌炎"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s316",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "棒状杆菌病是由棒状杆菌引起的，一般呈隐性感染，当受到应激因素刺激时可呈急性爆发、造成________。",
+  "options": {
+   "A": "肺炎",
+   "B": "伪结核病",
+   "C": "肢体肿大",
+   "D": "肠道充血"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s317",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "温度和湿度对于真菌的生长繁殖是必要的，一般而言，适合于真菌生长的最适温度是________。",
+  "options": {
+   "A": "0℃",
+   "B": "37℃",
+   "C": "42℃",
+   "D": "100℃"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s318",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "不同的寄生虫对宿主是有选择性的，如人的体虱只寄生于人，这一类型的寄生虫，则把它归属于________。",
+  "options": {
+   "A": "多宿主寄生虫",
+   "B": "体外寄生虫",
+   "C": "单宿主寄生虫",
+   "D": "永久寄生虫"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s319",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "寄生虫的成虫和幼虫往往寄生于不同的宿主，我们把成虫寄生的宿主称作________。",
+  "options": {
+   "A": "第一宿主",
+   "B": "中间宿主",
+   "C": "终末宿主",
+   "D": "带虫宿主"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s320",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "当实验动物或其他宿主感染了一种寄生虫，在自行康复或治愈之后，或处于隐性感染阶段，此时动物对寄生虫保持着一定的免疫力，同时也保持着一定量的虫体感染，我们把这种现象称作为________。",
+  "options": {
+   "A": "带虫现象",
+   "B": "带虫宿主",
+   "C": "带虫免疫",
+   "D": "隐性感染现象"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s321",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物皮肤真菌感染的传播方式主要为________，另外，动物体外寄生虫也可传播此病菌。",
+  "options": {
+   "A": "经皮肤感染",
+   "B": "接触感染",
+   "C": "经消化道感染",
+   "D": "经呼吸道感染"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s322",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物感染皮肤真菌后，常用的处理方法是________。",
+  "options": {
+   "A": "继续使用",
+   "B": "治疗后使用",
+   "C": "全群淘汰，对所有的用具和房间进行彻底的熏蒸消毒",
+   "D": "淘汰患病动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s323",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "检查血液内的原虫多采用__________，制作血片标本，经染色、镜检来发现血浆或细胞内的虫体。",
+  "options": {
+   "A": "动脉采血",
+   "B": "静脉采血",
+   "C": "刮去皮屑检查",
+   "D": "病理剖检"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s324",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "刚第弓形虫的终末宿主是________，还有一系列的中间宿主。其中，小鼠是主要的中间宿主。",
+  "options": {
+   "A": "狗",
+   "B": "猫",
+   "C": "大鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s325",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "弓形虫感染后通常没有明显的临床症状。人感染后多数是无症状的隐性感染。实验动物感染弓形虫后，少数有被毛疏松不整，淋巴结肿大，出现________现象。",
+  "options": {
+   "A": "贫血现象",
+   "B": "腹泻症状",
+   "C": "组织脓肿",
+   "D": "流产或死胎"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s326",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "预防弓形虫主要是着眼于防止实验动物的饲料、饮水被猫粪便污染，消灭野鼠。为避免人体感染，接触实验动物后要清洗消毒，儿童不要与猫狗玩耍，孕妇更不要与猫接触。治疗可用磺胺类药物和________合用，效果较好。",
+  "options": {
+   "A": "抗菌增效剂",
+   "B": "广谱抗生素",
+   "C": "喹诺酮类药物",
+   "D": "甲硝唑"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s327",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物中易受感染球虫的主要有兔、小鼠、豚鼠和猴，另外也可感染人，感染人的一种叫作________。",
+  "options": {
+   "A": "隐孢球虫",
+   "B": "等孢子球虫",
+   "C": "小袋虫",
+   "D": "阿米巴虫"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s328",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "________的家兔最易感染球虫病。",
+  "options": {
+   "A": "初生兔",
+   "B": "1月龄",
+   "C": "3月龄",
+   "D": "6月龄"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s329",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "螨病的诊断方法可以根据流行病学、临床症状，结合________，如发现大量螨虫虫体可确诊。",
+  "options": {
+   "A": "病变部位皮肤刮取皮屑检查虫体",
+   "B": "内脏虫体检查",
+   "C": "脏器病理学检查",
+   "D": "肉眼检查"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s330",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "常用的治疗实验动物螨病的药物主要有阿维菌素、灭虫丁注射液等，并采取________的方法。",
+  "options": {
+   "A": "体内给药",
+   "B": "体外给药",
+   "C": "内外结合给药",
+   "D": "直接淘汰"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s331",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "血液寄生虫病主要通过________ 作为中间媒介物来传播。",
+  "options": {
+   "A": "饲料",
+   "B": "节肢动物",
+   "C": "饮水",
+   "D": "工作人员"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s332",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "寄生虫感染动物机体后，常常会使血液中的________数量增多，干扰血液学指标的观察，进而影响实验研究。",
+  "options": {
+   "A": "淋巴细胞",
+   "B": "嗜碱性粒细胞",
+   "C": "嗜酸性粒细胞",
+   "D": "红细胞"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s333",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在实验动物寄生虫病的控制过程中，一定要加强卫生防疫管理，对所有的患病动物进行隔离或淘汰，另外，________也是行之有效的寄生虫病的防治方法。",
+  "options": {
+   "A": "对所有实验动物进行免疫",
+   "B": "切断传播途径，加强对易感动物的卫生管理",
+   "C": "对所有患病动物进行药物治疗",
+   "D": "只需加强对患病动物和带虫宿主的卫生管理即可"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s334",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国际实验动物科学协会的简称是 ______ 。",
+  "options": {
+   "A": "ICLAS",
+   "B": "CIOMS",
+   "C": "IUBS",
+   "D": "WHO"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s335",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "澳大利亚实验动物管理的主要法规是   ______。",
+  "options": {
+   "A": "《防止虐待动物法》",
+   "B": "《动物保护法》",
+   "C": "《研究用动物法》",
+   "D": "《实验动物管理与使用法》"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s336",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "我国《实验动物质量管理法》是国家科技部和国家技术监督局于  ______ 联合制发的。",
+  "options": {
+   "A": "1993年12月",
+   "B": "1997年12月",
+   "C": "2000年12月",
+   "D": "2004年12月"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s337",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国家实验动物质量检测中心（环境、病理）挂靠在 ______。",
+  "options": {
+   "A": "中国药品制品检定所",
+   "B": "上海生物制品研究所",
+   "C": "中国医学科学院实验动物研究所",
+   "D": "中国农业科学院上海寄生虫研究所"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s338",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "我国已建立了哪一类实验动物的种子中心 ______。",
+  "options": {
+   "A": "啮齿类实验动物中心",
+   "B": "实验兔种子中心",
+   "C": "Beagle犬种子中心",
+   "D": "小型猪种子中心"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s339",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "关于实验动物种子的管理，下列哪一项是错误的  ______ 。",
+  "options": {
+   "A": "国家实验动物种子中心是一个网络体系，由各具体品种或品系的实验动物中心共同  组",
+   "B": "国家实验动物种子中心统一负责实验动物的国外引种和为用户提供实验动物种子",
+   "C": "其他单位如有必要，可直接向国外引进国内没有的实验动物品种、品系作为实验动物种子向用户提供",
+   "D": "国家实验动物种子中心，可以是依托于高校科研院所的相对独立实体，也可以是独    立法人"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s340",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列叙述中，违背《实验动物管理条例》精神的是  ______。",
+  "options": {
+   "A": "实验动物繁育室和动物实验室应设在同一区域，按同样的要求进行管理",
+   "B": "对不同等级的实验动物，应当按照相应的微生物控制标准进行管理",
+   "C": "实验动物的保种、饲育应采用国内或国外公认的品种、品系",
+   "D": "应用实验动物应当根据不同的实验目的，选用相应的合格实验动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s341",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "关于实验动物许可证的管理，下列哪一项是错误的 ______。",
+  "options": {
+   "A": "省级实验动物检测机构，负责检测实验动物生产和使用单位的实验动物质量及相关条件为许可证的管理提供技术保证",
+   "B": "省、自治区、直辖市科技厅（科委、局）负责受理许可证申请，并进行考核和审批",
+   "C": "许可证的有效期没有规定，获得后将长期有效",
+   "D": "许可证实行年检管理制度，年检不合格的单位，由本省（自治区、直辖市）科技厅（科委、局）吊销其许可证"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s342",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "关于实验动物检测机构的管理，下列哪一项是错误的______。",
+  "options": {
+   "A": "实验动物检测机构必须是实际从事检测活动的相对独立实体，不能从事实验动物的商业性饲育经营活动",
+   "B": "实验动物检测机构应取得中国实验室国家认可协会的认可，并遵守有关规定",
+   "C": "省级实验动物质量检测机构主要从事实验动物质量的检测服务，受省科技主管部门的领导",
+   "D": "省级实验动物质量检测机构需有检测所需要的仪器设备，但不必有专用场所"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s343",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "关于实验动物工作人员的管理，下列哪一项是不正确的  ______。",
+  "options": {
+   "A": "专业从事实验工作的单位，应当根据需要配备适当比例的高、中和初级科技人员和饲育人员",
+   "B": "各类实验动物工作人员必须取得从业人员上岗证，并持证上岗",
+   "C": "各类实验动物工作人员必须遵守实验动物管理法规、制度，熟练掌握操作规程",
+   "D": "实验动物工作人员必须具备大专以上学历"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s344",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "专用于新药临床前安全性评价的法规是  ______。",
+  "options": {
+   "A": "动物福利法",
+   "B": "良好实验室操作规范",
+   "C": "实验动物管理和使用指南",
+   "D": "研究用动物法"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s345",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关申请实验动物生产许可证，错误的是 ______ 。",
+  "options": {
+   "A": "实验动物种子必须来源于国家实验动物保种中心或国家认可的种源单位",
+   "B": "具有健全有效的质量管理制度,具有保证实验动物及相关产品质量的饲养、生产环境设施及检测手段",
+   "C": "使用实验动物饲料、垫料及饮水等符合一般卫生要求",
+   "D": "生产的实验动物质量符合国家标准"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s346",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关申请实验动物使用许可证，错误的是 ______ 。",
+  "options": {
+   "A": "使用的实验动物及相关产品必须来自有实验动物生产许可证的单位",
+   "B": "对实验动物饲养和实验人员无特殊要求",
+   "C": "实验动物饲育环境及设施符合国家标准",
+   "D": "具有健全有效的质量管理制度"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s347",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关实验动物生产、使用许可证的申请、审批、发放，错误的是 ______。",
+  "options": {
+   "A": "向所在省（自治区、直辖市）科技厅（科委、局）提交申请书",
+   "B": "所在省（自治区、直辖市）科技厅（科委、局）受理申请后，组织专家组进行评审，出具专家组验收报告",
+   "C": "合格者由省（自治区、直辖市）科技厅（科委、局）发放许可证",
+   "D": "也可以向所在省质量技术监督部门申请许可证"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s348",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物生产许可证，有效期期为  ______。",
+  "options": {
+   "A": "2年",
+   "B": "3年",
+   "C": "5年",
+   "D": "无时间限制"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s349",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关实验动物许可证的监督和管理，错误的是______。",
+  "options": {
+   "A": "出售实验动物时，应提供实验动物质量合格证",
+   "B": "在同一单位内，如高等院校，实验动物许可证各部门可共用",
+   "C": "许可证实行年检管理制度",
+   "D": "许可证有效期满，需重新申请并重新审查发证"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s350",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物从业从员上岗需持有什么证书______。",
+  "options": {
+   "A": "实验动物从业人员岗位证书",
+   "B": "实验动物生产许可证",
+   "C": "实验动物使用许可证",
+   "D": "以上3个证书均需要"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s351",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "关于实验动物质量检测机构的管理，错误的是______。",
+  "options": {
+   "A": "分国家和省两级管理",
+   "B": "国家级以国家标准（GB/T15481）“校准和检验实验室能力的通用要求”为基本条件",
+   "C": "省级与国家级的标准不同",
+   "D": "中级以上技术职称人员不得低于全部技术人员的50%"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s352",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国家实验动物质量检测机构的主要任务不包括 ______。",
+  "options": {
+   "A": "开展实验动物及相关条件的检测方法检测技术研究",
+   "B": "研究实验动物保种新技术",
+   "C": "培养实验动物质量检测人员",
+   "D": "提供实验动物质量检测和仲裁检验服务"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s353",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "省级实验动物质量检测机构的主要任务，不包括______。",
+  "options": {
+   "A": "引进、收集和保存实验动物品种、品系",
+   "B": "承担实验动物及其相关产品的生产和使用单位所申请的质量检测",
+   "C": "承担对本省实验动物许可证年检的技术检测和实验动物质量的不定期检测",
+   "D": "按上级管理部门的要求提供检测统计报表及有关资料"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s354",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国家实验动物种子中心的主要任务，不包括  ______。",
+  "options": {
+   "A": "引进、收集和保存实验动物品种、品系",
+   "B": "研究实验动物保种新技术",
+   "C": "负责实验动物质量检测",
+   "D": "培育实验动物新品种、品系"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s355",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关国家实验动物种子中心下列描述错误的是  ______。",
+  "options": {
+   "A": "统一负责实验动物的国外引种和为用户提供实验动物种子",
+   "B": "国际交流与技术合作需报国家科技部审批",
+   "C": "其他单位，如有必要，可直接向国外引进国内没有的实验动物品种、品系，供本单位做动物实验",
+   "D": "其他单位，直接向国外引进的国内没有的实验动物品种、品系，也可作为实验动物种子向用户提供"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s356",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关动物麻醉的描述，错误的是 ______。",
+  "options": {
+   "A": "麻醉深度要适度",
+   "B": "麻醉过深，正常反应受到抑制",
+   "C": "麻醉过浅，疼痛刺激使一些功能发生改变",
+   "D": "麻醉深浅的改变，对实验结果影响不大"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s357",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "抓取家兔时错误的是 ______。",
+  "options": {
+   "A": "先抓住兔颈部的毛皮",
+   "B": "抓住双耳拎起",
+   "C": "不要抓腹部",
+   "D": "用手托其臀部或腹部"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s358",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______不属于实验环境方面影响动物实验结果的因素。",
+  "options": {
+   "A": "实验对照",
+   "B": "气流、清洁度",
+   "C": "动物营养",
+   "D": "环境微生物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s359",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______不属于实验动物自身影响动物实验结果的因素。",
+  "options": {
+   "A": "种属",
+   "B": "动物饲养密度",
+   "C": "健康状态",
+   "D": "性别、年龄及体重"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s360",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "不适宜染色标记法的染液是 ______。",
+  "options": {
+   "A": "3%－5%苦味酸溶液",
+   "B": "2%的硝酸银溶液",
+   "C": "墨汁",
+   "D": "0.5%的中性品红溶液"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s361",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "染色标记法编号的方法通常是 ______。",
+  "options": {
+   "A": "不分左右，上下不拘",
+   "B": "先左后右，先上后下",
+   "C": "先右后左，先下后上",
+   "D": "先左后右，先下后上"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s362",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "烙印标记法，用的染液为 ______。",
+  "options": {
+   "A": "溶于酒精的黑墨",
+   "B": "3%－5%苦味酸",
+   "C": "0.5%中性品红溶液",
+   "D": "2%的硝酸银溶液"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s363",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "关于吸入麻醉，下列描述错误的是 ______。",
+  "options": {
+   "A": "采用乙醚、氯仿",
+   "B": "乙醚易引起上呼吸分泌物增多，可先用阿托品预防",
+   "C": "动物的角膜反射消失，瞳孔突然放大，应立即停止麻醉",
+   "D": "如呼吸停止，放弃抢救，停止实验"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s364",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关腹腔和静脉给药麻醉方法，描述错误的是 ______。",
+  "options": {
+   "A": "大鼠、小鼠、豚鼠常用腹腔给药麻醉",
+   "B": "麻醉过程平稳，麻醉深度、使用剂量较易掌握和控制",
+   "C": "操作简便，是常用方法",
+   "D": "兔、犬、猴多用静脉给药麻醉"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s365",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "局部麻醉中使用最多的是 ______。",
+  "options": {
+   "A": "浸润麻醉",
+   "B": "表面麻醉",
+   "C": "阻断麻醉",
+   "D": "全身麻醉"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s366",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列描述错误的是 ______。",
+  "options": {
+   "A": "经口给药分灌胃法和口服法",
+   "B": "口服给药和灌胃给药没有什么区别",
+   "C": "灌胃法比口服法给药剂量准确",
+   "D": "给兔犬等灌胃时，应检查胃管一端有无气泡排出，以确定胃管插入胃中"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s367",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠与大鼠尾静脉注射时，不恰当的方法是 ______。",
+  "options": {
+   "A": "尾部用70~80℃的热水浸润几分钟使血管扩张",
+   "B": "用75%酒精棉球反复擦拭，使血管充盈",
+   "C": "针头尽量采取与尾部平等的角度进针",
+   "D": "要从尾末端处刺入"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s368",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔静脉注射常用 ______。",
+  "options": {
+   "A": "皮下头静脉",
+   "B": "耳缘静脉",
+   "C": "小隐静脉",
+   "D": "尾静脉"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s369",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猴静脉注射常用 ______。",
+  "options": {
+   "A": "小隐静脉",
+   "B": "股静脉",
+   "C": "皮下头静脉",
+   "D": "以上都是"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s370",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猫、犬皮下注射部位 ______。",
+  "options": {
+   "A": "大腿外侧",
+   "B": "背部",
+   "C": "腹部",
+   "D": "颈部"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s371",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "皮内注射错误的是 ______。",
+  "options": {
+   "A": "注射部位脱毛、消毒",
+   "B": "左手拇指、食指轻轻提起皮肤",
+   "C": "针头紧贴表层不同程度皮内",
+   "D": "皮肤表面出现白色桔皮样隆起"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s372",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠、小鼠、豚鼠肌肉注射部位 ______。",
+  "options": {
+   "A": "臀部肌肉",
+   "B": "股部",
+   "C": "大腿外侧肌肉",
+   "D": "以上都是"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s373",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬、猴等大型动物肌肉注射部位 ______。",
+  "options": {
+   "A": "股部肌肉",
+   "B": "臀部肌肉",
+   "C": "腰椎旁肌肉",
+   "D": "大腿外侧肌肉"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s374",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠、小鼠腹腔注射时，不应 ______。",
+  "options": {
+   "A": "腹部热敷",
+   "B": "回抽无回血或尿液，注入药液",
+   "C": "从下腹两侧向头方刺入进针",
+   "D": "腹部朝上"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s375",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔腹腔注射的部位 ______。",
+  "options": {
+   "A": "上腹部近腹白线左右",
+   "B": "下腹部近腹白线左右两侧1cm处",
+   "C": "下腹部两侧",
+   "D": "上腹部两侧"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s376",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬腹腔注射的部位 ______。",
+  "options": {
+   "A": "脐前腹白线两侧边1-2cm处",
+   "B": "脐后腹白线两侧边1-2cm处",
+   "C": "下腹部两侧",
+   "D": "上腹部两侧"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s377",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关给药容量错误的是 ______。",
+  "options": {
+   "A": "不同种类实验动物一次给药时能耐受的最大容量不同",
+   "B": "灌胃太多时易导致胃扩张",
+   "C": "按动物体重估计,一般为10%",
+   "D": "静脉给药容量过多易导致心力衰竭和肺水肿"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s378",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "20克体重小鼠灌胃一次给药耐受的最大容量 ______。",
+  "options": {
+   "A": "0.8ml",
+   "B": "0.4ml",
+   "C": "1.5ml",
+   "D": "2.5ml"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s379",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠腹腔注射一次给药最大容量 ______。",
+  "options": {
+   "A": "0.5ml",
+   "B": "1.0ml",
+   "C": "1.5ml",
+   "D": "2.5ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s380",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "20克体重小鼠静脉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "0.4ml",
+   "B": "0.8ml",
+   "C": "1.5ml",
+   "D": "2.5ml"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s381",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠灌胃一次给药最大容量 ______。",
+  "options": {
+   "A": "5ml",
+   "B": "2ml",
+   "C": "1ml",
+   "D": "8ml"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s382",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠腹腔注射一次给药最大容量 ______。",
+  "options": {
+   "A": "1ml",
+   "B": "4ml",
+   "C": "8ml",
+   "D": "10ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s383",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠静脉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "1ml",
+   "B": "4ml",
+   "C": "8ml",
+   "D": "10ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s384",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "兔、猫静脉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "20ml",
+   "B": "10ml",
+   "C": "5ml",
+   "D": "1ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s385",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猴静脉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "10ml",
+   "B": "20ml",
+   "C": "50ml",
+   "D": "100ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s386",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "猴肌肉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "1ml",
+   "B": "3ml",
+   "C": "8ml",
+   "D": "15ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s387",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬肌肉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "1ml",
+   "B": "4ml",
+   "C": "8ml",
+   "D": "15ml"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s388",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬静脉注射一次给药最大容量 ______。",
+  "options": {
+   "A": "100ml",
+   "B": "50ml",
+   "C": "20ml",
+   "D": "10ml"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s389",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠、大鼠大量取血常用 ______。",
+  "options": {
+   "A": "剪尾采血",
+   "B": "眼眶后静脉丛采血",
+   "C": "断头取血",
+   "D": "股动脉采血"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s390",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关家兔采血法，描述错误的是 ______。",
+  "options": {
+   "A": "家兔采血法有耳缘静脉采血",
+   "B": "耳缘静脉采血一次可采血5-10ml",
+   "C": "心脏采血一次可采血20-25m",
+   "D": "心脏采血穿刺部位为第5肋间胸骨左缘3mm处"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s391",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "犬大量连续采血时，常采用 ______。",
+  "options": {
+   "A": "颈静脉采血",
+   "B": "皮下头静脉采血",
+   "C": "小隐静脉采血",
+   "D": "心脏采血"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s392",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "小鼠和大鼠的尿液采集适宜采用 ______。",
+  "options": {
+   "A": "导尿法",
+   "B": "代谢笼法",
+   "C": "压迫膀胱法",
+   "D": "穿刺法"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s393",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "采集未污染尿液的方法 ______。",
+  "options": {
+   "A": "代谢笼法",
+   "B": "导尿法",
+   "C": "压迫膀胱法",
+   "D": "以上都不是"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s394",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "化学药物致死法，使用药物最好为 ______。",
+  "options": {
+   "A": "三氯甲烷",
+   "B": "乙醚",
+   "C": "二氧化碳、氯化钾",
+   "D": "一氧化碳"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s395",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔处死常用 ______。",
+  "options": {
+   "A": "断髓法",
+   "B": "击打法",
+   "C": "空气栓塞法",
+   "D": "乙醚麻醉法"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s396",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "急性实验中去除小动物的被毛，下列哪种方法比较常用？ ______",
+  "options": {
+   "A": "拔毛法",
+   "B": "剪毛法",
+   "C": "剃毛法",
+   "D": "先麻醉后除毛"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s397",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大动物手术常用的去除动物被毛的方法是  _____   。",
+  "options": {
+   "A": "剪毛法",
+   "B": "拔毛法",
+   "C": "剃毛法",
+   "D": "先麻醉后除毛"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s398",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "吸入麻醉最常用麻醉剂是 ______。",
+  "options": {
+   "A": "水合氯醛",
+   "B": "氨基甲酸乙酯",
+   "C": "硫喷妥钠",
+   "D": "乙醚"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s399",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "操作简便，麻醉过程较平稳，常用的麻醉方法是 ______。",
+  "options": {
+   "A": "吸入法",
+   "B": "腹腔和静脉给药法",
+   "C": "皮下注射法",
+   "D": "肌肉注射"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s400",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列标记法中，最简单、适用于小动物短期实验的是 ______。",
+  "options": {
+   "A": "染色法",
+   "B": "耳缘剪孔法",
+   "C": "烙印法",
+   "D": "挂牌法"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s401",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实施全身麻醉，猫、犬、猪或非人灵长类大动物禁食不能少于 ______。",
+  "options": {
+   "A": "2h",
+   "B": "8h",
+   "C": "12h",
+   "D": "24h"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s402",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "经口给药方法中，既简单方便，又能较好保证剂量准确的是 ______。",
+  "options": {
+   "A": "灌胃法",
+   "B": "口服法",
+   "C": "喂服法",
+   "D": "注射法"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s403",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "兔少量多次的采血途径是 ______。",
+  "options": {
+   "A": "断头",
+   "B": "耳静脉",
+   "C": "心脏",
+   "D": "眼眶静脉丛"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s404",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "自发性动物模型的缺点是 ______。",
+  "options": {
+   "A": "与人类相应疾病相似性不高",
+   "B": "受人为因素的影响",
+   "C": "应用价值一般",
+   "D": "来源困难，种类有限"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s405",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "特定的疾病不会在某种动物身上发生，这种动物可以成为哪种动物模型 ______。",
+  "options": {
+   "A": "自发性动物模型",
+   "B": "诱发性动物模型",
+   "C": "抗疾病型动物模型",
+   "D": "系统疾病动物模型"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s406",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "兔胸腔的特殊结构用于胸外科手术研究比较方便，此动物模型属于 ______。",
+  "options": {
+   "A": "生物医学模型",
+   "B": "抗疾病性模型",
+   "C": "诱发性模型",
+   "D": "自发性模型"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s407",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "属于按照中医症候分类的动物模型是 ______。",
+  "options": {
+   "A": "解表药动物模型",
+   "B": "理气药动物模型",
+   "C": "厥脱症动物模型",
+   "D": "平喘药动物模型"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s408",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "属于按照中药理论分类的动物模型是 ______。",
+  "options": {
+   "A": "气虚动物模型",
+   "B": "温里药动物模型",
+   "C": "血虚动物模型",
+   "D": "阴虚动物模型"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s409",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "先天性T淋巴细胞功能缺陷动物是 ______。",
+  "options": {
+   "A": "裸鼠",
+   "B": "大鼠",
+   "C": "新西兰兔",
+   "D": "Beagle犬"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s410",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "先天性B淋巴细胞功能缺陷动物是 ______。",
+  "options": {
+   "A": "裸小鼠",
+   "B": "BALB/CIH 鼠",
+   "C": "CBA/N小鼠",
+   "D": "NIH小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s411",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "先天性NK细胞功能缺陷动物是 ______。",
+  "options": {
+   "A": "KM小鼠",
+   "B": "CBA/N小鼠",
+   "C": "裸小鼠",
+   "D": "Beige小鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s412",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "常用于人体肿瘤移植研究的动物是 ______。",
+  "options": {
+   "A": "裸大鼠",
+   "B": "SCID小鼠",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s413",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "最适合筛选抗高血压药物的大鼠是 ______。",
+  "options": {
+   "A": "SD大鼠",
+   "B": "Wistar大鼠",
+   "C": "ACI大鼠",
+   "D": "SHR大鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s414",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "哪个不是通常认为的模式动物 ______。",
+  "options": {
+   "A": "果蝇",
+   "B": "班马鱼",
+   "C": "大鼠",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s415",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "研究人类基因功能最理想的模式动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s416",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "转基因动物模型属于下列哪类动物模型 ______。",
+  "options": {
+   "A": "自发性动物模型",
+   "B": "诱发性动物模型",
+   "C": "抗疾病开动动物模型",
+   "D": "生物医学动物模型"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s417",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "获得遗传工程动物模型的基本技术手段是 ______。",
+  "options": {
+   "A": "显微注射转基因",
+   "B": "基因化学和放射性诱变",
+   "C": "基因定位突变",
+   "D": "以上都是"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s418",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "研究最多、最深入的基因敲除动物模型的动物是 ______。",
+  "options": {
+   "A": "基因敲除小鼠",
+   "B": "基因敲除大鼠",
+   "C": "基因敲除豚鼠",
+   "D": "基因敲除兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s419",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "显微注射法培育转基因动物时，将外源目的基因注射的正确方法是 ______。",
+  "options": {
+   "A": "注射到成熟卵母细胞的细胞核内",
+   "B": "注射到受精卵的细胞质内",
+   "C": "注射到受精卵的雄性原核内",
+   "D": "注射到受精卵的雌性原核内"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s420",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "将外源目的基因随机插入到小鼠染色体基因组便可得到 ______。",
+  "options": {
+   "A": "转基因小鼠",
+   "B": "基因敲除小鼠",
+   "C": "基因剔除小鼠",
+   "D": "基因替换小鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s421",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物实验时对实验动物的基本要求是 ______。",
+  "options": {
+   "A": "个体间的均一性",
+   "B": "容易获得",
+   "C": "遗传的稳定性",
+   "D": "三者均要求"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s422",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "慢性实验周期较长，一般应选择 ______。",
+  "options": {
+   "A": "幼龄动物",
+   "B": "成年动物",
+   "C": "老龄动物",
+   "D": "幼龄动物与老龄动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s423",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "年龄是实验动物选择时一个重要的生物量，较敏感的动物年龄是 ______。",
+  "options": {
+   "A": "幼龄动物",
+   "B": "老龄动物",
+   "C": "成年动物",
+   "D": "生病的动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s424",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物实验结果的外推结论应在 ______情况下作出。",
+  "options": {
+   "A": "使用多种动物",
+   "B": "多次、反复试验",
+   "C": "科学地分析",
+   "D": "结合以上3点"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s425",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是目前国内科研标准实验动物，适用于大多数科研实验。",
+  "options": {
+   "A": "普通动物",
+   "B": "SPF动物",
+   "C": "清洁动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s426",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国际公认的标准实验动物是 ______。",
+  "options": {
+   "A": "普通动物",
+   "B": "SPF动物",
+   "C": "清洁动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s427",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一般来说,淡水中生活的动物尿液是 ______。",
+  "options": {
+   "A": "低渗",
+   "B": "等渗",
+   "C": "高渗",
+   "D": "测不出渗透压"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s428",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一般来说，海水中生活的动物尿液是 ______。",
+  "options": {
+   "A": "低渗",
+   "B": "等渗",
+   "C": "高渗",
+   "D": "测不出渗透压"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s429",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一般来说，陆地上生活的动物尿液是 ______。",
+  "options": {
+   "A": "低渗",
+   "B": "等渗",
+   "C": "高渗",
+   "D": "测不出渗透压"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s430",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适宜选做烧伤实验的动物 ______。",
+  "options": {
+   "A": "豚鼠",
+   "B": "猪",
+   "C": "狗",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s431",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适宜实验外科学研究的实验动物 ______。",
+  "options": {
+   "A": "兔",
+   "B": "猴",
+   "C": "犬",
+   "D": "大鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s432",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "食用高胆固醇食物很容易出现动脉粥样硬化典型病灶的实验动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "兔",
+   "C": "猪",
+   "D": "犬"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s433",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适合观察药物对循环系统的作用机制分析的实验动物 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "豚鼠",
+   "C": "猫",
+   "D": "兔"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s434",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "因为是红绿色盲，不能以红绿色作为条件刺激物，进行条件反射实验的动物是 ______。",
+  "options": {
+   "A": "大鼠",
+   "B": "豚鼠",
+   "C": "兔",
+   "D": "犬"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s435",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适宜于观察减压神经对心脏影响试验的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s436",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适于作发热和检查致热原研究的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s437",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "无胆囊，不能选作胆囊功能研究的动物是 ______。",
+  "options": {
+   "A": "犬",
+   "B": "大鼠",
+   "C": "猫",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s438",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适合作胆管插管收集胆汁，进行消化功能研究的动物是 ______。",
+  "options": {
+   "A": "犬",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s439",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "易产生真性糖尿病，胰岛退化，适于糖尿病研究的动物是 ______。",
+  "options": {
+   "A": "猫",
+   "B": "犬",
+   "C": "中国地鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s440",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "何种动物不能合成维生素C？ ______",
+  "options": {
+   "A": "小鼠、大鼠",
+   "B": "豚鼠、猕猴",
+   "C": "兔、犬",
+   "D": "猫、猪"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s441",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对人型结核杆菌高度易感，病变与人类相似，作为结核病诊断及病理研究首选实验动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s442",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "解热药研究首选动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "家兔",
+   "C": "犬",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s443",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "做神经节传导阻滞影响的药物试验时，首选 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "猫",
+   "D": "兔"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s444",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "镇咳药筛选试验的首选动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "兔",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s445",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对化学刺激或电刺激不敏感，故很少用于筛选试验镇咳药的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "兔",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s446",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "因气管平滑肌对致痉剂和药物的反应最敏感，而作为支气管扩张药物研究最常用的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s447",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "常用实验动物中，有呕吐反射的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s448",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "常用实验动物，无呕吐反射的动物是 ______。",
+  "options": {
+   "A": "兔",
+   "B": "猫",
+   "C": "犬",
+   "D": "猴"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s449",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关利尿药物或抗利尿药物研究的动物，选择错误的是 ______。",
+  "options": {
+   "A": "雄性大鼠",
+   "B": "犬",
+   "C": "家兔",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s450",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "常用于制备免疫血清的动物是 ______。",
+  "options": {
+   "A": "犬",
+   "B": "兔",
+   "C": "鼠",
+   "D": "猴"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s451",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "皮肤结构与人相似，常用于人烧伤后的敷盖物的动物皮肤是 ______。",
+  "options": {
+   "A": "猪",
+   "B": "兔",
+   "C": "犬",
+   "D": "鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s452",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适合用于药物对循环系统作用机制的分析的动物是 ______。",
+  "options": {
+   "A": "猫",
+   "B": "小鼠",
+   "C": "兔",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s453",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "药物LD50常选用的动物是 ______。",
+  "options": {
+   "A": "犬",
+   "B": "封闭群大小鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s454",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "不麻醉能耐受手术切割皮肤、肌肉等组织引起的疼痛的动物是 ______。",
+  "options": {
+   "A": "兔",
+   "B": "猪",
+   "C": "树鼩",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s455",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "适合于各类唇裂、腭裂的研究动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "犬",
+   "D": "兔"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s456",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长期毒性试验啮齿类动物常用 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "中国地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s457",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "长期毒性试验大动物一般选 ______。",
+  "options": {
+   "A": "猴",
+   "B": "猪",
+   "C": "兔",
+   "D": "Beagle犬"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s458",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "皮肤病学研究中 ______是常选用动物。",
+  "options": {
+   "A": "青蛙",
+   "B": "狗",
+   "C": "小型猪",
+   "D": "兔"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s459",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "胸腔由纵隔分成互不相通的左右两部分的实验动物是 ______。",
+  "options": {
+   "A": "豚鼠",
+   "B": "兔",
+   "C": "犬",
+   "D": "猪"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s460",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "减压神经独立分支，交感神经与迷走神经合并为迷走交感干的实验动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "兔",
+   "C": "大鼠",
+   "D": "犬"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s461",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列器官或组织，大鼠没有的是 ______。",
+  "options": {
+   "A": "胆囊",
+   "B": "胸腺",
+   "C": "汗腺",
+   "D": "胰腺"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s462",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "食用高胆固醇，高脂肪饲料后易形成动脉粥样硬化与高脂血症模型的动物是 ______。",
+  "options": {
+   "A": "小鼠",
+   "B": "大鼠",
+   "C": "豚鼠",
+   "D": "兔"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s463",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "压迫膀胱法集尿适用于 ______。",
+  "options": {
+   "A": "犬",
+   "B": "小鼠",
+   "C": "大鼠",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s464",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一般动物实验应选择多大年龄的动物 ______。",
+  "options": {
+   "A": "幼龄动物",
+   "B": "成年动物",
+   "C": "老龄动物",
+   "D": "成年和老龄动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s465",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "做简单的反射弧实验，宜选用的动物是 ______。",
+  "options": {
+   "A": "鼠",
+   "B": "兔",
+   "C": "犬",
+   "D": "蛙和蟾蜍"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s466",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "哪种动物易于调教，通过短期训练即可较好地配合实验，故非常适合进行慢性实验研究           。",
+  "options": {
+   "A": "小鼠",
+   "B": "兔",
+   "C": "犬",
+   "D": "豚鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s467",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "心血管病研究较好的动物模型，通常是          。",
+  "options": {
+   "A": "大鼠",
+   "B": "犬",
+   "C": "兔",
+   "D": "小鼠"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s468",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "选用金黄地鼠观察微循环的优点是 ______。",
+  "options": {
+   "A": "颊囊壁组织藻而颜色淡，透光性好，微血管清晰",
+   "B": "颊嗝的伸缩性很大，一般较大的刺激对微循环影响不大",
+   "C": "颊囊是双侧对称，可在同一动物身上进行自身对照",
+   "D": "以上都是"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s469",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在近交系动物管理实践中，由于其他品系动物与本品系动物发生交配所致的实验动物管理事故是______。",
+  "options": {
+   "A": "遗传污染",
+   "B": "遗传漂变",
+   "C": "突变",
+   "D": "遗传改变"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s470",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在近交系动物管理实践中，一个品系动物基因型在饲养过程中可能发生的随机改变，这种改变多由于近交系动物残留杂合基因分离，造成了亚系的形成，这是______。",
+  "options": {
+   "A": "遗传污染",
+   "B": "遗传漂变",
+   "C": "突变",
+   "D": "遗传改变"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s471",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在近交系动物管理实践中，由于动物基因组中某个核苷酸残基的置换、缺失或插入，引起一个等位基因的改变，这是______。",
+  "options": {
+   "A": "遗传污染",
+   "B": "遗传漂变",
+   "C": "突变",
+   "D": "遗传改变"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s472",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物在繁殖过程中，产生与自己相似的个体，以保证物种世代延续。这种子代在形态、生理、生化等方面的特征与亲代的一致性，称为______。",
+  "options": {
+   "A": "遗传",
+   "B": "变异",
+   "C": "延续",
+   "D": "繁殖"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s473",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "控制性状的一对基因不论在纯合或杂交状态时，每个基因都保持各自的独立性，在形成性细胞时，基因分离各自分配到各个性细胞中，这是孟德尔遗传的哪种基本定律        。",
+  "options": {
+   "A": "分离定律",
+   "B": "自由组合定律",
+   "C": "自由组合定律",
+   "D": "随机定律"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s474",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "两对（或多对）相对性状遗传，形成性细胞时，每对性状基因的分离与其他性状的基因分离无关，不同性状的基因组合在一个性细胞中完全是随机的，两性细胞结合成合子，基因型的组合也是随机的，这是孟德尔遗传的______。",
+  "options": {
+   "A": "分离定律",
+   "B": "自由组合定律",
+   "C": "独立定律",
+   "D": "随机定律"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s475",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "一种生物的基因数目远远多于染色体的数目，因而一条染色体上存在多个基因，很多基因存在于同一条染色体上，称为______。",
+  "options": {
+   "A": "基因连锁",
+   "B": "基因同体",
+   "C": "基因同株",
+   "D": "染色体同体"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s476",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "用圆头表示着丝点、黑线表示按细胞学长度比例染色体的相对遗传长度，说明小鼠各染色体上基因之间位置关系及其距离的图谱称为______。",
+  "options": {
+   "A": "小鼠基因连锁图",
+   "B": "小鼠基因同体图",
+   "C": "小鼠基因同株图",
+   "D": "小鼠染色体同体图"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s477",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对于群体，我们假定一个大群体实行随机交配，则某一后代在亲代中随机取得一对同源等位基因的概率，它还表示动物近交程度的一个指数，这就是这一个体的______。",
+  "options": {
+   "A": "近交系数",
+   "B": "近交指数",
+   "C": "近交概率",
+   "D": "近交频率"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s478",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "至少连续20代的同胞兄妹交配培育而成，品系内所有个体都可追溯到起源于第20代或以后代数的一对共同祖先，是指______。",
+  "options": {
+   "A": "近交系",
+   "B": "封闭群",
+   "C": "杂交群",
+   "D": "重组系"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s479",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "由两个近交系动物杂交后，经连续20代以上兄妹交配育成的近交系，为______。",
+  "options": {
+   "A": "重组近交系",
+   "B": "同源突变系",
+   "C": "同源导入近交系",
+   "D": "转基因动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s480",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "两个近交系，除了在一个指明位点等位基因不同外，其他遗传基因全部相同，简称为______。",
+  "options": {
+   "A": "重组近交系",
+   "B": "同源突变系",
+   "C": "同源导入近交系",
+   "D": "转基因动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s481",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "通过杂交-互交或回交等方式将一个基因导入到近交系中，由此形成的一个新的近交系与原来的近交系只是在一个很小的染色体片段上的基因不同，称为______。",
+  "options": {
+   "A": "重组近交系",
+   "B": "同源突变系",
+   "C": "同源导入近交系",
+   "D": "转基因动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s482",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "通过实验手段将新的遗传物质导入到动物胚细胞中，并能稳定遗传，由此获得的动物称为______。",
+  "options": {
+   "A": "重组近交系",
+   "B": "同源突变系",
+   "C": "同源导入近交系",
+   "D": "转基因动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s483",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于近交系命名的是______。",
+  "options": {
+   "A": "A（F87）",
+   "B": "N：NIH",
+   "C": "B6D2F1",
+   "D": "（NMRI X LAC）F2"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s484",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于封闭群命名的是______。",
+  "options": {
+   "A": "A（F87）",
+   "B": "N：NIH",
+   "C": "B6D2F1",
+   "D": "CXB1"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s485",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于杂交群命名的是______。",
+  "options": {
+   "A": "A（F87）",
+   "B": "N：NIH",
+   "C": "B6D2F1",
+   "D": "CXB1"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s486",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于重组近交系命名的是______。",
+  "options": {
+   "A": "CXB1",
+   "B": "A/Fa- +/c",
+   "C": "B10.129-H-12b",
+   "D": "C57BL/6J-TgN(CD8Ge)23Jwg"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s487",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于同源突变近交系命名的是______。",
+  "options": {
+   "A": "CXB1",
+   "B": "A/Fa- +/c",
+   "C": "B10.129-H-12b",
+   "D": "C57BL/6J-TgN(CD8Ge)23Jwg"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s488",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于同源导入近交系命名的是______。",
+  "options": {
+   "A": "CXB1",
+   "B": "A/Fa- +/c",
+   "C": "B10.129-H-12b",
+   "D": "C57BL/6J-TgN(CD8Ge)23Jwg"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s489",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列属于转基因动物命名的是______。",
+  "options": {
+   "A": "CXB1",
+   "B": "A/Fa- +/c",
+   "C": "B10.129-H-12b",
+   "D": "C57BL/6J-TgN(CD8Ge)23Jwg"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s490",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列哪个选项表示该同源导入近交系的遗传背景为C57BL/10sn(=B10)，导入B10的基因为H-12b，基因提供者为129/J近交系。______",
+  "options": {
+   "A": "B10.129-H-12b",
+   "B": "B10-H-12b.129",
+   "C": "129-H-12b. B10 D",
+   "D": "B10-H-12b"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s491",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列哪个选项表示来源于美国杰克逊研究所（J）的C57BL/6品系小鼠被转入了的CD8基因组（Ge）；转基因工作在Jon W.Gordon(Jwg)实验室完成,这个小鼠是该实验室通过一系列显微注射后得到的序号为23的小鼠。______",
+  "options": {
+   "A": "C57BL/6J-TgN(CD8Ge)23Jwg",
+   "B": "JwgC57BL/6J-TgN(CD8Ge)23",
+   "C": "C57BL/6J-TgN23 (CD8Ge) Jwg",
+   "D": "TgN(CD8Ge)23Jwg -C57BL/6J"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s492",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "以非近亲交配方式进行繁殖生产的一个实验动物种群，在不从其外部引入新个体的条件下，至少连续繁殖4代以上，称为______。",
+  "options": {
+   "A": "近交系",
+   "B": "封闭群",
+   "C": "杂交群",
+   "D": "重组系"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s493",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "由不同品系或种群之间杂交产生的后代，称为______。",
+  "options": {
+   "A": "近交系",
+   "B": "封闭群",
+   "C": "杂交群",
+   "D": "重组系"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s494",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "皮肤移植法是指每个品系随机抽取至少4只相同性别的成年动物，进行______。",
+  "options": {
+   "A": "同系同体皮肤移植",
+   "B": "异系同体皮肤移植",
+   "C": "同系异体皮肤移植",
+   "D": "异系异体皮肤移植"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s495",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "不携带所规定的人兽共患病病原和动物烈性传染病的病原的动物是______。",
+  "options": {
+   "A": "普通级动物",
+   "B": "清洁动物",
+   "C": "无特定病原体动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s496",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "除普通动物应排除的病原外，不携带对动物危害大和对科学研究干扰大的病原的动物是______。",
+  "options": {
+   "A": "普通级动物",
+   "B": "清洁动物",
+   "C": "无特定病原体动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s497",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "除清洁动物应排除的病原外，不携带主要潜在感染或条件致病和对科学实验干扰大的病原的动物是______。",
+  "options": {
+   "A": "普通级动物",
+   "B": "清洁动物",
+   "C": "无特定病原体动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s498",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "无可检出的一切生命体的动物是______。",
+  "options": {
+   "A": "普通级动物",
+   "B": "清洁动物",
+   "C": "无特定病原体动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s499",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级实验兔需排除的病毒为______。",
+  "options": {
+   "A": "淋巴细胞脉络丛脑膜炎病毒",
+   "B": "兔出血症病毒",
+   "C": "仙台病毒",
+   "D": "汉坦病毒"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s500",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级实验豚鼠需要排除的病毒是______。",
+  "options": {
+   "A": "淋巴细胞脉络丛脑膜炎病毒",
+   "B": "仙台病毒",
+   "C": "汉坦病毒",
+   "D": "呼肠孤病毒Ⅲ型"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s501",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级实验猴需要排除的病毒是______。",
+  "options": {
+   "A": "淋巴细胞脉络丛脑膜炎病毒",
+   "B": "仙台病毒",
+   "C": "猴B病毒",
+   "D": "汉坦病毒"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s502",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是在隔离系统内饲育的，经检测其体内外仅有经人工计划接种的已知的微生物或寄生虫的动物。该类动物是向无菌动物接种一种或几种已知菌而获得的。",
+  "options": {
+   "A": "悉生动物",
+   "B": "SPF级动物",
+   "C": "清洁动物",
+   "D": "普通动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s503",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级实验动物微生物和寄生虫的检测频率要求是______。",
+  "options": {
+   "A": "每一年至少检测动物一次",
+   "B": "每六个月至少检测动物一次",
+   "C": "每三个月至少检测动物一次",
+   "D": "每一个月至少检测动物一次"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s504",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "清洁级实验动物微生物和寄生虫的检测频率要求是______。",
+  "options": {
+   "A": "每一年至少检测动物一次",
+   "B": "每六个月至少检测动物一次",
+   "C": "每三个月至少检测动物一次",
+   "D": "每一个月至少检测动物一次"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s505",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "SPF级实验动物微生物和寄生虫的检测频率要求是______。",
+  "options": {
+   "A": "每一年至少检测动物一次",
+   "B": "每六个月至少检测动物一次",
+   "C": "每三个月至少检测动物一次",
+   "D": "每一个月至少检测动物一次"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s506",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "无菌动物微生物和寄生虫的检测频率要求是______。",
+  "options": {
+   "A": "每一年至少检测动物一次",
+   "B": "每六个月至少检测动物一次",
+   "C": "每三个月至少检测动物一次",
+   "D": "每一个月至少检测动物一次"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s507",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物微生物和寄生虫的检测取样要求是______。",
+  "options": {
+   "A": "选择幼年动物用于检测",
+   "B": "选择成年动物用于检测",
+   "C": "选择老年动物用于检测",
+   "D": "选择刚出生动物用于检测"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s508",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物微生物和寄生虫的检测取样数量：每个小鼠、大鼠、地鼠、豚鼠和兔生产繁殖单元以及每个犬、猴生产繁殖群体，根据动物多少，取样数量也不同，群体大小<100时，取样数量为______。",
+  "options": {
+   "A": ">5只",
+   "B": ">10只",
+   "C": ">20只",
+   "D": ">50只"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s509",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物微生物和寄生虫的检测取样数量：每个隔离器检测取样______。",
+  "options": {
+   "A": "1只",
+   "B": "2只",
+   "C": "5只",
+   "D": "10只"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s510",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠癣螨的宿主是______。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "豚鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s511",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "鼠肉螨的宿主是______。",
+  "options": {
+   "A": "大鼠",
+   "B": "小鼠",
+   "C": "豚鼠",
+   "D": "地鼠"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s512",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物实验是对演出型施加一定的处理，为求得动物对处理结果的可重复性，就要求演出型的稳定。动物对实验处理的反应可用以下公式表示：R＝（A＋B＋C）×D＋E，其中D代表______。",
+  "options": {
+   "A": "动物种的共同反应",
+   "B": "品种及品系特有的反应",
+   "C": "个体反应（个体差异）",
+   "D": "环境影响"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s513",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对动物的生殖系统是一个强烈的刺激因素，起定时器作用的环境因素是______。",
+  "options": {
+   "A": "温度",
+   "B": "光照",
+   "C": "换气次数",
+   "D": "湿度"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s514",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物设施中的空调系统集中冷源（冷机、水泵）系统，并将全部空气处理设备（风机、空气表冷器、加湿器、过滤器、加热器等）都集中在同一机房内，将处理过的空气通过风道（管）、风口送至实验动物屏障设施区域内。这是______。",
+  "options": {
+   "A": "集中式空调系统",
+   "B": "半集中式空调系统",
+   "C": "局部式空调系统",
+   "D": "半局部式空调系统"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s515",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是利用稀释作用，使室内尘源产生的灰尘均匀扩散而被“冲淡”，满足工艺和人的卫生要求，避免涡流把工作区外的灰尘卷入工作区，以减少产品的污染机会。一般采用上送下回的形式，使气流自上而下，与尘粒重力沉降方向一致。",
+  "options": {
+   "A": "空气乱流",
+   "B": "空气层流",
+   "C": "空气矢流",
+   "D": "空气逆流"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s516",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "流线平行、流向单一、具有一定的、均匀的断面速度的气流组织方式，送入房间的气流充满整个洁净室断面，它像“活塞作用”那样把室内随时产的灰尘压至下风侧，再把灰尘排至室外。这称为______。",
+  "options": {
+   "A": "空气乱流",
+   "B": "空气层流",
+   "C": "空气矢流",
+   "D": "空气逆流"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s517",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "采用弧形送风口送风，于侧上角送风，对侧下角回风。它是一种新型的气流组织方式，其净化功能是靠流线不交叉的气流的推动作用，将室内污染物排出室外。这称为______。",
+  "options": {
+   "A": "空气乱流",
+   "B": "空气层流",
+   "C": "空气矢流",
+   "D": "空气逆流"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s518",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______设置在新风口。一般采用易于清洗和更换的粗、中孔泡沫塑料或其它滤料用于新风过滤，过滤对象是大于10μm的尘粒。",
+  "options": {
+   "A": "粗效空气过滤器",
+   "B": "中效空气过滤器",
+   "C": "高效空气过滤器",
+   "D": "超效空气过滤器"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s519",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______设置在设施系统的正压处。一般采用中、细孔泡沫塑料或其它纤维，滤料的过滤器，用于过滤新风及回风，延长高效空气过滤器使用年限，过滤对象是1-10μm的尘粒。",
+  "options": {
+   "A": "粗效空气过滤器",
+   "B": "中效空气过滤器",
+   "C": "高效空气过滤器",
+   "D": "超效空气过滤器"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s520",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______设置在设施系统的末端。一般采用玻璃纤维滤纸，石棉纤维滤纸和合成纤维滤纸等三类滤料的滤器，主要用于过滤小于1μm的尘粒。",
+  "options": {
+   "A": "粗效空气过滤器",
+   "B": "中效空气过滤器",
+   "C": "高效空气过滤器",
+   "D": "超效空气过滤器"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s521",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是一种活病原微生物的动物实验设施，该设施重点要求具备防止危险有害因素向设施外传播和扩散的结构和功能。通常的防护主要靠物理学隔离原理，采用负压通风达到防止有害气溶胶扩散的目的。",
+  "options": {
+   "A": "生物安全柜",
+   "B": "生物安全度",
+   "C": "病原危害",
+   "D": "病原危害度"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s522",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在生物医学研究中，为防止传染病源或其一部分通过直接传染或环境的间接传播对健康人体、动物或植物存在确实或潜在的危害，必须在______中进行。",
+  "options": {
+   "A": "感染性动物实验设施",
+   "B": "病原性动物实验设施",
+   "C": "负压动物实验设施",
+   "D": "控制性动物实验设施"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s523",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "设施符合动物居住的基本要求，不能完全控制传染因子，适用于饲育教学等用途的普通级实验动物，该环境是______。",
+  "options": {
+   "A": "普通环境",
+   "B": "屏障环境",
+   "C": "隔离环境",
+   "D": "半屏障环境"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s524",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "环境设施适用于饲育清洁级实验动物及SPF实验动物，该环境严格控制人员、物品和环境空气的进出，该环境是______。",
+  "options": {
+   "A": "普通环境",
+   "B": "屏障环境",
+   "C": "隔离环境",
+   "D": "半屏障环境"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s525",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "环境设施采用无菌隔离装置以保存无菌或无外来污染动物，该环境是______。",
+  "options": {
+   "A": "普通环境",
+   "B": "屏障环境",
+   "C": "隔离环境",
+   "D": "半屏障环境"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s526",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "饲育、实验均在普通环境中的是哪级动物？______。",
+  "options": {
+   "A": "普通级动物",
+   "B": "清洁级动物",
+   "C": "SPF级动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s527",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "饲育、实验均在隔离环境中的是哪级动物？______。",
+  "options": {
+   "A": "普通级动物",
+   "B": "清洁级动物",
+   "C": "SPF级动物",
+   "D": "无菌动物"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s528",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物环境指标中，只有动态监测特性的指标是______。",
+  "options": {
+   "A": "换气次数",
+   "B": "氨气浓度",
+   "C": "空气洁净度",
+   "D": "微生物落下菌"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s529",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物笼器具产品检测时的抽样，笼箱，饮水瓶的数量是______。",
+  "options": {
+   "A": "3-5只/次/批",
+   "B": "5-10只/次/批",
+   "C": "10-15只/次/批",
+   "D": "15-20只/次/批"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s530",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物笼器具产品检测时的抽样，网盖，笼架取样的数量是______。",
+  "options": {
+   "A": "3-5只/次/批",
+   "B": "5-10只/次/批",
+   "C": "10-15只/次/批",
+   "D": "15-20只/次/批"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s531",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "不带有强制性空气净化装置的笼器具，它包括笼箱、笼架和饮水瓶，这一种笼器具是指______。",
+  "options": {
+   "A": "普通笼器具",
+   "B": "净化笼器具",
+   "C": "隔离笼器具",
+   "D": "屏障笼器具"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s532",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "带有空气净化装置的特殊笼器具，包括层流架、隔离器、带空气过滤帽的塑料笼等，这一种笼器具是指______。",
+  "options": {
+   "A": "普通笼器具",
+   "B": "净化笼器",
+   "C": "隔离笼器具",
+   "D": "屏障笼器具"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s533",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "灵长类动物或豚鼠，因缺乏L－谷氨酸氧化酶，必须人工添加______。",
+  "options": {
+   "A": "维生素A",
+   "B": "维生素B族",
+   "C": "维生素C",
+   "D": "维生素D"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s534",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是指含粗纤维18％以上，每千克干物质的消化能不超过10467kJ的饲料。如农作物在籽实成熟后，收获籽实所剩余的副产品。",
+  "options": {
+   "A": "粗饲料",
+   "B": "青绿饲料",
+   "C": "青贮饲料",
+   "D": "能量饲料"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s535",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是指富含叶绿素的植物性饲料，包括牧草、蔬菜类饲料、作物的茎叶、枝叶饲料及水生植物饲料等。",
+  "options": {
+   "A": "粗饲料",
+   "B": "青绿饲料",
+   "C": "青贮饲料",
+   "D": "能量饲料"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s536",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是指利用青贮技术，使青饲料处于厌氧条件下，利用乳酸菌发酵产生乳酸，使青饲料处于pH 3.8～4.2的环境中，从而较好地保存原有营养价值的青饲料。",
+  "options": {
+   "A": "粗饲料",
+   "B": "青绿饲料",
+   "C": "青贮饲料",
+   "D": "能量饲料"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s537",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是指粗纤维含量不足18％，或每千克饲料干物质中含消化能10467kJ以上的饲料。主要有谷类籽实、块根、块茎类饲料及其加工副产品。",
+  "options": {
+   "A": "粗饲料",
+   "B": "青绿饲料",
+   "C": "青贮饲料",
+   "D": "能量饲料"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s538",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是指根据饲养动物的营养需要，将多种饲料原料按饲料配方经工业化生产的均匀混合物。",
+  "options": {
+   "A": "配合饲料",
+   "B": "浓缩饲料",
+   "C": "添加剂预混料",
+   "D": "代乳饲料"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s539",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是以蛋白质饲料为主，混以矿物质和添加剂预混料配比而成。不能直接饲喂动物，须按说明与能量饲料或粗饲料混合后才可使用。",
+  "options": {
+   "A": "配合饲料",
+   "B": "浓缩饲料",
+   "C": "添加剂预混料",
+   "D": "代乳饲料"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s540",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "由营养物质添加剂（如各种氨基酸和维生素等）和非营养物质添加剂（如促生长剂、黏合剂和防霉剂等），按各种饲料配方需要加上必要的载体配制成各种添加剂预混料，分别包装，在配料时按比例加入。这是______。",
+  "options": {
+   "A": "配合饲料",
+   "B": "浓缩饲料",
+   "C": "添加剂预混料",
+   "D": "代乳饲料"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s541",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "能够替代自然乳的全价配合饲料是______。",
+  "options": {
+   "A": "配合饲料",
+   "B": "浓缩饲料",
+   "C": "添加剂预混料",
+   "D": "代乳饲料"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s542",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "大鼠、小鼠、兔目前最常用的饲喂饲料是______。",
+  "options": {
+   "A": "粉状饲料",
+   "B": "颗粒饲料",
+   "C": "膨化饲料",
+   "D": "液体饲料"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s543",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "在实验动物饲料灭菌中有一种方式，能有效地摧毁微生物，也不会在饲料中留下残留量，并且对营养成分破坏极小。它也是饲料灭菌的最佳选择，这种方式是______。",
+  "options": {
+   "A": "高压",
+   "B": "熏蒸",
+   "C": "辐照",
+   "D": "日照"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s544",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "水分太多的实验动物饲料易霉变。贮存的颗粒饲料含水率应低于______。",
+  "options": {
+   "A": "8%",
+   "B": "11%",
+   "C": "16%",
+   "D": "18%"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s545",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物饲料中蛋白质由氨基酸组成，饲料中的蛋白质必须分解成氨基酸，才能被吸收。动物体内不能合成或合成速度及数量不能满足正常生长需要，必须由饲料供给氨基酸，它是______。",
+  "options": {
+   "A": "必需氨基酸",
+   "B": "非必需氨基酸",
+   "C": "植物性氨基酸",
+   "D": "动物性氨基酸"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s546",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______作为能量的主要来源在植物性饲料中含量丰富，约占全部营养物质的70％，是构成机体组织及生命物质的重要成分，也可变为脂肪贮存在体内。",
+  "options": {
+   "A": "碳水化合物",
+   "B": "蛋白质",
+   "C": "氨基酸",
+   "D": "脂肪"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s547",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "碳水化合物可分为两类，一种对实验动物肠粘膜有刺激作用，可促进胃肠蠕动和粪便的排泄，在反刍动物的瘤胃和兔的盲肠内，经微生物的发酵作用，一部分变为脂肪酸为动物利用。它是______。",
+  "options": {
+   "A": "粗纤维",
+   "B": "细纤维",
+   "C": "无氮浸出物",
+   "D": "含氮浸出物"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s548",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "碳水化合物可分为两类，一类是提供热能及转化成脂肪的重要物质。它是______。",
+  "options": {
+   "A": "粗纤维",
+   "B": "细纤维",
+   "C": "无氮浸出物",
+   "D": "含氮浸出物"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s549",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物饲料中的脂肪可分成两大类。其中由脂肪酸与甘油结合而成的是______。",
+  "options": {
+   "A": "真脂肪",
+   "B": "类脂肪",
+   "C": "次脂肪",
+   "D": "混脂肪"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s550",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "缺乏下列哪些微量元素，会表现有异嗜，食欲不振，生产力和繁殖力降低；骨骼病变，如佝偻病，骨端、关节变大，骨骼变形，脊柱和胸骨弯曲，骨软症，骨骼变得多孔而脆弱，易骨折等？______",
+  "options": {
+   "A": "铁、铜",
+   "B": "钠、氯",
+   "C": "钙、磷",
+   "D": "碘"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s551",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物饲料产品检测时抽样：大小鼠、兔、豚鼠饲料抽样的数量为______。",
+  "options": {
+   "A": "0.5kg/次/批",
+   "B": "1kg/次/批",
+   "C": "1.5kg/次/批",
+   "D": "2kg/次/批"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s552",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是细胞生长增殖、维持上皮组织的正常形态和视网膜功能的重要物质。缺乏它实验动物会生长不良，易感染疾病，神经系统、上皮退化，四肢麻痹，眼疾，胃肠活动失常，丧失生殖能力。",
+  "options": {
+   "A": "维生素A",
+   "B": "维生素D",
+   "C": "维生素E",
+   "D": "维生素B族"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s553",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______是参与调节钙、磷代谢，促进骨的生长和骨组织的矿质化。缺乏它将降低对钙、磷的吸收及利用能力，发生佝偻病、软骨病等。",
+  "options": {
+   "A": "维生素A",
+   "B": "维生素D",
+   "C": "维生素E",
+   "D": "维生素B族"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s554",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "______和生殖、泌乳有关，缺乏后可引起动物不育症。鲜草和其他青绿饲料、干草以及种子的胚芽中含量丰富。",
+  "options": {
+   "A": "维生素A",
+   "B": "维生素D",
+   "C": "维生素E",
+   "D": "维生素B族"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s555",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "清洁级大、小鼠配合饲料中维持饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤18 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤14 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤20 粗脂肪≤4.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s556",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级兔配合饲料中维持饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤18 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤14 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤20 粗脂肪≤4.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s557",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级豚鼠配合饲料中维持饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤18 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤14 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤20 粗脂肪≤4.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s558",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级犬配合饲料中维持饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤18 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤14 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤20 粗脂肪≤4.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s559",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "清洁级大、小鼠配合饲料中生产、繁殖饲料饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤20 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤20 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤24 粗脂肪≤6.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s560",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级兔配合饲料中生产、繁殖饲料饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤20 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤20 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤20 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s561",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级豚鼠配合饲料中生产、繁殖饲料饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤20 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤20 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤24 粗脂肪≤6.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "C"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s562",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "普通级犬配合饲料中生产、繁殖饲料饲料常规营养成分为______。",
+  "options": {
+   "A": "水份≤10 蛋白质≤20 粗脂肪≤4 粗纤维≤5 粗灰分≤8",
+   "B": "水份≤11 蛋白质≤17 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "C": "水份≤11 蛋白质≤20 粗脂肪≤3 粗纤维≤10-15 粗灰分≤9",
+   "D": "水份≤11 蛋白质≤24 粗脂肪≤6.5 粗纤维≤3 粗灰分≤9"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s563",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物实验适宜的环境温度为 ______。",
+  "options": {
+   "A": "大于30℃",
+   "B": "21－27℃",
+   "C": "27℃－30℃",
+   "D": "D小于18℃、"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s564",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "动物实验适宜的环境湿度为 ______。",
+  "options": {
+   "A": "40%－70%",
+   "B": "小于40%",
+   "C": "70%－80%",
+   "D": "30%－40%"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s565",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "光照对动物的影响，错误的是 ______。",
+  "options": {
+   "A": "光照长短与动物的性周期有密切关系",
+   "B": "对动物的影响不大",
+   "C": "啮齿类动物应避免强的光照",
+   "D": "国家标准对实验动物的工作照度，动物照度均有规定"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s566",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "下列描述，错误的是 ______。",
+  "options": {
+   "A": "动物也需要有一定的活动空间",
+   "B": "不同种类的动物对空间的要求是不同的",
+   "C": "根据不同的营养要求满足动物各自的营养要求",
+   "D": "为保证营养，可随时调整饲料配方"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s567",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "家兔放射敏感性降低的季节 ______。",
+  "options": {
+   "A": "秋冬",
+   "B": "春夏",
+   "C": "冬夏",
+   "D": "秋春"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s568",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "实验动物哪些指标有昼夜规律性波动 ______。",
+  "options": {
+   "A": "内分泌，血糖",
+   "B": "体温",
+   "C": "基础代谢率",
+   "D": "以上都是"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s569",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "可影响小鼠生殖的环境因素是 ______。",
+  "options": {
+   "A": "温度、湿度",
+   "B": "噪声",
+   "C": "光照",
+   "D": "以上都是"
+  },
+  "answer": [
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s570",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国家标准规定实验动物饲养室湿度，指 ______。",
+  "options": {
+   "A": "绝对湿度",
+   "B": "相对湿度",
+   "C": "饱和湿度",
+   "D": "不饱和湿度"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s571",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国家标准规定实验动物饲养室的氨浓度不超过 ______。",
+  "options": {
+   "A": "14mg/m3",
+   "B": "14ppm",
+   "C": "24mg/m3",
+   "D": "4mg/m3"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s572",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国家标准规定实验动物室噪声不得高于 ______。",
+  "options": {
+   "A": "30db",
+   "B": "60db",
+   "C": "80db",
+   "D": "10db"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s573",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "对实验动物散热有主要影响作用的环境因素是 ______。",
+  "options": {
+   "A": "温度",
+   "B": "湿度",
+   "C": "光照",
+   "D": "噪声"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s574",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "有关实验动物的进出口管理，错误的是 ______ 。",
+  "options": {
+   "A": "从国外进口实验动物原种，必须向国家科技部指定的保种、育种和质量监测单位登记",
+   "B": "从国外进口作为原种的实验动物，只需附有饲育单位负责人签发的品系和亚系名称资料",
+   "C": "出口实验动物，必须报国家科技部审批",
+   "D": "进、出口实验动物的检疫工作，按《中华人民共和国进出口动植物检疫条例》的规定办理"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s575",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "世界最大的实验大、小鼠商品化生产、销售公司是  ______。",
+  "options": {
+   "A": "美国查士利华实验室",
+   "B": "北京维能利华实验动物技术有限公司",
+   "C": "杰克逊实验室",
+   "D": "实验动物研究所"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s576",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "国际实验动物科学协会的网站是  ______ 。",
+  "options": {
+   "A": "http://www.iclas.org",
+   "B": "http://www.aaalac.org",
+   "C": "http://www.aalas.org",
+   "D": "http://www.Jax.org"
+  },
+  "answer": [
+   "A"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-s577",
+  "bank": "labanimal",
+  "type": "single",
+  "stem": "中国实验动物信息网，网站是 ______。",
+  "options": {
+   "A": "http://www.nicpbp.org.cn",
+   "B": "http://www.lascn.net",
+   "C": "http://www.labanimals.com",
+   "D": "http://www.cnjax.org"
+  },
+  "answer": [
+   "B"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学单选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
  }
 ];

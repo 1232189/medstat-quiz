@@ -200,7 +200,7 @@ button{touch-action:manipulation}
 </head>
 <body>
 <div id="app"></div>
-<script src="questions.js?v=0da2f67a"></script>
+<script src="questions.js?v=e9f5a384"></script>
 <script src="feedback-config.js?v=b920c553"></script>
 <script>
 (function(){
@@ -471,10 +471,12 @@ function renderQuiz(){
     '<main class="wrap">' +
       '<div class="marks strip" aria-hidden="true">'+marksHtml(prog,st.i)+'</div>' +
       '<article class="qcard">' +
-        '<div class="qmeta"><span>第 '+q.page+' 页 · 原题 '+q.no+'</span><span class="sp"></span>' +
+        '<div class="qmeta"><span>'+esc(q.page ? ('第 '+q.page+' 页 · 原题 '+q.no) : ((q.source&&q.source.file)||'文档导入'))+'</span><span class="sp"></span>' +
           '<span>'+esc(q.lecture)+'</span>' +
-          '<button class="linkbtn" data-act="vopen" data-v="'+esc(q.id)+':image">原卷 ↗</button>' +
-          '<button class="linkbtn" data-act="vopen" data-v="'+esc(q.id)+':clean">去红版 ↗</button>' +
+          (q.source&&q.source.image
+            ? '<button class="linkbtn" data-act="vopen" data-v="'+esc(q.id)+':image">原卷 ↗</button>' +
+              '<button class="linkbtn" data-act="vopen" data-v="'+esc(q.id)+':clean">去红版 ↗</button>'
+            : '') +
           '<button class="linkbtn" data-act="feedback" data-v="'+esc(q.id)+'">反馈这道题</button></div>' +
         '<h2 class="stem">'+esc(q.stem)+'</h2>' +
         '<div class="opts">'+optionHtml(q)+'</div>' +
@@ -502,7 +504,7 @@ function renderResult(){
   var rev = wrongOnes.length ? wrongOnes.map(function(r){
     return '<div class="rev"><p class="rt">'+esc(r.q.stem)+'</p>' +
       '<div class="ra">你选 <i>'+(chosenArray(r.chosen).join('、')||'未作答')+'</i>　正确 <b>'+answerArray(r.q).join('、')+'</b>　' +
-      '<button class="linkbtn" data-act="vopen" data-v="'+esc(r.q.id)+':image">第 '+r.q.page+' 页原卷 ↗</button></div></div>';
+      ((r.q.source&&r.q.source.image) ? '<button class="linkbtn" data-act="vopen" data-v="'+esc(r.q.id)+':image">第 '+r.q.page+' 页原卷 ↗</button>' : '')+'</div></div>';
   }).join('') : '<div class="empty"><h2>全部答对</h2><p>这套题没有留下错题。</p></div>';
   app.innerHTML =
     bar('<div class="brand"><span class="seal">统</span> 本套结果</div>','',
@@ -526,7 +528,7 @@ function renderWrongBook(){
   var body = list.length ? '<div class="wlist">'+list.map(function(q){
     return '<div class="witem"><div><p>'+esc(q.stem)+'</p>' +
       '<div class="small">正确答案 <b>'+answerArray(q).join('、')+'</b> · '+esc(typeOf(q)==='judge' ? optionLabel(q, answerArray(q)[0]||'T') : (q.options[answerArray(q)[0]]||''))+
-      ' · <button class="linkbtn" data-act="vopen" data-v="'+esc(q.id)+':image">第 '+q.page+' 页原卷 ↗</button></div></div>' +
+      ((q.source&&q.source.image) ? ' · <button class="linkbtn" data-act="vopen" data-v="'+esc(q.id)+':image">第 '+q.page+' 页原卷 ↗</button>' : '')+'</div></div>' +
       '<button class="ghost" data-act="drop" data-v="'+esc(q.id)+'">移除</button></div>';
   }).join('')+'</div>'+
   '<div class="startbar"><button class="cta" data-act="practiceWrong">练这些错题 <span>→</span></button></div>'
