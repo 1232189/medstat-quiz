@@ -3,7 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>医学统计学 · 答题卡</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>医学统计 / 实验动物学 · 答题卡</title>
+<script>
+/* 版本自检：页面被微信或浏览器缓存后，用 version.json 比对，过期就自动跳到新地址 */
+(function(){
+  var LOCAL = '5fa6a89e';
+  if (!window.fetch || LOCAL.indexOf('__BUILD') === 0) return;   /* 本地开发不检查 */
+  var key = 'quiz_build_seen';
+  try {
+    fetch('version.json?ts=' + Date.now(), {cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if (!d || !d.build || d.build === LOCAL) return;
+        if (sessionStorage.getItem(key) === d.build) return;
+        sessionStorage.setItem(key, d.build);
+        location.replace(location.pathname + '?v=' + d.build + location.hash);
+      })
+      .catch(function(){});
+  } catch(e){}
+})();
+</script>
 <style>
 :root{
   --paper:#F7F9FA; --sheet:#FFFFFF; --ink:#173B57; --ink-soft:#4C6273;
