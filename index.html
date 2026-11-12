@@ -10,7 +10,7 @@
 <script>
 /* 版本自检：页面被微信或浏览器缓存后，用 version.json 比对，过期就自动跳到新地址 */
 (function(){
-  var LOCAL = '5fa6a89e';
+  var LOCAL = 'bf3e8c8c';
   if (!window.fetch || LOCAL.indexOf('__BUILD') === 0) return;   /* 本地开发不检查 */
   var key = 'quiz_build_seen';
   try {
@@ -83,6 +83,9 @@ h1{font-family:var(--display);font-size:clamp(36px,7vw,60px);line-height:1.14;le
 .segment button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .section-title{font-family:var(--display);font-size:23px;margin:38px 0 16px;display:flex;align-items:baseline;gap:12px}
 .section-title small{font-family:var(--body);font-size:12px;font-weight:400;color:var(--ink-soft)}
+.fbexplain{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);text-align:left}
+.fbexplain b{font-size:12px;color:var(--ink-soft);font-weight:600}
+.fbexplain p{margin:6px 0 0;font-size:14px;line-height:1.7;white-space:pre-wrap}
 .bank-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 4px}
 .bank-row button{border:1px solid var(--line);background:var(--sheet);border-radius:999px;padding:9px 16px;font-size:14px;cursor:pointer;color:var(--ink);font-family:var(--body)}
 .bank-row button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
@@ -508,9 +511,11 @@ function feedbackHtml(q){
   var detail = correct.map(function(k){
     return judge ? optionLabel(q,k) : (q.options[k] || '');
   }).join('；');
+  var ex = String(q.explanation == null ? '' : q.explanation).trim();
   return '<div class="feedback'+(ok?'':' bad')+'" role="status">' +
     '<div class="fbhead">'+(ok?'答对了':'答错了')+'</div>' +
     '<p>正确答案 <b>'+correct.join('、')+'</b> · '+esc(detail)+'</p>' +
+    (ex ? '<div class="fbexplain"><b>解析</b><p>'+esc(ex)+'</p></div>' : '') +
     (judge ? '' : '<p>如果题干或选项读着别扭，多半是 OCR 误识，点上方「原卷 / 去红版」核对原卷。</p>') +
     '</div>';
 }
