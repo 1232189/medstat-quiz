@@ -200,7 +200,7 @@ button{touch-action:manipulation}
 </head>
 <body>
 <div id="app"></div>
-<script src="questions.js?v=e9f5a384"></script>
+<script src="questions.js?v=5102cf72"></script>
 <script src="feedback-config.js?v=b920c553"></script>
 <script>
 (function(){
@@ -253,7 +253,14 @@ function isCorrect(q, chosen){
   var a = chosenArray(chosen), b = answerArray(q);
   return a.length === b.length && a.every(function(x,i){ return x === b[i]; });
 }
-function optionKeys(q){ return typeOf(q)==='judge' ? ['T','F'] : ['A','B','C','D']; }
+function optionKeys(q){
+  if(typeOf(q)==='judge') return ['T','F'];
+  var ks = Object.keys(q.options||{}).filter(function(k){
+    return k.length===1 && k>='A' && k<='F' && (q.options[k]||'').trim();
+  });
+  ks.sort();
+  return ks.length ? ks : ['A','B','C','D'];
+}
 function optionLabel(q,k){ return typeOf(q)==='judge' ? (k==='T'?'正确':'错误') : k; }
 
 function fmt(ms){

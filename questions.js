@@ -50614,6 +50614,38 @@ window.QUIZ_DATA = [
   "no": null
  },
  {
+  "id": "labanimal-m317",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "人类感染淋巴细胞性脉络丛脑膜炎的主要症状 _。",
+  "options": {
+   "A": "大脑型 B_内脏型",
+   "C": "流感样症状",
+   "D": "脑膜炎"
+  },
+  "answer": [
+   "C",
+   "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
   "id": "labanimal-m318",
   "bank": "labanimal",
   "type": "multiple",
@@ -50994,9 +51026,10 @@ window.QUIZ_DATA = [
   "stem": "下列小鼠命名与其表示的意义相符的是_。",
   "options": {
    "A": "CBA/J表示CBA近交系的亚系",
-   "B": "(C57BL/6XDBA/2)F,表示由C57BL/6和DBA/2杂交的子一代动物",
+   "B": "(C57BL/6XDBA/2)",
    "C": "CXB1可表示由BALB/c与C57BL两个近交系杂交育成的重组近交系",
-   "D": "B10.129—\" —12'表示该同源导入近交系的遗传背景为129/J,导入B10的基因为\"一12*,基因提供者为近交系B10"
+   "D": "B10.129—\" —12'表示该同源导入近交系的遗传背景为129/J,导入B10的基因为\"一12*,基因提供者为近交系B10",
+   "F": "表示由C57BL/6和DBA/2杂交的子一代动物"
   },
   "answer": [
    "A",
@@ -51237,6 +51270,41 @@ window.QUIZ_DATA = [
   "answer": [
    "C",
    "D"
+  ],
+  "topic": "",
+  "tags": [],
+  "source": {
+   "page": null,
+   "no": null,
+   "file": "实验动物学 多选题.docx"
+  },
+  "quality": {
+   "ocr": "docx",
+   "reviewed": false,
+   "needs_review": false,
+   "incomplete": false
+  },
+  "explanation": null,
+  "version": 2,
+  "page": null,
+  "no": null
+ },
+ {
+  "id": "labanimal-m339",
+  "bank": "labanimal",
+  "type": "multiple",
+  "stem": "下列动物中可以用作人类脱发研究的动物有_。",
+  "options": {
+   "A": "树駒",
+   "B": "长毛兔",
+   "C": "比格犬",
+   "D": "稀毛小鼠",
+   "E": "裸鼠"
+  },
+  "answer": [
+   "A",
+   "D",
+   "E"
   ],
   "topic": "",
   "tags": [],
@@ -51677,7 +51745,8 @@ window.QUIZ_DATA = [
    "A": "维生素A",
    "B": "维生素D",
    "C": "维生素E",
-   "D": "维生素K    E.维生素B6"
+   "D": "维生素K",
+   "E": "维生素B6"
   },
   "answer": [
    "A",
