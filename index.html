@@ -61,6 +61,10 @@ h1{font-family:var(--display);font-size:clamp(36px,7vw,60px);line-height:1.14;le
 .segment button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .section-title{font-family:var(--display);font-size:23px;margin:38px 0 16px;display:flex;align-items:baseline;gap:12px}
 .section-title small{font-family:var(--body);font-size:12px;font-weight:400;color:var(--ink-soft)}
+.bank-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 4px}
+.bank-row button{border:1px solid var(--line);background:var(--sheet);border-radius:999px;padding:9px 16px;font-size:14px;cursor:pointer;color:var(--ink);font-family:var(--body)}
+.bank-row button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bank-row button i{font-style:normal;opacity:.55;margin-left:6px;font-size:12px}
 .topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
 .topic{border:1px solid var(--line);border-radius:12px;background:var(--sheet);padding:16px 18px;text-align:left;display:flex;flex-direction:column;gap:8px;min-height:82px;justify-content:space-between}
 .topic:hover{border-color:var(--ink)}
@@ -200,12 +204,14 @@ button{touch-action:manipulation}
 </head>
 <body>
 <div id="app"></div>
-<script src="questions.js?v=39e969ab"></script>
+<script src="questions.js?v=f1f66560"></script>
 <script src="feedback-config.js?v=b920c553"></script>
 <script>
 (function(){
 "use strict";
 var DATA = (window.QUIZ_DATA || []).slice();
+var BANKS = (window.QUIZ_BANKS || []);
+function bankOf(q){ return q.bank || (BANKS[0] && BANKS[0].id) || 'medstat'; }
 var app = document.getElementById('app');
 var ABCD = ['A','B','C','D'];
 var K = {wrong:'quiz_wrong_v1', flag:'quiz_flag_v1', hist:'quiz_hist_v1',
@@ -217,8 +223,9 @@ var store = {
   set:function(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} },
   del:function(k){ try{ localStorage.removeItem(k); }catch(e){} }
 };
-var st = {view:'home', topic:'__all__', mode:'instant', count:10,
+var st = {view:'home', bank:'', topic:'__all__', mode:'instant', count:10,
           queue:[], i:0, chosen:{}, results:[], started:0, elapsed:0, locked:false, hint:''};
+st.bank = (BANKS[0] && BANKS[0].id) || '__all__';
 var tick = null;
 var viewer = null;
 var FB = window.QUIZ_FEEDBACK_CONFIG || {channel:'local',target:'',appVersion:'2',contactHint:''};
@@ -232,7 +239,17 @@ var CATS = [
 ];
 var fbDraft = null;
 var toastTimer = null;
-var topics = DATA.map(function(q){return q.topic;}).filter(function(v,i,a){return a.indexOf(v)===i;});
+function bankPool(){
+  return st.bank==='__all__' ? DATA.slice()
+    : DATA.filter(function(q){ return bankOf(q)===st.bank; });
+}
+function topicsOf(bank){
+  var p = bank==='__all__' ? DATA
+    : DATA.filter(function(q){ return bankOf(q)===bank; });
+  var out = [];
+  p.forEach(function(q){ if(q.topic && out.indexOf(q.topic)<0) out.push(q.topic); });
+  return out;
+}
 
 /* 题型策略：以后加题型只需在这里加一行，判分逻辑不用改 */
 var TYPES = {
@@ -271,9 +288,13 @@ function mmss(ms){
   var s = Math.max(0, Math.floor(ms/1000));
   return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0');
 }
-function topicCount(t){ return t==='__all__' ? DATA.length : DATA.filter(function(q){return q.topic===t;}).length; }
+function topicCount(t){
+  var p = bankPool();
+  return t==='__all__' ? p.length : p.filter(function(q){return q.topic===t;}).length;
+}
 function pool(){
-  return st.topic==='__all__' ? DATA.slice() : DATA.filter(function(q){return q.topic===st.topic;});
+  var p = bankPool();
+  return st.topic==='__all__' ? p : p.filter(function(q){return q.topic===st.topic;});
 }
 function shuffle(a){
   for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; }
@@ -298,7 +319,7 @@ function saveSession(){
   if(st.view==='home'){ store.del(K.sess); return; }
   if(st.view!=='quiz' && st.view!=='result') return;
   store.set(K.sess, {
-    view:st.view, topic:st.topic, mode:st.mode, count:st.count,
+    view:st.view, bank:st.bank, topic:st.topic, mode:st.mode, count:st.count,
     queue:st.queue.map(function(q){return q.id;}),
     i:st.i, chosen:st.chosen, locked:st.locked,
     started:st.started, elapsed:st.elapsed,
@@ -311,6 +332,7 @@ function restoreSession(){
   var queue = (s.queue||[]).map(byId).filter(Boolean);
   if(!queue.length) return false;
   st.view = s.view;
+  st.bank = s.bank || st.bank;
   st.topic = s.topic || '__all__';
   st.mode = s.mode || 'instant';
   st.count = s.count || 10;
@@ -386,12 +408,23 @@ function renderHome(){
   var rate = stat.done ? Math.round(stat.right/stat.done*100) : 0;
   var row = [];
   for(var i=0;i<24;i++){ row.push(hist[hist.length-24+i] || ''); }
-  var cards = '<button class="topic" data-act="topic" data-v="__all__" aria-pressed="'+(st.topic==='__all__')+'"><span class="tname">全部题目</span><span class="tnum">'+DATA.length+' 题</span></button>';
-  topics.forEach(function(t){
+  var bp = bankPool();
+  var tp = topicsOf(st.bank);
+  var curBank = st.bank==='__all__' ? '全部题库'
+    : ((BANKS.filter(function(b){return b.id===st.bank;})[0]||{}).name || '题库');
+  var bankChips = BANKS.map(function(b){
+    var n = DATA.filter(function(q){return bankOf(q)===b.id;}).length;
+    return '<button class="chip" data-act="bank" data-v="'+esc(b.id)+'" aria-pressed="'+(st.bank===b.id)+'">'+esc(b.name)+'<i>'+n+'</i></button>';
+  }).join('');
+  if(BANKS.length>1){
+    bankChips += '<button class="chip" data-act="bank" data-v="__all__" aria-pressed="'+(st.bank==='__all__')+'">全部<i>'+DATA.length+'</i></button>';
+  }
+  var cards = '<button class="topic" data-act="topic" data-v="__all__" aria-pressed="'+(st.topic==='__all__')+'"><span class="tname">全部题目</span><span class="tnum">'+bp.length+' 题</span></button>';
+  tp.forEach(function(t){
     cards += '<button class="topic" data-act="topic" data-v="'+esc(t)+'" aria-pressed="'+(st.topic===t)+'"><span class="tname">'+esc(t)+'</span><span class="tnum">'+topicCount(t)+' 题</span></button>';
   });
   app.innerHTML =
-    bar('<div class="brand"><span class="seal">统</span> 医学统计学 · 题库 05</div>',
+    bar('<div class="brand"><span class="seal">题</span> '+esc(curBank)+'</div>',
         '',
         '<div class="bar-actions">'+
           '<button class="ghost" data-act="tickets">反馈 <b>'+getTickets().length+'</b></button>'+
@@ -399,9 +432,9 @@ function renderHome(){
         '</div>') +
     '<main class="wrap">' +
       '<section class="hero">' +
-        '<p class="eyebrow">'+((window.QUIZ_BANKS||[]).map(function(b){return esc(b.name);}).join(' · ')||'Answer sheet')+'</p>' +
-        '<h1>医学统计学<br>选择题题库</h1>' +
-        '<p class="lede">'+DATA.length+' 道可作答 · '+topics.length+' 个专题 · 选自 55 页原卷。题目由 OCR 转写，遇到读不通的字句，点答题页的「原卷 / 去红版」核对。</p>' +
+        '<p class="eyebrow">'+((BANKS||[]).map(function(b){return esc(b.name);}).join(' · ')||'Answer sheet')+'</p>' +
+        '<h1>'+esc(curBank)+'<br>题库</h1>' +
+        '<p class="lede">'+bp.length+' 道可作答 · '+tp.length+' 个专题。题目来自扫描件或文档转写，遇到读不通的字句，点答题页的「原卷 / 去红版」核对。</p>' +
         '<div class="marks" aria-hidden="true">'+marksHtml(row,-1)+'</div>' +
         '<p class="marknote">最近 24 次作答　绿 = 对　红 = 错</p>' +
       '</section>' +
@@ -421,6 +454,8 @@ function renderHome(){
           }).join('') +
         '</div></div>' +
       '</section>' +
+      (BANKS.length>1 ? '<h2 class="section-title">选择题库 <small>切换后专题会跟着变</small></h2>' +
+        '<div class="bank-row">'+bankChips+'</div>' : '') +
       '<h2 class="section-title">选择专题 <small>单选，默认全部</small></h2>' +
       '<div class="topic-grid">'+cards+'</div>' +
       '<div class="startbar"><button class="cta" data-act="start">开始答题 <span>→</span></button>' +
@@ -850,6 +885,7 @@ document.addEventListener('click', function(e){
   }
   else if(act==='fclear'){ store.set(KT, []); render(); }
   else if(act==='topic'){ st.topic=v; renderHome(); }
+  else if(act==='bank'){ st.bank=v; st.topic='__all__'; renderHome(); }
   else if(act==='mode'){ st.mode=v; renderHome(); }
   else if(act==='count'){ st.count=parseInt(v,10); renderHome(); }
   else if(act==='start'){
